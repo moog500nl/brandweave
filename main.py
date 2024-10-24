@@ -25,20 +25,24 @@ def main():
     # Sidebar controls
     st.sidebar.header("Settings")
     
+    # Initialize selected providers with session state
     selected_providers = {}
     for provider_name in providers.keys():
         selected_providers[provider_name] = st.sidebar.checkbox(
             f"Use {provider_name}",
-            value=True
+            value=st.session_state.get(f'selected_{provider_name}', True)
         )
+        # Update session state
+        st.session_state[f'selected_{provider_name}'] = selected_providers[provider_name]
 
     temperature = st.sidebar.slider(
         "Temperature",
         min_value=0.0,
         max_value=1.0,
-        value=0.7,
+        value=st.session_state.get('temperature', 0.7),
         step=0.1
     )
+    st.session_state['temperature'] = temperature
 
     num_submissions = st.sidebar.number_input(
         "Number of submissions",
@@ -64,6 +68,12 @@ def main():
                 if template:
                     st.session_state['system_prompt'] = template['system_prompt']
                     st.session_state['user_prompt'] = template['user_prompt']
+                    # Load model settings if they exist
+                    if 'selected_providers' in template:
+                        for provider_name, selected in template['selected_providers'].items():
+                            st.session_state[f'selected_{provider_name}'] = selected
+                    if 'temperature' in template:
+                        st.session_state['temperature'] = template['temperature']
                     st.rerun()
             
             if st.sidebar.button("Delete Selected Template"):
@@ -96,7 +106,8 @@ def main():
         new_template_name = st.text_input("Template Name", placeholder="Enter name to save as template")
         if st.button("Save as Template"):
             if new_template_name and system_prompt and user_prompt:
-                if save_template(new_template_name, system_prompt, user_prompt):
+                if save_template(new_template_name, system_prompt, user_prompt, 
+                               selected_providers, temperature):
                     st.success(f"Template '{new_template_name}' saved successfully!")
                     st.rerun()
             else:

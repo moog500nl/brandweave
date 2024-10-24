@@ -28,8 +28,9 @@ def save_templates(templates: Dict):
     with open(TEMPLATES_FILE, 'w') as f:
         json.dump(templates, f, indent=2)
 
-def save_template(name: str, system_prompt: str, user_prompt: str) -> bool:
-    """Save a new template"""
+def save_template(name: str, system_prompt: str, user_prompt: str, 
+                 selected_providers: Dict[str, bool], temperature: float) -> bool:
+    """Save a new template with model settings"""
     templates = load_templates()
     if not name:
         return False
@@ -37,6 +38,8 @@ def save_template(name: str, system_prompt: str, user_prompt: str) -> bool:
     templates[name] = {
         'system_prompt': system_prompt,
         'user_prompt': user_prompt,
+        'selected_providers': selected_providers,
+        'temperature': temperature,
         'created_at': datetime.now().isoformat()
     }
     save_templates(templates)
