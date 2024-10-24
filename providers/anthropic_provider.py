@@ -21,7 +21,7 @@ class AnthropicProvider(LLMProvider):
             )
             if not message.content:
                 return "Error: Anthropic returned empty response"
-            return message.content[0].value
+            return message.content[0].text
 
         except Exception as e:
             return f"Error with Anthropic: {str(e)}"
