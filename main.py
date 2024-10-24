@@ -64,12 +64,12 @@ def main():
                 if template:
                     st.session_state['system_prompt'] = template['system_prompt']
                     st.session_state['user_prompt'] = template['user_prompt']
-                    st.experimental_rerun()
+                    st.rerun()
             
             if st.sidebar.button("Delete Selected Template"):
                 if delete_template(selected_template):
                     st.sidebar.success(f"Template '{selected_template}' deleted!")
-                    st.experimental_rerun()
+                    st.rerun()
 
     # Main content
     col1, col2 = st.columns(2)
@@ -98,7 +98,7 @@ def main():
             if new_template_name and system_prompt and user_prompt:
                 if save_template(new_template_name, system_prompt, user_prompt):
                     st.success(f"Template '{new_template_name}' saved successfully!")
-                    st.experimental_rerun()
+                    st.rerun()
             else:
                 st.error("Please provide template name and both prompts")
 
