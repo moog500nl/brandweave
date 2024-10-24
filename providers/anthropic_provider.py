@@ -8,17 +8,20 @@ class AnthropicProvider(LLMProvider):
         
     @property
     def name(self) -> str:
-        return "Anthropic-Claude"
+        return "claude-3-sonnet-20240229"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             message = self.client.messages.create(
-                model="claude-3-opus-20240229",
+                model="claude-3-sonnet-20240229",
                 max_tokens=1000,
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_prompt}],
                 temperature=temperature
             )
-            return message.content[0].text
+            if not message.content:
+                return "Error: Anthropic returned empty response"
+            return message.content[0].value
+
         except Exception as e:
             return f"Error with Anthropic: {str(e)}"

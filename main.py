@@ -6,9 +6,9 @@ from utils.csv_handler import save_responses_to_csv
 
 def initialize_providers():
     return {
-        "OpenAI GPT-4": OpenAIProvider(),
-        "Google Gemini": GoogleProvider(),
-        "Anthropic Claude": AnthropicProvider()
+        "gpt-4o-mini": OpenAIProvider(),
+        "gemini-1.5-flash": GoogleProvider(),
+        "claude-3-sonnet-20240229": AnthropicProvider()
     }
 
 def main():
