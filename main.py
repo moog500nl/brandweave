@@ -3,6 +3,10 @@ from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
 from utils.csv_handler import save_responses_to_csv
+from utils.template_manager import (
+    save_template, get_template, delete_template,
+    list_templates
+)
 
 def initialize_providers():
     return {
@@ -43,12 +47,37 @@ def main():
         value=1
     )
 
+    # Template Management in Sidebar
+    st.sidebar.header("Template Management")
+    template_names = list_templates()
+    
+    if template_names:
+        selected_template = st.sidebar.selectbox(
+            "Load Template",
+            [""] + template_names,
+            index=0
+        )
+        
+        if selected_template:
+            if st.sidebar.button("Load Selected Template"):
+                template = get_template(selected_template)
+                if template:
+                    st.session_state['system_prompt'] = template['system_prompt']
+                    st.session_state['user_prompt'] = template['user_prompt']
+                    st.experimental_rerun()
+            
+            if st.sidebar.button("Delete Selected Template"):
+                if delete_template(selected_template):
+                    st.sidebar.success(f"Template '{selected_template}' deleted!")
+                    st.experimental_rerun()
+
     # Main content
     col1, col2 = st.columns(2)
 
     with col1:
         system_prompt = st.text_area(
             "System Prompt",
+            value=st.session_state.get('system_prompt', ''),
             height=150,
             placeholder="Enter system prompt here..."
         )
@@ -56,9 +85,22 @@ def main():
     with col2:
         user_prompt = st.text_area(
             "User Prompt",
+            value=st.session_state.get('user_prompt', ''),
             height=150,
             placeholder="Enter user prompt here..."
         )
+
+    # Template Save Section
+    col3, col4 = st.columns(2)
+    with col3:
+        new_template_name = st.text_input("Template Name", placeholder="Enter name to save as template")
+        if st.button("Save as Template"):
+            if new_template_name and system_prompt and user_prompt:
+                if save_template(new_template_name, system_prompt, user_prompt):
+                    st.success(f"Template '{new_template_name}' saved successfully!")
+                    st.experimental_rerun()
+            else:
+                st.error("Please provide template name and both prompts")
 
     if st.button("Generate Responses"):
         if not any(selected_providers.values()):
