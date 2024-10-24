@@ -1,12 +1,12 @@
 {
-  "Test1": {
-    "system_prompt": "You are a helpful assistant.",
-    "user_prompt": "What is the capital of the Netherlands?",
-    "created_at": "2024-10-24T11:48:18.334223"
+  "vodka5": {
+    "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not explain yourself. ",
+    "user_prompt": "Which 5 vodka brands do you recommend?",
+    "created_at": "2024-10-24T12:00:02.509513"
   },
-  "Test2": {
+  "france_capital": {
     "system_prompt": "You are a helpful assistant.",
-    "user_prompt": "What is the capital of Belgium?",
-    "created_at": "2024-10-24T11:50:15.249448"
+    "user_prompt": "What is the capital of France?",
+    "created_at": "2024-10-24T12:01:35.086618"
   }
 }
