@@ -43,7 +43,7 @@ def main():
     num_submissions = st.sidebar.number_input(
         "Number of submissions",
         min_value=1,
-        max_value=10,
+        max_value=1000,
         value=1
     )
 
