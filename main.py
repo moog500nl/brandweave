@@ -124,16 +124,10 @@ def main():
                         )
                         responses.append((provider.name, response))
 
-        # Display responses
-        st.subheader("Responses")
-        for provider_name, response in responses:
-            with st.expander(f"Response from {provider_name}"):
-                st.write(response)
-
         # Save to CSV
         if responses:
             filename = save_responses_to_csv(responses)
-            st.success(f"Responses saved to {filename}")
+            st.success(f"Responses have been saved to CSV file: {filename}")
             
             with open(filename, 'rb') as f:
                 st.download_button(
