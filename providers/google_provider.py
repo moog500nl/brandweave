@@ -20,6 +20,6 @@ class GoogleProvider(LLMProvider):
                     temperature=temperature
                 )
             )
-            return response.text
+            return response.text.strip()
         except Exception as e:
             return f"Error with Google: {str(e)}"
