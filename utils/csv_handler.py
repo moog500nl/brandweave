@@ -1,6 +1,7 @@
 import pandas as pd
 from datetime import datetime
 import os
+import csv
 
 def save_responses_to_csv(responses: list[tuple[str, str]]) -> str:
     """
@@ -10,5 +11,5 @@ def save_responses_to_csv(responses: list[tuple[str, str]]) -> str:
     filename = f"llm_responses_{timestamp}.csv"
     
     df = pd.DataFrame(responses, columns=['model', 'response'])
-    df.to_csv(filename, index=False)
+    df.to_csv(filename, index=False, quoting=csv.QUOTE_MINIMAL)
     return filename
