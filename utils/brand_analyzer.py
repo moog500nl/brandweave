@@ -1,12 +1,13 @@
 import pandas as pd
-import plotly.express as px
 from collections import Counter
-from typing import List, Tuple
+from typing import List, Tuple, Dict, Any
+import os
+import json
+import streamlit.components.v1 as components
 
-def analyze_brand_frequencies(responses: List[Tuple[str, str]]) -> dict:
+def analyze_brand_frequencies(responses: List[Tuple[str, str]]) -> List[Dict[str, Any]]:
     """
-    Analyze brand frequencies from responses
-    Returns a dictionary containing visualization data
+    Analyze brand frequencies from responses and return data for React visualization
     """
     # Convert responses to DataFrame
     df = pd.DataFrame(responses, columns=['model', 'response'])
@@ -21,23 +22,44 @@ def analyze_brand_frequencies(responses: List[Tuple[str, str]]) -> dict:
     # Count frequencies
     brand_counts = Counter(all_brands)
     
-    # Convert to DataFrame for visualization
-    freq_df = pd.DataFrame.from_dict(brand_counts, orient='index', columns=['count'])
-    freq_df = freq_df.reset_index().rename(columns={'index': 'brand'})
-    freq_df = freq_df.sort_values('count', ascending=True)
+    # Convert to list of dictionaries for React
+    data = [{"brand": brand, "count": count} 
+            for brand, count in sorted(brand_counts.items(), 
+                                    key=lambda x: x[1],
+                                    reverse=True)]
     
-    # Create bar chart
-    fig = px.bar(freq_df, 
-                 x='count', 
-                 y='brand',
-                 orientation='h',
-                 title='Brand Frequency Analysis',
-                 labels={'count': 'Frequency', 'brand': 'Brand Name'})
+    return data
+
+def render_brand_chart(data: List[Dict[str, Any]]):
+    """
+    Render the React-based brand chart
+    """
+    # Get the directory of the current file
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Path to the frontend build directory
+    build_dir = os.path.join(current_dir, "..", "frontend", "build", "static", "js")
+    js_path = os.path.join(build_dir, "main.js")
     
-    # Update layout for better readability
-    fig.update_layout(
-        height=max(400, len(freq_df) * 25),  # Dynamic height based on number of brands
-        margin=dict(l=10, r=10, t=30, b=10)
+    # Create a custom component
+    components.html(
+        f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+            <style>
+                #root {{ font-family: 'Roboto', sans-serif; }}
+            </style>
+        </head>
+        <body>
+            <div id="root"></div>
+            <script>
+                window.brandChartData = {json.dumps(data)};
+            </script>
+            <script src="frontend/build/static/js/main.js"></script>
+        </body>
+        </html>
+        """,
+        height=max(400, len(data) * 25),
     )
-    
-    return fig
