@@ -1,0 +1,10 @@
+model,response
+gpt-4o-mini,"Grey Goose, Belvedere, Ketel One, Absolut, Tito's Handmade Vodka"
+gemini-1.5-flash,"Ketel One, Absolut, Belvedere, Grey Goose, Tito's."
+claude-3-sonnet-20240229,"Belvedere, Grey Goose, Ketel One, Tito's, Chopin."
+gpt-4o-mini,"Grey Goose, Belvedere, Ketel One, Tito's Handmade Vodka, Absolute Vodka"
+gemini-1.5-flash,"Grey Goose, Belvedere, Tito's, Absolut, Ketel One."
+claude-3-sonnet-20240229,"Grey Goose, Belvedere, Ketel One, Tito's, Absolut."
+gpt-4o-mini,"Grey Goose, Belvedere, Absolut, Ketel One, Tito's Handmade Vodka"
+gemini-1.5-flash,"Grey Goose, Belvedere, Ketel One, Tito's, Absolut."
+claude-3-sonnet-20240229,"Grey Goose, Ketel One, Belvedere, Tito's, Chopin."

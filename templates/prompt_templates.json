@@ -1,16 +1,20 @@
 {
-  "Vodka10(1.0)": {
+  "vodka5": {
     "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not explain yourself. ",
-    "user_prompt": "Which 10 vodka brands do you recommend?",
-    "selected_providers": {
-      "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
-      "claude-3-sonnet-20240229": true
-    },
-    "temperature": 1.0,
-    "created_at": "2024-10-25T08:06:18.354189"
+    "user_prompt": "Which 5 vodka brands do you recommend?",
+    "created_at": "2024-10-24T12:00:02.509513"
   },
-  "Vodka10(0.2)": {
+  "france_capital": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "What is the capital of France?",
+    "created_at": "2024-10-24T12:01:35.086618"
+  },
+  "vodka10": {
+    "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not explain yourself. ",
+    "user_prompt": "Which 10 vodka brands do you recommend?",
+    "created_at": "2024-10-24T12:12:31.236794"
+  },
+  "vokda10(0.0)": {
     "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not explain yourself. ",
     "user_prompt": "Which 10 vodka brands do you recommend?",
     "selected_providers": {
@@ -18,7 +22,18 @@
       "gemini-1.5-flash": true,
       "claude-3-sonnet-20240229": true
     },
-    "temperature": 0.2,
-    "created_at": "2024-10-25T08:06:01.018722"
+    "temperature": 0.0,
+    "created_at": "2024-10-24T13:15:48.033429"
+  },
+  "vokda10(0.5)": {
+    "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not explain yourself. ",
+    "user_prompt": "Which 10 vodka brands do you recommend?",
+    "selected_providers": {
+      "gpt-4o-mini": true,
+      "gemini-1.5-flash": true,
+      "claude-3-sonnet-20240229": true
+    },
+    "temperature": 0.5,
+    "created_at": "2024-10-24T13:15:24.648943"
   }
 }
