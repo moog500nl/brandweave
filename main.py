@@ -7,6 +7,7 @@ from utils.template_manager import (
     save_template, get_template, delete_template,
     list_templates
 )
+from utils.brand_analyzer import analyze_brand_frequencies
 
 def initialize_providers():
     return {
@@ -147,6 +148,11 @@ def main():
                     file_name=filename,
                     mime='text/csv'
                 )
+            
+            # Add visualization
+            st.header("Brand Frequency Analysis")
+            fig = analyze_brand_frequencies(responses)
+            st.plotly_chart(fig, use_container_width=True)
 
 if __name__ == "__main__":
     main()
