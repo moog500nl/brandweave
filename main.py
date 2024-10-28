@@ -16,7 +16,7 @@ def initialize_providers():
         "gemini-1.5-flash": GoogleProvider(),
         "claude-3-sonnet-20240229": AnthropicProvider(),
         "grok-beta": GrokProvider(),
-        "llama-3-70b-instruct-lite": LlamaProvider()
+        "llama-3.1-70b-instruct-turbo": LlamaProvider()
     }
 
 def main():

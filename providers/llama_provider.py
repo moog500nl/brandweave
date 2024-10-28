@@ -11,12 +11,12 @@ class LlamaProvider(LLMProvider):
         
     @property
     def name(self) -> str:
-        return "llama-3-70b-instruct-lite"
+        return "llama-3.1-70b-instruct-turbo"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             response = self.client.chat.completions.create(
-                model="mistralai/meta-llama/Meta-Llama-3-70B-Instruct-Lite",
+                model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
