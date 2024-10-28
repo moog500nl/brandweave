@@ -15,19 +15,29 @@ class LlamaProvider(LLMProvider):
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
-            # Combine system and user prompts as Llama uses a single message format
-            combined_prompt = f"{system_prompt}\n\n{user_prompt}"
+            messages = [
+                {"role": "system", "content": system_prompt} if system_prompt else None,
+                {"role": "user", "content": user_prompt}
+            ]
+            # Filter out None messages if system prompt is empty
+            messages = [msg for msg in messages if msg is not None]
             
             response = self.client.chat.completions.create(
                 model="meta/llama-3.1-70b-instruct",
-                messages=[{"role": "user", "content": combined_prompt}],
+                messages=messages,
                 temperature=temperature,
                 top_p=0.7,
                 max_tokens=1024,
-                stream=False  # We don't want streaming for this implementation
+                stream=True
             )
             
-            return response.choices[0].message.content
+            # Handle streaming response
+            full_response = ""
+            for chunk in response:
+                if chunk.choices[0].delta.content is not None:
+                    full_response += chunk.choices[0].delta.content
+                    
+            return full_response.strip()
             
         except Exception as e:
             return f"Error with Llama: {str(e)}"
