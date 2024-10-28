@@ -2,6 +2,7 @@ import streamlit as st
 from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
+from providers.grok_provider import GrokProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
@@ -12,7 +13,8 @@ def initialize_providers():
     return {
         "gpt-4o-mini": OpenAIProvider(),
         "gemini-1.5-flash": GoogleProvider(),
-        "claude-3-sonnet-20240229": AnthropicProvider()
+        "claude-3-sonnet-20240229": AnthropicProvider(),
+        "grok-beta": GrokProvider()
     }
 
 def main():

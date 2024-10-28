@@ -1,0 +1,18 @@
+Grok API Call
+
+curl https://api.x.ai/v1/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer xai-VDyzYLiXVrblNdXpEMnry5qjGNBGAydJ8vRCZp0r9b0nZPJYCdqoD6y9DmfEqVhTAkBIr4fUPsskTFue" -d '{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a test assistant."
+    },
+    {
+      "role": "user",
+      "content": "Testing. Just say hi and hello world and nothing else."
+    }
+  ],
+  "model": "grok-beta",
+  "stream": false,
+  "temperature": 1.0
+}'
+

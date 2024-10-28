@@ -1020,6 +1020,7 @@ dependencies = [
     { name = "google-generativeai" },
     { name = "openai" },
     { name = "pandas" },
+    { name = "requests" },
     { name = "streamlit" },
 ]
 
@@ -1029,6 +1030,7 @@ requires-dist = [
     { name = "google-generativeai", specifier = ">=0.8.3" },
     { name = "openai", specifier = ">=1.52.2" },
     { name = "pandas", specifier = ">=2.2.3" },
+    { name = "requests", specifier = ">=2.32.3" },
     { name = "streamlit", specifier = ">=1.39.0" },
 ]
 
