@@ -20,8 +20,8 @@ def initialize_providers():
     }
 
 def main():
-    st.set_page_config(page_title="LLM Comparison Tool", layout="wide")
-    st.title("🤖 LLM Comparison Tool")
+    st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
+    st.title("🤖 Brandweave LLM Diagnostics")
 
     # Initialize providers
     providers = initialize_providers()
