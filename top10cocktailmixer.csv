@@ -1,0 +1,1876 @@
+model,response
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, New Amsterdam, Skyy, Finlandia, Svedka, Belvedere, Grey Goose, Stolichnaya"
+gemini-1.5-flash,"Absolut, Smirnoff, Tito's, Ketel One, Grey Goose, Belvedere,"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing are: Tito's, Smirnoff, New Amsterdam, Svedka, Skyy."
+grok-beta,"Absolut, Smirnoff, Stolichnaya, Svedka, Ketel One, Tito's, New Amsterdam, Pinnacle, Skyy, Finlandia,ví)"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Svedka, New Amsterdam, Burnett's, Deep Eddy"
+gpt-4o-mini,"Tito's, Svedka, Smirnoff, Absolut, Skyy, New Amsterdam, Prairie Organic, Finlandia, Belvedere, Stoli"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Belvedere, Chopin,  Stoli,  Tanqueray,  Belvedere,  Tanqueray,  Ciroc,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Absolut, New Amsterdam, Skyy, Svedka, Pinnacle."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 15:59:03 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dac9ace7efe0d1a</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade, Absolut, Stolichnaya, New Amsterdam, Smirnoff, Belvedere, Pinnacle, Svedka"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Skyy, New Amsterdam, Stolichnaya, Ketel One, Finlandia, Popov, Svedka"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Belvedere,  Stoli,  Tanqueray,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, Svedka, New Amsterdam, Skyy, Absolut."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:00:03 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dac9c419f1d456a</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Tito's Handmade Vodka, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Burnett's, Wyborowa"
+gpt-4o-mini,"Tito's Handmade, New Amsterdam, Skyy, Smirnoff, Absolut, Finlandia, Pearl, Elit, Belvedere, Svedka"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, New Amsterdam, Stoli, Skyy, Chopin,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle, Burnett's."
+grok-beta,"Absolut, Smirnoff, Grey Goose, Belvedere, Tito's, Stolichnaya, Svedka, Ciroc, Ketel One, Skyy"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Svedka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Skyy, New Amsterdam, Belvedere, Finlandia, Stoli, Ketel One, Crystal Head"
+gemini-1.5-flash,"Ketel One, Absolut, Tito's, Smirnoff, Grey Goose, New Amsterdam, Pinnacle,  Stoli,  Belvedere,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Popov, Burnett's."
+grok-beta,"Smirnoff, Svedka, Absolut, New Amsterdam, Tito's Handmade Vodka."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Smirnoff, Svedka, New Amsterdam"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, New Amsterdam, Absolut, Skyy, Pinnacle, Svedka, Stoli, Vodka Marie, Finlandia"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,  Belvedere,  Stoli"
+claude-3-sonnet-20240229,"Tito's, Svedka, New Amsterdam, Smirnoff, Skyy, Absolut, Luksusowa."
+grok-beta,"Ketel One, Absolut, Stoli, Svedka, Smirnoff, Tito's, New Amsterdam, Belvedere, Grey Goose, Skyy"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Stolichnaya, Absolut, Smirnoff, Svedka, New Amsterdam"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Skyy, New Amsterdam, Finlandia, Svedka, Prairie Organic, Crystal Head, Belvedere"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Absolut, Skyy, New Amsterdam, Svedka, Platinum, Luksusowa."
+grok-beta,"Absolut, Smirnoff, Svedka, Tito's, Finlandia"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Tito's Handmade Vodka, Smirnoff, Stolichnaya, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade, Grey Goose, Finlandia, Smirnoff, Absolut, Belvedere, Stolichnaya, Skyy, New Amsterdam, Deep Eddy"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose, New Amsterdam,  Stoli,  Skyy,  Tanqueray,  Belvedere,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle."
+grok-beta,"Smirnoff, Svedka, New Amsterdam, Pinnacle, Absolut, Titos, SKYY, Gordon's, Stolichnaya, Ketel One"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Tito's Handmade Vodka, Smirnoff, Stolichnaya, New Amsterdam, Svedka"
+gpt-4o-mini,"Smirnoff, Tito's Handmade, Absolut, Grey Goose, Skyy, New Amsterdam, Belvedere, Stoli, Finlandia, Pinnacle"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Chopin, Belvedere, Stoli,  Skyy,  New Amsterdam,  Three Olives."
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Luksusowa, Svedka."
+grok-beta,"Absolut, Smirnoff, Svedka, New Amsterdam, Pinnacle, Stolichnaya, Titos, Skyy, Gordon's, Reyka."
+llama-v3p1-70b-instruct,"Absolut, Smirnoff, Ketel One, Grey Goose, Stolichnaya, Tito's Handmade Vodka, New Amsterdam, Svedka, Burnett's, Pinnacle"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Skyy, Smirnoff, New Amsterdam, Svedka, Finlandia, Hangar 1, Belvedere, Kulov, Ciroc"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Smirnoff, Grey Goose, New Amsterdam,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Luksusowa, New Amsterdam, Svedka, Platinum."
+grok-beta,"Smirnoff, Svedka, Absolut, New Amsterdam, Pinnacle, Skyy, Titos."
+llama-v3p1-70b-instruct,"Tito's Handmade Vodka, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Svedka, New Amsterdam, Deep Eddy, Burnett's"
+gpt-4o-mini,"Tito's Handmade, New Amsterdam, Absolut, Svedka, Smirnoff, Skyy, BÏK, Belvedere, Grey Goose, Finlandia"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose, New Amsterdam, Svedka,  Stoli"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Luksusowa, Svedka."
+grok-beta,"Absolut, Smirnoff, Skyy, Svedka, Stoli."
+llama-v3p1-70b-instruct,"Absolut, Smirnoff, Stolichnaya, Grey Goose, Ketel One, Tito's Handmade, Svedka, New Amsterdam, Deep Eddy, Burnett's"
+gpt-4o-mini,"Absolut, Tito's Handmade, New Amsterdam, Smirnoff, Svedka, Belvedere, Skyy, Grey Goose, Stoli, Pinnacle"
+gemini-1.5-flash,"Tito's,  Smirnoff,  Ketel One,  Grey Goose,  Absolut,  New Amsterdam,  Svedka,  Chopin,  Belvedere,  Stoli,  Skyy,  Tanqueray,  Tanqueray Ten,  Tanqueray Rangpur"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Absolut, Pinnacle."
+grok-beta,"Smirnoff, Svedka, Absolut, Tito's, New Amsterdam."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Tito's Handmade Vodka, Svedka, Pinnacle"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, New Amsterdam, Skyy, Burnett's, Finlandia, Belvedere, Stolichnaya, Three Olives"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, New Amsterdam,"
+claude-3-sonnet-20240229,"Some good vodka brands for cocktail mixing that offer a balance of quality and affordability are: Tito's, Smirnoff, Svedka, New Amsterdam, Skyy, Luksusowa."
+grok-beta,"Smirnoff, Absolut, Tito's, Svedka, Stolichnaya, New Amsterdam, Pinnacle, Skyy, Kettle One, Luksusowa, Three Olives, Reyka, Grey Goose, Belvedere, Ciroc"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Stolichnaya, Absolut, Svedka, New Amsterdam, Deep Eddy"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Grey Goose, Belvedere, Stolichnaya, New Amsterdam, Deep Eddy, Skyy, Crown Royal"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose,  Tanqueray,  Belvedere,  Stolichnaya,  Chopin,  Wyborowa,  Skyy,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Luksusowa, Platinum, Monopolowa."
+grok-beta,"Smirnoff, Svedka, Absolut, Tito's, Skyy."
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Tito's Handmade, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Deep Eddy, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Absolut, Svedka, New Amsterdam, Skyy, Smirnoff, Finlandia, Stolichnaya, Burnett's, Deep Eddy"
+gemini-1.5-flash,"Tito's, Absolut, Ketel One, Smirnoff, Grey Goose, New Amsterdam,  Svedka,  Stoli"
+claude-3-sonnet-20240229,"Some affordable yet quality vodka brands well-suited for cocktail mixing include: Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Luksusowa."
+grok-beta,"Smirnoff, Svedka, Absolut, Skyy, Pinnacle, Stolichnaya, New Amsterdam, Titos, Reyka, Ketel One"
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Tito's, Stolichnaya, Svedka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, Grey Goose, Stolichnaya, Skyy, New Amsterdam, Belvedere, Polska Wodka, Finlandia"
+gemini-1.5-flash,"Tito's,  Smirnoff,  Absolut,  Ketel One,  Grey Goose,  Belvedere,  Chopin,  Skyy,  New Amsterdam"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing are: Tito's, Smirnoff, New Amsterdam, Skyy, Svedka."
+grok-beta,"Stolichnaya, Smirnoff, Svedka, Absolut, Skyy, Tito's Handmade, New Amsterdam, Pinnacle, Ciroc, Grey Goose, Ketel One, Finlandia, Luksusowa, 1.75 liters of Green Mark, Monopolowa, Sobieski, Wyborowa, Effen, Burnett's, and Gordon's."
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Stolichnaya, Smirnoff, Absolut, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, New Amsterdam, Skyy, Stoli, Finlandia, Belvedere, Grey Goose, Sobieski"
+gemini-1.5-flash,"Absolut,  Smirnoff,  Ketel One,  Tito's,  Grey Goose,  Belvedere,  Stoli,  Skyy,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle, UV, Monopolowa, Luksusowa."
+grok-beta,"Svedka, Absolut, Tito's, Smirnoff, Stolichnaya"
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Stolichnaya, Svedka, New Amsterdam, Tito's Handmade Vodka, Smirnoff"
+gpt-4o-mini,"Smirnoff, Tito's, Absolut, New Amsterdam, Skyy, Svedka, Stolichnaya, Finlandia, Belvedere, Grey Goose"
+gemini-1.5-flash,"Tito's,  Smirnoff,  Ketel One,  Absolut,  Grey Goose,  Belvedere,  Stolichnaya,  Tanqueray,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Luksusowa, New Amsterdam, Skyy, Svedka."
+grok-beta,"Svedka, Stolichnaya, Pinnacle, Smirnoff, Burnett's, Arrow, UV, Popov, Gordon's, New Amsterdam."
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Belvedere, Stolichnaya, Tito's Handmade Vodka, New Amsterdam, Svedka, Pinnacle"
+gpt-4o-mini,"Titos, Absolut, Smirnoff, Finlandia, Skyy, New Amsterdam, Stolichnaya, Bacardi, Van Gogh, Deep Eddy"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Grey Goose, Tito's, New Amsterdam, Svedka"
+claude-3-sonnet-20240229,"Absolut, Smirnoff, Tito's, New Amsterdam, Skyy, Svedka, Pinnacle, Burnett's."
+grok-beta,"Absolut, Stolichnaya, Smirnoff, Svedka, Tito's, Reyka, Skyy, New Amsterdam"
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka, Belvedere"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, Stoli, New Amsterdam, Skyy, Van Gogh, Deep Eddy, Burnett's, Three Olives"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, Chopin, Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Skyy, Luksusowa, Platinum."
+grok-beta,"Absolut, Stolichnaya, Smirnoff, Svedka, Tito's, Ketel One, New Amsterdam, Pinnacle, Burnett's, Deep Eddy, Skyy, Grey Goose, Belvedere, Ciroc, Finlandia, Luksusowa, Sobieski, Wodka, Effen, Monopolowa"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Tito's Handmade Vodka, Stolichnaya, Smirnoff, Svedka, New Amsterdam, Deep Eddy, Belvedere"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, New Amsterdam, Skyy, Finlandia, Svedka, Belvedere, Grey Goose, Burnett's"
+gemini-1.5-flash,"Absolut, Smirnoff, Tito's, Ketel One, Grey Goose, Belvedere, Chopin,  Stoli"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Absolut, Skyy, New Amsterdam, Svedka, Pinnacle."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:01:41 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dac9ea8f8f2bfa9</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, New Amsterdam, Belvedere, Smirnoff"
+gpt-4o-mini,"Tito's, Smirnoff, Absolut, New Amsterdam, Grey Goose, Svedka, Skyy, Belvedere, Finlandia, Stolichnaya"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose,  Stoli,  New Amsterdam,  Belvedere,  Chopin,  Skyy,  Tanqueray,  Ciroc,  Effen,  UV,  Svedka,  Russian Standard,  Crystal Head,  Hangar 1,  Prairie Organic,  Milagro,  Tequila Ocho,  Espolon,  Don Julio,  Casamigos,  Patron,  Jose Cuervo,  Herradura,  Sauza,  El Jimador,  Tres Agaves,  Corralejo,  Arette,  Clase Azul,  Cenote,  Cabo Wabo,  1800,  Hornitos,  Tequila Cabeza,  Teremana,  Casa Noble,  Fortaleza,  El Tesoro,  Tequila Avion,  Milagro,  Tequila Ocho,  Espolon,  Don Julio,  Casamigos,  Patron,  Jose Cuervo,  Herradura,  Sauza,  El Jimador,  Tres Agaves,  Corralejo,  Arette,  Clase Azul,  Cenote,  Cabo Wabo,  1800,  Hornitos,  Tequila Cabeza,  Teremana,  Casa Noble,  Fortaleza,  El Tesoro,  Tequila Avion,  Milagro,  Tequila Ocho,  Espolon,  Don Julio,  Casamigos,  Patron,  Jose Cuervo,  Herradura,  Sauza,  El Jimador,  Tres Agaves,  Corralejo,  Arette,  Clase Azul,  Cenote,  Cabo Wabo,  1800,  Hornitos,  Tequila Cabeza,  Teremana,  Casa Noble,  Fortaleza,  El Tesoro,  Tequila Avion,  Milagro,  Tequila Ocho,  Espolon,  Don Julio,  Casamigos,  Patron,  Jose Cuervo,  Herradura,  Sauza,  El Jimador,  Tres Agaves,  Corralejo,  Arette,  Clase Azul,  Cenote,  Cabo Wabo,  1800,  Hornitos,  Tequila Cabeza,  Teremana,  Casa Noble,  Fortaleza,  El Tesoro,  Tequila Avion"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Pinnacle, Svedka."
+grok-beta,"Absolut, Stolichnaya, Svedka, Tito's, Smirnoff, Finlandia, Grey Goose, Belvedere, Ketel One, Wyborowa, Ciroc, Luksusowa, Skyy, Pinnacle, Deep Eddy, New Amsterdam"
+llama-v3p1-70b-instruct,"Tito's, Ketel One, Grey Goose, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Skyy, New Amsterdam, Smirnoff, Finlandia, Stoli, Prairie Organic, Pinnacle, Belvedere"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,  Stoli,  New Amsterdam,  Skyy,  Ciroc,  Tanqueray,  Belvedere,  Chopin,  Wyborowa,  Potocki,  Russian Standard,  Crystal Head,  Milagro,  Deep Eddy,  Prairie Organic,  High West,  Ezra Brooks,  Evan Williams,  Four Roses,  Jim Beam,  Maker's Mark,  Wild Turkey,  Buffalo Trace,  E.H. Taylor Jr,  George T. Stagg,  W.L. Weller,  Henry McKenna,  Old Forester,  Russell's Reserve,  Eagle Rare,  Knob Creek,  Basil Hayden's,  Booker's,  Makers Mark,  Woodford Reserve,  Evan Williams Bottled-in-Bond,  Henry McKenna Single Barrel,  Evan Williams Single Barrel,  Old Forester 100,  Old Forester 100 Single Barrel,  Russell's Reserve 10 Year,  Elijah Craig,  Willett,  Four Roses Single Barrel,  Eagle Rare 10 Year,  Knob Creek Single Barrel,  Basil Hayden's 10 Year,  Booker's 30th Anniversary,  Makers Mark 46,  Woodford Reserve Double Oaked,  Evan Williams Bottled-in-Bond 100 Proof,  Henry McKenna Single Barrel 10 Year,  Evan Williams Single Barrel Vintage,  Old Forester 100 Single Barrel 100 Proof,  Russell's Reserve 10 Year Single Barrel,  Elijah Craig 12 Year,  Willett Pot Still Reserve,  Four Roses Single Barrel 10 Year,  Eagle Rare 12 Year,  Knob Creek 12 Year,  Basil Hayden's 10 Year Single Barrel,  Booker's 20th Anniversary,  Makers Mark Cask Strength,  Woodford Reserve Rye,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel,  Henry McKenna Single Barrel 12 Year,  Evan Williams Single Barrel Vintage 10 Year,  Old Forester 100 Single Barrel 100 Proof 10 Year,  Russell's Reserve 10 Year Single Barrel 10 Year,  Elijah Craig Barrel Proof,  Willett Family Estate,  Four Roses Single Barrel 12 Year,  Eagle Rare 17 Year,  Knob Creek 15 Year,  Basil Hayden's 10 Year Single Barrel 10 Year,  Booker's 25th Anniversary,  Makers Mark Private Select,  Woodford Reserve Bottled-in-Bond,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 10 Year,  Henry McKenna Single Barrel 15 Year,  Evan Williams Single Barrel Vintage 12 Year,  Old Forester 100 Single Barrel 100 Proof 12 Year,  Russell's Reserve 10 Year Single Barrel 12 Year,  Elijah Craig Barrel Proof  Single Barrel,  Willett Rye,  Four Roses Single Barrel 15 Year,  Eagle Rare 20 Year,  Knob Creek 20 Year,  Basil Hayden's 10 Year Single Barrel 12 Year,  Booker's 30th Anniversary  Single Barrel,  Makers Mark Private Select  Cask Strength,  Woodford Reserve  Double Oaked Bottled-in-Bond,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 12 Year,  Henry McKenna Single Barrel 18 Year,  Evan Williams Single Barrel Vintage 15 Year,  Old Forester 100 Single Barrel 100 Proof 15 Year,  Russell's Reserve 10 Year Single Barrel 15 Year,  Elijah Craig Barrel Proof  Single Barrel  12 Year,  Willett Pot Still Reserve  Single Barrel,  Four Roses Single Barrel 18 Year,  Eagle Rare 23 Year,  Knob Creek 25 Year,  Basil Hayden's 10 Year Single Barrel 15 Year,  Booker's 35th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 15 Year,  Henry McKenna Single Barrel 20 Year,  Evan Williams Single Barrel Vintage 18 Year,  Old Forester 100 Single Barrel 100 Proof 18 Year,  Russell's Reserve 10 Year Single Barrel 18 Year,  Elijah Craig Barrel Proof  Single Barrel  15 Year,  Willett Family Estate  Single Barrel,  Four Roses Single Barrel 20 Year,  Eagle Rare 25 Year,  Knob Creek 30 Year,  Basil Hayden's 10 Year Single Barrel 18 Year,  Booker's 40th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 18 Year,  Henry McKenna Single Barrel 25 Year,  Evan Williams Single Barrel Vintage 20 Year,  Old Forester 100 Single Barrel 100 Proof 20 Year,  Russell's Reserve 10 Year Single Barrel 20 Year,  Elijah Craig Barrel Proof  Single Barrel  18 Year,  Willett Rye  Single Barrel,  Four Roses Single Barrel 25 Year,  Eagle Rare 30 Year,  Knob Creek 35 Year,  Basil Hayden's 10 Year Single Barrel 20 Year,  Booker's 45th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  10 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 20 Year,  Henry McKenna Single Barrel 30 Year,  Evan Williams Single Barrel Vintage 25 Year,  Old Forester 100 Single Barrel 100 Proof 25 Year,  Russell's Reserve 10 Year Single Barrel 25 Year,  Elijah Craig Barrel Proof  Single Barrel  20 Year,  Willett Family Estate  Single Barrel  10 Year,  Four Roses Single Barrel 30 Year,  Eagle Rare 35 Year,  Knob Creek 40 Year,  Basil Hayden's 10 Year Single Barrel 25 Year,  Booker's 50th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  12 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 25 Year,  Henry McKenna Single Barrel 35 Year,  Evan Williams Single Barrel Vintage 30 Year,  Old Forester 100 Single Barrel 100 Proof 30 Year,  Russell's Reserve 10 Year Single Barrel 30 Year,  Elijah Craig Barrel Proof  Single Barrel  25 Year,  Willett Pot Still Reserve  Single Barrel  10 Year,  Four Roses Single Barrel 35 Year,  Eagle Rare 40 Year,  Knob Creek 45 Year,  Basil Hayden's 10 Year Single Barrel 30 Year,  Booker's 55th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  15 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 30 Year,  Henry McKenna Single Barrel 40 Year,  Evan Williams Single Barrel Vintage 35 Year,  Old Forester 100 Single Barrel 100 Proof 35 Year,  Russell's Reserve 10 Year Single Barrel 35 Year,  Elijah Craig Barrel Proof  Single Barrel  30 Year,  Willett Family Estate  Single Barrel  12 Year,  Four Roses Single Barrel 40 Year,  Eagle Rare 45 Year,  Knob Creek 50 Year,  Basil Hayden's 10 Year Single Barrel 35 Year,  Booker's 60th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  18 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 35 Year,  Henry McKenna Single Barrel 45 Year,  Evan Williams Single Barrel Vintage 40 Year,  Old Forester 100 Single Barrel 100 Proof 40 Year,  Russell's Reserve 10 Year Single Barrel 40 Year,  Elijah Craig Barrel Proof  Single Barrel  35 Year,  Willett Pot Still Reserve  Single Barrel  12 Year,  Four Roses Single Barrel 45 Year,  Eagle Rare 50 Year,  Knob Creek 55 Year,  Basil Hayden's 10 Year Single Barrel 40 Year,  Booker's 65th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  20 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 40 Year,  Henry McKenna Single Barrel 50 Year,  Evan Williams Single Barrel Vintage 45 Year,  Old Forester 100 Single Barrel 100 Proof 45 Year,  Russell's Reserve 10 Year Single Barrel 45 Year,  Elijah Craig Barrel Proof  Single Barrel  40 Year,  Willett Family Estate  Single Barrel  15 Year,  Four Roses Single Barrel 50 Year,  Eagle Rare 55 Year,  Knob Creek 60 Year,  Basil Hayden's 10 Year Single Barrel 45 Year,  Booker's 70th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  25 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 45 Year,  Henry McKenna Single Barrel 55 Year,  Evan Williams Single Barrel Vintage 50 Year,  Old Forester 100 Single Barrel 100 Proof 50 Year,  Russell's Reserve 10 Year Single Barrel 50 Year,  Elijah Craig Barrel Proof  Single Barrel  45 Year,  Willett Pot Still Reserve  Single Barrel  18 Year,  Four Roses Single Barrel 55 Year,  Eagle Rare 60 Year,  Knob Creek 65 Year,  Basil Hayden's 10 Year Single Barrel 50 Year,  Booker's 75th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  30 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 50 Year,  Henry McKenna Single Barrel 60 Year,  Evan Williams Single Barrel Vintage 55 Year,  Old Forester 100 Single Barrel 100 Proof 55 Year,  Russell's Reserve 10 Year Single Barrel 55 Year,  Elijah Craig Barrel Proof  Single Barrel  50 Year,  Willett Family Estate  Single Barrel  20 Year,  Four Roses Single Barrel 60 Year,  Eagle Rare 65 Year,  Knob Creek 70 Year,  Basil Hayden's 10 Year Single Barrel 55 Year,  Booker's 80th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  35 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 55 Year,  Henry McKenna Single Barrel 65 Year,  Evan Williams Single Barrel Vintage 60 Year,  Old Forester 100 Single Barrel 100 Proof 60 Year,  Russell's Reserve 10 Year Single Barrel 60 Year,  Elijah Craig Barrel Proof  Single Barrel  55 Year,  Willett Pot Still Reserve  Single Barrel  25 Year,  Four Roses Single Barrel 65 Year,  Eagle Rare 70 Year,  Knob Creek 75 Year,  Basil Hayden's 10 Year Single Barrel 60 Year,  Booker's 85th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  40 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 60 Year,  Henry McKenna Single Barrel 70 Year,  Evan Williams Single Barrel Vintage 65 Year,  Old Forester 100 Single Barrel 100 Proof 65 Year,  Russell's Reserve 10 Year Single Barrel 65 Year,  Elijah Craig Barrel Proof  Single Barrel  60 Year,  Willett Family Estate  Single Barrel  25 Year,  Four Roses Single Barrel 70 Year,  Eagle Rare 75 Year,  Knob Creek 80 Year,  Basil Hayden's 10 Year Single Barrel 65 Year,  Booker's 90th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  45 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 65 Year,  Henry McKenna Single Barrel 75 Year,  Evan Williams Single Barrel Vintage 70 Year,  Old Forester 100 Single Barrel 100 Proof 70 Year,  Russell's Reserve 10 Year Single Barrel 70 Year,  Elijah Craig Barrel Proof  Single Barrel  65 Year,  Willett Pot Still Reserve  Single Barrel  30 Year,  Four Roses Single Barrel 75 Year,  Eagle Rare 80 Year,  Knob Creek 85 Year,  Basil Hayden's 10 Year Single Barrel 70 Year,  Booker's 95th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  50 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 70 Year,  Henry McKenna Single Barrel 80 Year,  Evan Williams Single Barrel Vintage 75 Year,  Old Forester 100 Single Barrel 100 Proof 75 Year,  Russell's Reserve 10 Year Single Barrel 75 Year,  Elijah Craig Barrel Proof  Single Barrel  70 Year,  Willett Family Estate  Single Barrel  30 Year,  Four Roses Single Barrel 80 Year,  Eagle Rare 85 Year,  Knob Creek 90 Year,  Basil Hayden's 10 Year Single Barrel 75 Year,  Booker's 100th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  55 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 75 Year,  Henry McKenna Single Barrel 85 Year,  Evan Williams Single Barrel Vintage 80 Year,  Old Forester 100 Single Barrel 100 Proof 80 Year,  Russell's Reserve 10 Year Single Barrel 80 Year,  Elijah Craig Barrel Proof  Single Barrel  75 Year,  Willett Pot Still Reserve  Single Barrel  35 Year,  Four Roses Single Barrel 85 Year,  Eagle Rare 90 Year,  Knob Creek 95 Year,  Basil Hayden's 10 Year Single Barrel 80 Year,  Booker's 105th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  60 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 80 Year,  Henry McKenna Single Barrel 90 Year,  Evan Williams Single Barrel Vintage 85 Year,  Old Forester 100 Single Barrel 100 Proof 85 Year,  Russell's Reserve 10 Year Single Barrel 85 Year,  Elijah Craig Barrel Proof  Single Barrel  80 Year,  Willett Family Estate  Single Barrel  35 Year,  Four Roses Single Barrel 90 Year,  Eagle Rare 95 Year,  Knob Creek 100 Year,  Basil Hayden's 10 Year Single Barrel 85 Year,  Booker's 110th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  65 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 85 Year,  Henry McKenna Single Barrel 95 Year,  Evan Williams Single Barrel Vintage 90 Year,  Old Forester 100 Single Barrel 100 Proof 90 Year,  Russell's Reserve 10 Year Single Barrel 90 Year,  Elijah Craig Barrel Proof  Single Barrel  85 Year,  Willett Pot Still Reserve  Single Barrel  40 Year,  Four Roses Single Barrel 95 Year,  Eagle Rare 100 Year,  Knob Creek 105 Year,  Basil Hayden's 10 Year Single Barrel 90 Year,  Booker's 115th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  70 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 90 Year,  Henry McKenna Single Barrel 100 Year,  Evan Williams Single Barrel Vintage 95 Year,  Old Forester 100 Single Barrel 100 Proof 95 Year,  Russell's Reserve 10 Year Single Barrel 95 Year,  Elijah Craig Barrel Proof  Single Barrel  90 Year,  Willett Family Estate  Single Barrel  40 Year,  Four Roses Single Barrel 100 Year,  Eagle Rare 105 Year,  Knob Creek 110 Year,  Basil Hayden's 10 Year Single Barrel 95 Year,  Booker's 120th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  75 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 95 Year,  Henry McKenna Single Barrel 105 Year,  Evan Williams Single Barrel Vintage 100 Year,  Old Forester 100 Single Barrel 100 Proof 100 Year,  Russell's Reserve 10 Year Single Barrel 100 Year,  Elijah Craig Barrel Proof  Single Barrel  95 Year,  Willett Pot Still Reserve  Single Barrel  45 Year,  Four Roses Single Barrel 105 Year,  Eagle Rare 110 Year,  Knob Creek 115 Year,  Basil Hayden's 10 Year Single Barrel 100 Year,  Booker's 125th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  80 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 100 Year,  Henry McKenna Single Barrel 110 Year,  Evan Williams Single Barrel Vintage 105 Year,  Old Forester 100 Single Barrel 100 Proof 105 Year,  Russell's Reserve 10 Year Single Barrel 105 Year,  Elijah Craig Barrel Proof  Single Barrel  100 Year,  Willett Family Estate  Single Barrel  45 Year,  Four Roses Single Barrel 110 Year,  Eagle Rare 115 Year,  Knob Creek 120 Year,  Basil Hayden's 10 Year Single Barrel 105 Year,  Booker's 130th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  85 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 105 Year,  Henry McKenna Single Barrel 115 Year,  Evan Williams Single Barrel Vintage 110 Year,  Old Forester 100 Single Barrel 100 Proof 110 Year,  Russell's Reserve 10 Year Single Barrel 110 Year,  Elijah Craig Barrel Proof  Single Barrel  105 Year,  Willett Pot Still Reserve  Single Barrel  50 Year,  Four Roses Single Barrel 115 Year,  Eagle Rare 120 Year,  Knob Creek 125 Year,  Basil Hayden's 10 Year Single Barrel 110 Year,  Booker's 135th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  90 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 110 Year,  Henry McKenna Single Barrel 120 Year,  Evan Williams Single Barrel Vintage 115 Year,  Old Forester 100 Single Barrel 100 Proof 115 Year,  Russell's Reserve 10 Year Single Barrel 115 Year,  Elijah Craig Barrel Proof  Single Barrel  110 Year,  Willett Family Estate  Single Barrel  50 Year,  Four Roses Single Barrel 120 Year,  Eagle Rare 125 Year,  Knob Creek 130 Year,  Basil Hayden's 10 Year Single Barrel 115 Year,  Booker's 140th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  95 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 115 Year,  Henry McKenna Single Barrel 125 Year,  Evan Williams Single Barrel Vintage 120 Year,  Old Forester 100 Single Barrel 100 Proof 120 Year,  Russell's Reserve 10 Year Single Barrel 120 Year,  Elijah Craig Barrel Proof  Single Barrel  115 Year,  Willett Pot Still Reserve  Single Barrel  55 Year,  Four Roses Single Barrel 125 Year,  Eagle Rare 130 Year,  Knob Creek 135 Year,  Basil Hayden's 10 Year Single Barrel 120 Year,  Booker's 145th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  100 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 120 Year,  Henry McKenna Single Barrel 130 Year,  Evan Williams Single Barrel Vintage 125 Year,  Old Forester 100 Single Barrel 100 Proof 125 Year,  Russell's Reserve 10 Year Single Barrel 125 Year,  Elijah Craig Barrel Proof  Single Barrel  120 Year,  Willett Family Estate  Single Barrel  55 Year,  Four Roses Single Barrel 130 Year,  Eagle Rare 135 Year,  Knob Creek 140 Year,  Basil Hayden's 10 Year Single Barrel 125 Year,  Booker's 150th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  105 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 125 Year,  Henry McKenna Single Barrel 135 Year,  Evan Williams Single Barrel Vintage 130 Year,  Old Forester 100 Single Barrel 100 Proof 130 Year,  Russell's Reserve 10 Year Single Barrel 130 Year,  Elijah Craig Barrel Proof  Single Barrel  125 Year,  Willett Pot Still Reserve  Single Barrel  60 Year,  Four Roses Single Barrel 135 Year,  Eagle Rare 140 Year,  Knob Creek 145 Year,  Basil Hayden's 10 Year Single Barrel 130 Year,  Booker's 155th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  110 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 130 Year,  Henry McKenna Single Barrel 140 Year,  Evan Williams Single Barrel Vintage 135 Year,  Old Forester 100 Single Barrel 100 Proof 135 Year,  Russell's Reserve 10 Year Single Barrel 135 Year,  Elijah Craig Barrel Proof  Single Barrel  130 Year,  Willett Family Estate  Single Barrel  60 Year,  Four Roses Single Barrel 140 Year,  Eagle Rare 145 Year,  Knob Creek 150 Year,  Basil Hayden's 10 Year Single Barrel 135 Year,  Booker's 160th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  115 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 135 Year,  Henry McKenna Single Barrel 145 Year,  Evan Williams Single Barrel Vintage 140 Year,  Old Forester 100 Single Barrel 100 Proof 140 Year,  Russell's Reserve 10 Year Single Barrel 140 Year,  Elijah Craig Barrel Proof  Single Barrel  135 Year,  Willett Pot Still Reserve  Single Barrel  65 Year,  Four Roses Single Barrel 145 Year,  Eagle Rare 150 Year,  Knob Creek 155 Year,  Basil Hayden's 10 Year Single Barrel 140 Year,  Booker's 165th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  120 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 140 Year,  Henry McKenna Single Barrel 150 Year,  Evan Williams Single Barrel Vintage 145 Year,  Old Forester 100 Single Barrel 100 Proof 145 Year,  Russell's Reserve 10 Year Single Barrel 145 Year,  Elijah Craig Barrel Proof  Single Barrel  140 Year,  Willett Family Estate  Single Barrel  65 Year,  Four Roses Single Barrel 150 Year,  Eagle Rare 155 Year,  Knob Creek 160 Year,  Basil Hayden's 10 Year Single Barrel 145 Year,  Booker's 170th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  125 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 145 Year,  Henry McKenna Single Barrel 155 Year,  Evan Williams Single Barrel Vintage 150 Year,  Old Forester 100 Single Barrel 100 Proof 150 Year,  Russell's Reserve 10 Year Single Barrel 150 Year,  Elijah Craig Barrel Proof  Single Barrel  145 Year,  Willett Pot Still Reserve  Single Barrel  70 Year,  Four Roses Single Barrel 155 Year,  Eagle Rare 160 Year,  Knob Creek 165 Year,  Basil Hayden's 10 Year Single Barrel 150 Year,  Booker's 175th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  130 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 150 Year,  Henry McKenna Single Barrel 160 Year,  Evan Williams Single Barrel Vintage 155 Year,  Old Forester 100 Single Barrel 100 Proof 155 Year,  Russell's Reserve 10 Year Single Barrel 155 Year,  Elijah Craig Barrel Proof  Single Barrel  150 Year,  Willett Family Estate  Single Barrel  70 Year,  Four Roses Single Barrel 160 Year,  Eagle Rare 165 Year,  Knob Creek 170 Year,  Basil Hayden's 10 Year Single Barrel 155 Year,  Booker's 180th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  135 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 155 Year,  Henry McKenna Single Barrel 165 Year,  Evan Williams Single Barrel Vintage 160 Year,  Old Forester 100 Single Barrel 100 Proof 160 Year,  Russell's Reserve 10 Year Single Barrel 160 Year,  Elijah Craig Barrel Proof  Single Barrel  155 Year,  Willett Pot Still Reserve  Single Barrel  75 Year,  Four Roses Single Barrel 165 Year,  Eagle Rare 170 Year,  Knob Creek 175 Year,  Basil Hayden's 10 Year Single Barrel 160 Year,  Booker's 185th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  140 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 160 Year,  Henry McKenna Single Barrel 170 Year,  Evan Williams Single Barrel Vintage 165 Year,  Old Forester 100 Single Barrel 100 Proof 165 Year,  Russell's Reserve 10 Year Single Barrel 165 Year,  Elijah Craig Barrel Proof  Single Barrel  160 Year,  Willett Family Estate  Single Barrel  75 Year,  Four Roses Single Barrel 170 Year,  Eagle Rare 175 Year,  Knob Creek 180 Year,  Basil Hayden's 10 Year Single Barrel 165 Year,  Booker's 190th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  145 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 165 Year,  Henry McKenna Single Barrel 175 Year,  Evan Williams Single Barrel Vintage 170 Year,  Old Forester 100 Single Barrel 100 Proof 170 Year,  Russell's Reserve 10 Year Single Barrel 170 Year,  Elijah Craig Barrel Proof  Single Barrel  165 Year,  Willett Pot Still Reserve  Single Barrel  80 Year,  Four Roses Single Barrel 175 Year,  Eagle Rare 180 Year,  Knob Creek 185 Year,  Basil Hayden's 10 Year Single Barrel 170 Year,  Booker's 195th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  150 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 170 Year,  Henry McKenna Single Barrel 180 Year,  Evan Williams Single Barrel Vintage 175 Year,  Old Forester 100 Single Barrel 100 Proof 175 Year,  Russell's Reserve 10 Year Single Barrel 175 Year,  Elijah Craig Barrel Proof  Single Barrel  170 Year,  Willett Family Estate  Single Barrel  80 Year,  Four Roses Single Barrel 180 Year,  Eagle Rare 185 Year,  Knob Creek 190 Year,  Basil Hayden's 10 Year Single Barrel 175 Year,  Booker's 200th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  155 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 175 Year,  Henry McKenna Single Barrel 185 Year,  Evan Williams Single Barrel Vintage 180 Year,  Old Forester 100 Single Barrel 100 Proof 180 Year,  Russell's Reserve 10 Year Single Barrel 180 Year,  Elijah Craig Barrel Proof  Single Barrel  175 Year,  Willett Pot Still Reserve  Single Barrel  85 Year,  Four Roses Single Barrel 185 Year,  Eagle Rare 190 Year,  Knob Creek 195 Year,  Basil Hayden's 10 Year Single Barrel 180 Year,  Booker's 205th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  160 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 180 Year,  Henry McKenna Single Barrel 190 Year,  Evan Williams Single Barrel Vintage 185 Year,  Old Forester 100 Single Barrel 100 Proof 185 Year,  Russell's Reserve 10 Year Single Barrel 185 Year,  Elijah Craig Barrel Proof  Single Barrel  180 Year,  Willett Family Estate  Single Barrel  85 Year,  Four Roses Single Barrel 190 Year,  Eagle Rare 195 Year,  Knob Creek 200 Year,  Basil Hayden's 10 Year Single Barrel 185 Year,  Booker's 210th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  165 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 185 Year,  Henry McKenna Single Barrel 195 Year,  Evan Williams Single Barrel Vintage 190 Year,  Old Forester 100 Single Barrel 100 Proof 190 Year,  Russell's Reserve 10 Year Single Barrel 190 Year,  Elijah Craig Barrel Proof  Single Barrel  185 Year,  Willett Pot Still Reserve  Single Barrel  90 Year,  Four Roses Single Barrel 195 Year,  Eagle Rare 200 Year,  Knob Creek 205 Year,  Basil Hayden's 10 Year Single Barrel 190 Year,  Booker's 215th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  170 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 190 Year,  Henry McKenna Single Barrel 200 Year,  Evan Williams Single Barrel Vintage 195 Year,  Old Forester 100 Single Barrel 100 Proof 195 Year,  Russell's Reserve 10 Year Single Barrel 195 Year,  Elijah Craig Barrel Proof  Single Barrel  190 Year,  Willett Family Estate  Single Barrel  90 Year,  Four Roses Single Barrel 200 Year,  Eagle Rare 205 Year,  Knob Creek 210 Year,  Basil Hayden's 10 Year Single Barrel 195 Year,  Booker's 220th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  175 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 195 Year,  Henry McKenna Single Barrel 205 Year,  Evan Williams Single Barrel Vintage 200 Year,  Old Forester 100 Single Barrel 100 Proof 200 Year,  Russell's Reserve 10 Year Single Barrel 200 Year,  Elijah Craig Barrel Proof  Single Barrel  195 Year,  Willett Pot Still Reserve  Single Barrel  95 Year,  Four Roses Single Barrel 205 Year,  Eagle Rare 210 Year,  Knob Creek 215 Year,  Basil Hayden's 10 Year Single Barrel 200 Year,  Booker's 225th Anniversary  Single Barrel,  Makers Mark  Woodford Reserve Bottled-in-Bond  Single Barrel  180 Year,  Evan Williams Bottled-in-Bond 100 Proof Single Barrel 200 Year,  Henry McKenna Single Barrel 210 Year,  Evan Williams Single Barrel Vintage 205 Year,  Old Forester 100 Single Barrel 100 Proof 205 Year,  Russell's Reserve 10 Year Single Barrel"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing are: Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Absolut, Luksusowa."
+grok-beta,"Absolut, Tito's, Smirnoff, Svedka, New Amsterdam"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, New Amsterdam Vodka, Skyy Vodka, Smirnoff Vodka, ABSOLUT Vodka, Burnett's Vodka, Finlandia Vodka, Pinnacle Vodka, Crystal Head Vodka, Stoli Vodka"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Grey Goose, Tito's, New Amsterdam"
+claude-3-sonnet-20240229,"Some affordable yet quality vodka brands well-suited for cocktails include: Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Luksusowa, Platinum 7X."
+grok-beta,"Absolut, Svedka, Tito's, Skyy, New Amsterdam."
+llama-v3p1-70b-instruct,"Tito's Handmade Vodka, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Svedka, New Amsterdam"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, New Amsterdam, Skyy, Svedka, Finlandia, Belvedere, Grey Goose"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, New Amsterdam,  Stoli,  Tanqueray,  Belvedere,  Skyy,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle, UV."
+grok-beta,"Titos, Ketel One, Svedka, Absolut, Smirnoff."
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Grey Goose, Belvedere, New Amsterdam, Skyy, Finlandia, Stoli, Van Gogh"
+gemini-1.5-flash,"Tito's,  Smirnoff,  Absolut,  Ketel One,  Grey Goose"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka."
+grok-beta,"Smirnoff, Stolichnaya, Svedka, Skyy, Pinnacle, Absolut, Ketel One"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Burnett's, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Stoli, Absolut, New Amsterdam, Smirnoff, Finlandia, Skyy, Belvedere, Grey Goose, Pinnacle"
+gemini-1.5-flash,"Tito's, Smirnoff, Absolut, Ketel One, Grey Goose,  Stoli,  Tanqueray,  New Amsterdam,  Svedka,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Svedka, New Amsterdam, Skyy, Smirnoff, Platinum, Absolut."
+grok-beta,"Titos, Smirnoff, Svedka, Absolut, Ketel One, Grey Goose, Belvedere, New Amsterdam, Stoli, Ciroc,    	"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Svedka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Absolut, Tito's, Skyy, Svedka, Smirnoff, New Amsterdam, Grey Goose, Pinnacle, Stolichnaya, Belvedere"
+gemini-1.5-flash,"Tito's, Absolut, Ketel One, Smirnoff, New Amsterdam, Grey Goose, Absolut"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Absolut."
+grok-beta,"Smirnoff, Absolut, Titos, Svedka, Ketel One, Grey Goose, Belvedere, Stolichnaya, Skyy, Ciroc, Burnett's, Pinnacle, New Amsterdam, Platinum 7x, UV Blue, Three Olives, Effen, Luksusowa, Absolut Elyx, Wyborowa, Sobieski, Finlandia, Van Gogh, Reyka, Square One Organic, Praire, Deep Eddy, Hangar 1, Wodka, Monopolowa, Karkov, Gordon's, Kraken, Imperia, Nemiroff, Arrow, Popov, Smirnoff Sourced, Crystal Head, Jewel of Russia, Konik's Tail, Zyr, Vox, Georgi, Bull's Eye, Aristocrat, Cracovia, St. Petersburg, Snow Leopard, Moskovskaya, Belaya Rus, Husky, Tahoe Blue, Cabana Cachaca, Moss, Parrot Bay, Crater Lake, Ruskova, German Ice, Russkaya, Row, Vox Lemonade, Oso Negro, 26 Amoretti, Sapphire, Maine Craft Distilling, Mammoth, Amerena, Schell Vodka, Purity, Sobieski Strawberry, Ungava, Owl's Brew, Roxx 21, Blonde Ambition, Pink 47, Sams Club."
+llama-v3p1-70b-instruct,"Tito's, Ketel One, Grey Goose, Absolut, Stolichnaya, Svedka, Smirnoff, Belvedere"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, Grey Goose, Stolichnaya, New Amsterdam, Skyy, Belvedere, Ciroc, Vodka O"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose,  New Amsterdam,  Stoli,  Skyy,  Tanqueray,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Skyy, Absolut."
+grok-beta,"Smirnoff, Absolut, Svedka, New Amsterdam, Titos, Grey Goose, Ketel One, Belvedere, Stolichnaya, Ciroc, Pinnacle, Skyy, Finlandia, UV, Zubrowka, Reyka, Monopolowa, Luksusowa, Sobieski, Chopin, Three Olives, Hangar One, Effen, Burnett's, Popov, Gordon's, Smirnoff's, Prairie Organic, Black Cow, Crystal Head, Square One, V-One, Blue Ice, Burnett's, Stoli, SKYY, Absolut, Ketel One, Svedka, New Amsterdam, Belvedere, Ciroc, Grey Goose, Pinnacle, Titos, Stolichnaya, Luksusowa, Reyka, Sobieski, Monopolowa, Zubrowka, Finlandia, Chopin, Three Olives, Effen, Hangar One, Popov, Smirnoff, Gordon's, Crystal Head, Black Cow, V-One, Square One, Blue Ice, Stoli, Smirnoff's, Burnett's, Prairie Organic, UV, Skyy, Absolut, New Amsterdam, Svedka, Titos, Grey Goose, Ketel One, Belvedere, Stolichnaya, Ciroc, Pinnacle, Skyy, Finlandia, UV, Zubrowka, Reyka, Monopolowa, Luksusowa, Sobieski, Chopin, Three Olives, Hangar One, Effen, Burnett's, Popov, Gordon's, Smirnoff's, Prairie Organic, Black Cow, Crystal Head, Square One, V-One, Blue Ice, New Amsterdam, Titos, Stolichnaya, Ciroc, Pinnacle, Skyy, Finlandia, UV, Zubrowka, Reyka, Monopolowa, Luksusowa, Sobieski, Chopin, Three Olives, Effen, Hangar One, Popov, Burnett's, Gordon's, Smirnoff, Absolut, Svedka, Belvedere, Grey Goose, Ketel One, Stoli, SKYY, Smirnoff's, Prairie Organic, Black Cow, V-One, Blue Ice, Square One, Crystal Head"
+llama-v3p1-70b-instruct,"Absolut, Smirnoff, Stolichnaya, Ketel One, Grey Goose, Tito's Handmade Vodka, New Amsterdam, Svedka, Burnett's, Luksusowa"
+gpt-4o-mini,"Tito's, Smirnoff, Absolut, Skyy, Svedka, New Amsterdam, Stoli, Finlandia, Belvedere, Gray Goose"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Grey Goose, Tito's, Chopin, Belvedere, Stoli,"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, Svedka, New Amsterdam, Skyy, Platinum, Luksusowa, Tovuti."
+grok-beta,"Absolut, Smirnoff, Svedka, Stolichnaya, Ketel One, Pinnacle, Ciroc, Grey Goose, Skyy, Belvedere."
+llama-v3p1-70b-instruct,"Tito's, Ketel One, Grey Goose, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut Vodka, Smirnoff Vodka, Svedka Vodka, New Amsterdam Vodka, Skyy Vodka, Pinnacle Vodka, Kettle One Vodka, Belvedere Vodka, Finlandia Vodka"
+gemini-1.5-flash,"Absolut, Tito's, Smirnoff, Ketel One, Grey Goose"
+claude-3-sonnet-20240229,"Tito's, Svedka, Smirnoff, New Amsterdam, Absolut, Luksusowa, Platinum."
+grok-beta,"Absolut, Smirnoff, Tito's, Svedka, Stolichnaya, Belvedere, Grey Goose, Ketel One, Finlandia, Luksusowa"
+llama-v3p1-70b-instruct,"Tito's, Ketel One, Grey Goose, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, New Amsterdam, Skyy, Pinnacle, Finlandia, Belvedere, Stoli"
+gemini-1.5-flash,"Smirnoff, Tito's, Ketel One, Absolut, Grey Goose, Belvedere, Chopin,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pinnacle, Monopolowa."
+grok-beta,"Titos, Smirnoff, Absolut, Svedka, Skyy, New Amsterdam, Grey Goose, Ketel One."
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Stolichnaya, Tito's Handmade Vodka, Svedka, New Amsterdam, Belvedere"
+gpt-4o-mini,"Smirnoff, Tito's Handmade, Absolut, Grey Goose, Stolichnaya, Ketel One, Belvedere, Finlandia, New Amsterdam, Ciroc"
+gemini-1.5-flash,"Smirnoff, Tito's, Absolut, Ketel One, Grey Goose, Belvedere, Chopin,  Stolichnaya,  Tanqueray,  Skyy,  New Amsterdam,  Svedka,  Three Olives,  Ciroc,  Crystal Head,  Hangar 1,  Effen,  Prairie Organic,  Milagro,  Volcan,  Deep Eddy,  Prairie Organic,  Vodka 8,  Prairie Organic"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing are: Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pinnacle."
+grok-beta,"Smirnoff, Tito's, Absolut, Svedka, Skyy."
+llama-v3p1-70b-instruct,"Absolut, Smirnoff, Grey Goose, Ketel One, Stolichnaya, New Amsterdam, Tito's Handmade, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Skyy, New Amsterdam, Prairie Organic, Svedka, Finlandia, Ciroc"
+gemini-1.5-flash,"Tito's, Absolut, Ketel One, Grey Goose, Smirnoff, Svedka, New Amsterdam,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Absolut."
+grok-beta,"Smirnoff, Absolut, Svedka, Skyy, Pinnacle, Burnett's, New Amsterdam, Tito's, Ketel One, Stolichnaya, Reyka, Finlandia, UV Blue, Ciroc, Effen"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Svedka, New Amsterdam, Tito's Handmade Vodka"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Ketel One, New Amsterdam, Skyy, Russian Standard, Finlandia, Stoli, Belvedere"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Chopin, Belvedere,  Stoli,  Tanqueray,  Tanqueray No. Ten,  Hendrick's,  Bombay Sapphire,  Beefeater,  Plymouth"
+claude-3-sonnet-20240229,"Smirnoff, Absolut, Tito's, Svedka, New Amsterdam, Skyy, Platinum."
+grok-beta,"Svedka, Stolichnaya, Smirnoff, Absolut, Tito's, Green Mark, Luksusowa, Ketel One, Russian Standard, Skyy"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Tito's Handmade Vodka, Smirnoff, Stolichnaya, New Amsterdam, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Skyy, Svedka, New Amsterdam, Absolut, Ciroc, Effen, Burnett's, Stoli"
+gemini-1.5-flash,"Smirnoff, Ketel One, Absolut, Tito's, Grey Goose, New Amsterdam, Pinnacle, Svedka, Stoli, Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Absolut."
+grok-beta,"Absolut, Svedka, Smirnoff, Skyy, Ketel One, Stolichnaya, New Amsterdam, Pinnacle, Burnett's, Deep Eddy."
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Tito's, Smirnoff, Stolichnaya, New Amsterdam, Svedka, Burnett's, Deep Eddy"
+gpt-4o-mini,"Tito's Handmade, Absolut, Ketel One, Smirnoff, Belvedere, Skyy, New Amsterdam, Grey Goose, Crystal Head, Finlandia"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Stoli, Chopin, Belvedere,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Platinum."
+grok-beta,"Smirnoff, Absolut, Svedka, Skyy, Stolichnaya, Pinnacle, Finlandia, New Amsterdam, Tito's, Burnett's"
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Stolichnaya, Smirnoff, Tito's Handmade Vodka, Svedka, New Amsterdam"
+gpt-4o-mini,"Absolut, Smirnoff, Tito's Handmade, Grey Goose, Belvedere, Stoli, Skyy, New Amsterdam, Finlandia, Pinnacle"
+gemini-1.5-flash,"Absolut, Smirnoff, Ketel One, Tito's, Grey Goose,  Stoli,  Tanqueray,  Belvedere,  Chopin,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Luksusowa."
+grok-beta,"Absolut, Tito's, Smirnoff, New Amsterdam, Svedka, Pinnacle, Skyy, Belvedere, Ketel One, Grey Goose."
+llama-v3p1-70b-instruct,"Tito's, Absolut, Grey Goose, Ketel One, Belvedere, Stolichnaya, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's, Smirnoff, Absolut, Skyy, New Amsterdam, Stoli, Finlandia, Belvedere, Svedka, Deep Eddy"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Grey Goose, Tito's, New Amsterdam, Svedka, Chopin, Belvedere, Stoli,  Stolichnaya,  Tanqueray,  Tanqueray  No.  Ten,  Hendricks,  Bombay  Sapphire,  Beefeater,  Plymouth,  Sipsmith,  Gin Mare,  Monkey  47,  Aviation,  St.  Germain,  Campari,  Aperol,  Cynar,  Vermouth,  Amaro,  Bitters,  Liqueurs,  Syrups"
+claude-3-sonnet-20240229,"Smirnoff, Absolut, Tito's, Svedka, New Amsterdam."
+grok-beta,"Smirnoff, Absolut, Tito's, Stolichnaya, Svedka, New Amsterdam, Pinnacle, Skyy, Platinum, Luksusowa, Reyka, Sobieski, Ketel One, Eristoff, Grey Goose, SKYY, Ciroc, Finlandia, Belvedere, Konik's Tail, Crystal Head, Green Mark, Zubrowka, Magic Moments, Romanoff, Mrcat, Aristocrat, Zamnesia, Szarlotka, Kharli, Polonaise, Orava, VIZOR, Ultimat, Wodka Wyborowa, Bistra, Modesta, Pirassununga, Mirate, Lenin, Arta 36, Cariel, Dragon Bleu, Gelera, Harwood, Jewel of Russia, Kettle One, Mei Kuan, Nao, Oaks, Orleans, Ozernaya, Piacqua, Praesidium, Quintessentially, Rakija, Sakurao, Square One, Tahoe Blue, Tanqueray, U'Luvka, Valt, Widow Jane, Xanté, Yamazaki, Zubrovka, Zoladkowa."
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Smirnoff, Absolut, Tito's Handmade, Skyy, Belvedere, Finlandia, Crystal Head, Grey Goose, Burnett's, New Amsterdam"
+gemini-1.5-flash,"Smirnoff, Tito's, Ketel One, Absolut, Grey Goose, Chopin, Belvedere,  Stoli,  Tanqueray,  New Amsterdam,  Skyy"
+claude-3-sonnet-20240229,"Ketel One, Tito's, New Amsterdam, Svedka, Smirnoff, Luksusowa, Skyy."
+grok-beta,"Smirnoff, Absolut, Svedka, New Amsterdam, Pinnacle, Burnett's, Skyy, Titos, Green Mark, Luksusowa"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, New Amsterdam, Absolut, Skyy, Finlandia, Svedka, Crystal Head, Belenkaya, Ciroc"
+gemini-1.5-flash,"Absolut, Smirnoff, Ketel One, Tito's, Grey Goose, New Amsterdam, Pinnacle"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, Absolut, New Amsterdam, Svedka."
+grok-beta,"Stolichnaya, Absolut, Svedka, New Amsterdam, Tito's, Skyy, Ketel One, Cîroc, Smirnoff, Reyka, Luksusowa, Pinnacle, Burnetts, Effen, Three Olives,еру"
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka, Deep Eddy, Belvedere"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, Grey Goose, Ketel One, New Amsterdam, Stoli, Belvedere, Skyy, Finlandia"
+gemini-1.5-flash,"Tito's, Smirnoff, Absolut, Grey Goose, Ketel One, New Amsterdam, Chopin, Belvedere,  Stoli"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Skyy, Luksusowa."
+grok-beta,"Smirnoff, Absolut, Tito's, Stolichnaya, Svedka, New Amsterdam, Pinnacle, Burnett's, Skyy, Luksusowa."
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Tito's Handmade Vodka, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Belvedere, Burnett's"
+gpt-4o-mini,"Tito's Handmade, New Amsterdam, Smirnoff, Absolut, Stoli, Finlandia, Belvedere, Skyy, Grey Goose, Pinnacle"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Smirnoff, Grey Goose, Stoli, New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Skyy, Luksusowa, Sobieski."
+grok-beta,"Smirnoff, Svedka, Absolut, Ketel One, New Amsterdam, Skyy, Stolichnaya, Belvedere, Grey Goose, Finlandia"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, Tito's Handmade, New Amsterdam, Belvedere, Wyborowa"
+gpt-4o-mini,"Tito's Handmade, New Amsterdam, Smirnoff, Absolut, Stoli, Skyy, Finlandia, Ciroc, Belvedere, Prairie Organic"
+gemini-1.5-flash,"Tito's,  Smirnoff,  Ketel One,  Grey Goose,  Absolut,  Stolichnaya,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pavel Ruski."
+grok-beta,"Absolut, Grey Goose, Tito's, Belvedere, Smirnoff, Ketel One, Svedka, Stoli, New Amsterdam, Finlandia."
+llama-v3p1-70b-instruct,"Tito's, Ketel One, Grey Goose, Belvedere, Stolichnaya, Absolut, Smirnoff, Svedka"
+gpt-4o-mini,"Belvedere, Tito's Handmade, Absolut, Skyy, Finlandia, Smirnoff, Stolichnaya, Prairie Organic, New Amsterdam, Ciroc"
+gemini-1.5-flash,"Tito's, Absolut, Smirnoff, Ketel One, Grey Goose,  Tanqueray,  Belvedere,  Stolichnaya,  Svedka,  New Amsterdam,  Chopin,  Skyy,  Ciroc,  Effen,  Uv,  Crystal Head,  Russian Standard,  Pineau des Charentes"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing are: Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Nikolai."
+grok-beta,"Stolichnaya,Tito's,Kettle One,Finlandia,Smirnoff"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka, Burnett's, Pinnacle"
+gpt-4o-mini,"Titos, Absolut, Smirnoff, Skyy, New Amsterdam, Stolichnaya, Finlandia, Belvedere, Grey Goose, Svedka"
+gemini-1.5-flash,"Ketel One, Absolut, Smirnoff, Tito's, Grey Goose, New Amsterdam, Svedka"
+claude-3-sonnet-20240229,"Smirnoff, New Amsterdam, Svedka, Skyy, Tito's, Deep Eddy."
+grok-beta,"Absolut, Smirnoff, Stolichnaya, Skyy, Titos, New Amsterdam, Svedka, Deep Eddy, Pinnacle, Grey Goose, Belvedere, Ketel One, Ciroc, Finlandia, Luksusowa, Burnett's, Effen, Gordon's, Monopolowa, Sobieski"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's, Absolut, Smirnoff, Skyy, New Amsterdam, Pinnacle, Svedka, Finlandia, Ciroc, Belvedere"
+gemini-1.5-flash,"Smirnoff, Ketel One, Absolut, Tito's, Grey Goose, New Amsterdam"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, New Amsterdam, Svedka, Skyy, Absolut, Pinnacle, Platinum."
+grok-beta,"Absolut, Svedka, Tito's, Smirnoff, Ketel One."
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, New Amsterdam, Svedka, Smirnoff"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, New Amsterdam, Skyy, Absolut, Svedka, Ciroc, Popov, Finlandia, Pinnacle"
+gemini-1.5-flash,"Absolut, Smirnoff, Ketel One, Tito's, Grey Goose,"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing include: Tito's, Smirnoff, Luksusowa, Svedka, New Amsterdam, Skyy."
+grok-beta,"Absolut, Tito's, Smirnoff, Svedka, New Amsterdam"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, New Amsterdam, Svedka, Smirnoff, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Grey Goose, Finlandia, New Amsterdam, Stoli, Belvedere, Skyy, Crystal Head"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, Belvedere, Chopin,  Stoli,  Tanqueray,  Belvedere,  Tanqueray,  Tito's,  Absolut,  Smirnoff,  Grey Goose"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Absolut, New Amsterdam, Skyy, Svedka, Pinnacle."
+grok-beta,"Smirnoff, Absolut, Stolichnaya, Svedka, Skyy, Tito's, New Amsterdam, Ketel One, Finlandia, Pinnacle."
+llama-v3p1-70b-instruct,"Tito's Handmade Vodka, Grey Goose, Ketel One, Stolichnaya, Absolut, Svedka, New Amsterdam, Belvedere, Smirnoff"
+gpt-4o-mini,"Tito's Handmade Vodka, New Amsterdam Vodka, Smirnoff, Absolut, Svedka, Finlandia, Skyy Vodka, Burnett's Vodka, Pinnacle Vodka, Belvedere"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,  Stoli, New Amsterdam,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Skyy."
+grok-beta,"Absolut, Tito's, Smirnoff, Svedka, Ketel One, Skyy, New Amsterdam, Pinnacle, Platinum 7X, Grey Goose "
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Stolichnaya, Tito's Handmade Vodka, Smirnoff, Svedka, New Amsterdam"
+gpt-4o-mini,"Tito's Handmade Vodka, New Amsterdam Vodka, Svedka Vodka, Absolut Vodka, Smirnoff Vodka, Skyy Vodka, Burnett's Vodka, Finlandia Vodka, Popov Vodka, Crystal Head Vodka"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,  New Amsterdam,  Stoli"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pinnacle."
+grok-beta,"Absolut, Svedka, Tito's, Smirnoff, Stolichnaya, Skyy, New Amsterdam, Pinnacle, Burnett's, Gordon's"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Tito's Handmade Vodka, New Amsterdam, Svedka, Smirnoff"
+gpt-4o-mini,"Titos, Absolut, Smirnoff, Skyy, New Amsterdam, Finlandia, Belvedere, Stolichnaya, Prairie, Tito's Handmade"
+gemini-1.5-flash,"Absolut, Tito's, Smirnoff, Ketel One, Grey Goose, Chopin, Belvedere, Stoli,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Absolut, New Amsterdam, Svedka, Skyy, UV."
+grok-beta,"Absolut, Belvedere, Grey Goose, Ketel One, Svedka, Smirnoff, Stolichnaya, Titos, Finlandia, New Amsterdam, Ciroc, Skyy, Wodka, Luksusowa, 360, Reyka, Absolut Elyx, Zubrowka, Bully Boy, Effen, Hangar One, Chopin, Mamont, Fair Quinoa, Nikka Coffey Grain, Haku, Zubrowka Bison Grass, Zyr, Moskovskaya, Russian Standard, Green Mark, Wyborowa, Zubrovka, Zar, Bistra, La Martiniquaise, Monopolowa, Greenall's, Konik's Tail, Vestal, Debowa, J.J. Whitley, Blue Ice, Orion, Vincent Van Gogh, Amsterdam, Rialto, Karkov, Barton, Sky Blue, Fris, Dolce Blu, Kalashnikov, U'Luvka, Pan Tadeusz, German Ice, Crystal Head, Jewel of Russia, Pinnacle, Vox, Aspen, Jewels of Russia, Sovereign, Sweet Caroline, Platinum 7X, Adnams Longshore, Djouls, Stolichnaya Elit, Bering, Oliver, Glasnow, Nastoyka, Royal Dragon, Dragon Bleu, Pirata, Kors, Bulbash, Polugar, Passport, Belaya Rus, Victory, Neman, Hawk, Parliament, Continent, Old Number One, Zbojowa, Zubrowka Szafirowa, Damaszka, Blue Eyes, Home Run, 5 O'clock, Yevhen, Tatslaya, Hlibnyi Dar, Nemiroff, Sich, Zaporizhzhya, Mirowka, Varta, Ruby, Luxe, Our Vodka, Mr. Black, Smirnoff Ice, Ciroc Premium, Svedka Grapefruit, Absolut Citron, Stoli Razberi, Finlandia Mango, Ketel One Oranje, Smirnoff Twist, Skyy Infusions, Pinnacle Flavors, Absolut Mandrin, Ketel One Citroen, Skyy Blood Orange, Finlandia Lime, Belvedere Pomarancza, Absolut Pears, Pinnacle Whipped, Stolichnaya Vanilla, Ciroc Peach, Grey Goose Le Citron, Smirnoff Flavors, Reyka Pineapple, Tito's Handmade, Svedka Blue Raspberry, Absolut Peppar, Ketel One Botanicals, Skyy Spiced, Belvedere Grapefruit, Finlandia Blackcurrant, Grey Goose Cherry Noir, Smirnoff Blue Raspberry Twist, Belvedere Pink Grapefruit, Absolut Ruby Red, Ciroc Summer Citrus, Finlandia Wild Berries, Ketel One Cucumber & Mint, Reyka Icelandic Lemon, Smirnoff Root Beer, Svedka Strawberry Lemonade, Stoli Blueberry, Titos Vodka Lemon Ice, Belvedere Lemon Tea, Ciroc Red Berry, Skyy Honeycrisp Apple, Absolut Wild Berries, Pinnacle Tropical Punch, Stolichnaya Cherry Burst, Grey Goose L'Orange, Smirnoff Mojito Twist, Finlandia Raspberry, Svedka Ginger Ale, Reyka Arctic Berry, Ketel One Mango & Orange, Absolut Vanilia, Ciroc Coconut, Belvedere Smogory Forest, Skyy Passion Fruit, Smirnoff Orange Twist, Finlandia Blueberry, Stolichnaya Citros, Tito's Handmade Vanilla Bean, Svedka Vanilla Lemonade, Belvedere Pure, Grey Goose VX, Absolut 100, Ciroc Black Raspberry, Ketel One Citroen, Finlandia Cranberry, Skyy X1, Reyka Grapefruit, Smirnoff Spice, Svedka Cucumber Lime, Stoli Ohranj, Tito's Handmade Pineapple, Absolut Kurant, Ciroc Summer Watermelon, Belvedere Ginger Zest, Skyy Colada, Finlandia Blackcurrant, Stolichnaya Raspberry, Reyka Lemon Wedge, Smirnoff Pina Colada, Svedka Citron Lemonade, Belvedere Hibiscus, Grey Goose La Poire, Tito's Handmade Cherry, Absolut Apeach, Ciroc Passion, Skyy Orange, Finlandia Seabuckthorn, Stolichnaya Ginger, Smirnoff Lemon, Svedka Swedish Fish, Tito's Handmade Honey, Reyka Icelandic Blueberry, Belvedere Smoky Almond, Ketel One Peach & Orange Blossom, Absolut Raspberri, Ciroc Mango, Skyy Wild Strawberry, Finlandia Elderflower, Stolichnaya Gala Applik, Smirnoff Grape, Svedka Lemonade, Tito's Handmade Lime, Belvedere Lake Bartezek, Grey Goose Honey Deuce, Reyka Icelandic Apple, Absolut Cherrykran, Ciroc Honey Melon, Stolichnaya Salted Karamel, Smirnoff Kissed Caramel, Finlandia Blackberry, Svedka Raspberry Lemonade, Belvedere Bloody Mary, Skyy Tequila Blanco, Tito's Handmade Citrus, Reyka Icelandic Grapefruit, Absolut Mandarin, Ciroc Snap Frost, Finlandia Lime, Stolichnaya Nitro, Smirnoff Peach, Svedka Cherry Lemonade, Tito's Handmade Mango, Belvedere Spiced Apple, Grey Goose Vat, Reyka Icelandic Raspberry, Absolut Cilantro, Ciroc Pineapple, Skyy Infusions Grapefruit, Finlandia Lime, Stolichnaya Apple, Smirnoff Red, Bully Boy, Svedka Tiki, Tito's Handmade Spiced, Belvedere Wishing Well, Reyka Pineapple Fusion, Grey Goose Citron de Savoie, Absolut Ruby Red, Ciroc White Grape, Finlandia Wild Berries, Skyy Infusions Pineapple, Stolichnaya Cranberry, Smirnoff Passionfruit, Tito's Infused with Green Tea, Belvedere Vodka   "
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, Absolut, New Amsterdam, Grey Goose, Skyy, Stolichnaya, Ketel One, Finlandia, Belvedere"
+gemini-1.5-flash,"Ketel One, Absolut, Tito's, Smirnoff, Grey Goose, Stoli,  Belvedere,  Tanqueray,  Svedka,  New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Luksusowa."
+grok-beta,"Tito's, Svedka, Absolut, Smirnoff, New Amsterdam."
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Belvedere, Tito's Handmade Vodka, New Amsterdam, Stolichnaya, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Finlandia, Skyy, New Amsterdam, Smirnoff, Belvedere, Stolichnaya, Ciroc, Pinnacle"
+gemini-1.5-flash,"Smirnoff, Tito's, Absolut, Ketel One, Grey Goose, New Amsterdam"
+claude-3-sonnet-20240229,"Some good vodka brands for mixing cocktails that offer quality and value are: Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Luksusowa, Nikolai."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:04:43 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8daca31bb89bbd1b</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Tito's, Absolut, Grey Goose, Ketel One, Stolichnaya, Svedka, New Amsterdam, Belvedere"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, Absolut, Grey Goose, Stoli, New Amsterdam, Skyy, Finlandia, Burnett's, Belvedere"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, New Amsterdam, Svedka, Pinnacle,  Stoli,  Tanqueray,  Belvedere,  Ciroc,  Skyy,  Chopin,  Effen,  Russian Standard,  Uv,  Flask,  Hangar 1,  Milagro,  Three Olives,  Prairie Organic,  Deep Eddy,  Vodka,  Wyborowa,  Luksusowa,  Crystal Head,  42 Below,  Absolut Elyx,  Beluga,  Stolichnaya,  Grey Goose La Poire,  Ketel One Botanicals,  Tito's Handmade Vodka,  Smirnoff No. 21,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka,  Tito's Handmade Vodka,  Smirnoff No. 21 Vodka,  New Amsterdam Vodka,  Svedka Vodka,  Pinnacle Vodka,  Stoli Vodka,  Tanqueray Vodka,  Belvedere Vodka,  Ciroc Vodka,  Skyy Vodka,  Chopin Vodka,  Effen Vodka,  Russian Standard Vodka,  Uv Vodka,  Flask Vodka,  Hangar 1 Vodka,  Milagro Vodka,  Three Olives Vodka,  Prairie Organic Vodka,  Deep Eddy Vodka,  Vodka,  Wyborowa Vodka,  Luksusowa Vodka,  Crystal Head Vodka,  42 Below Vodka,  Absolut Elyx Vodka,  Beluga Vodka,  Stolichnaya Vodka,  Grey Goose La Poire Vodka,  Ketel One Botanicals Vodka"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pinnacle, Platinum."
+grok-beta,"Smirnoff, Svedka, Tito's Handmade Vodka, Absolut, New Amsterdam, Finlandia, Skyy, Pinnacle, Stolichnaya, Grey Goose, Belvedere, Ketel One, Cîroc, Smirnoff, Zubrowka, Russian Standard, Eristoff, 360 Vodka, Deep Eddy, Luksusowa"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Skyy, New Amsterdam, Stoli, Pinnacle, Three Olives, Finlandia, Belvedere "
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Chopin, Belvedere, Stoli,  Tanqueray,  New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Absolut, Skyy, Svedka, Luksusowa."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:05:48 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8daca4b19fd453c3</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, Tito's Handmade Vodka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut Vodka, Smirnoff, Skyy Vodka, New Amsterdam Vodka, Finlandia Vodka, Grey Goose, Smirnoff, Belvedere Vodka"
+gemini-1.5-flash,"Tito's, Smirnoff, Absolut, Ketel One, Grey Goose,"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, New Amsterdam, Svedka, Pinnacle, Skyy."
+grok-beta,"Tito's, Svedka, Absolut, Ketel One, Smirnoff, Stolichnaya, Luksusowa, Skyy, Finlandia, New Amsterdam."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Smirnoff, Tito's Handmade, New Amsterdam, Svedka, Belvedere, Pinnacle"
+gpt-4o-mini,"Tito's Handmade Vodka, New Amsterdam Vodka, Smirnoff, Absolut, Skyy Vodka, Svedka, Finlandia, Crystal Head Vodka, Stoli, Belvedere"
+gemini-1.5-flash,"Tito's, Absolut, Ketel One, Smirnoff, Grey Goose, Svedka, New Amsterdam, Chopin, Belvedere, Stoli,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Nikolai."
+grok-beta,"Smirnoff, Absolut, Tito's, Svedka, New Amsterdam, Pinnacle, Skyy, Burnett's, UV Blue, Popov"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Belvedere, Stolichnaya, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Skyy, Svedka, Smirnoff, New Amsterdam, Nikolai, Finlandia, Burnett's, Belvedere"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Grey Goose, Tito's, Chopin, Belvedere, Stoli,  Tanqueray,  Tanqueray No. Ten,  Hendricks,  Beefeater,  Bombay Sapphire,  Plymouth,  Sipsmith,  St. George,  Aviation,  Gin Mare,  Nolet's,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1,  Plymouth,  Gordon's,  Tanqueray,  Beefeater,  Bombay Sapphire,  Hendricks,  Sipsmith,  Aviation,  St. George,  Gin Mare,  Roku,  Monkey 47,  The Botanist,  Malfy,  Barr Hill,  Martin Miller's,  Ferdinand's,  Broker's,  Fords Gin,  Drumshanbo Gunpowder Irish Gin,  Whitley Neill,  Greenall's,  Bloom,  Edinburgh,  Caorunn,  Old Tom Gin,  Plymouth Gin,  Hayman's,  D.O.M.  Pimm's No. 1"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Platinum, Pinnacle."
+grok-beta,"Smirnoff, Svedka, Absolut, Ketel One, Tito's, Skyy, Finlandia, Stolichnaya, Reyka, New Amsterdam, Pinnacle, Burnett's, Luksusowa, Wodka, Gordon's, Green Mark, Zubrowka, Tvarscki, Karkov, Aristocrat, Popov, Gilbey's, Crystal Palace, Five O'Clock, Cavalier, Korski, UV Blue, Platinum, Seagram's Extra Dry, McCormick, Kors, Exclusiv, Imperial, Moonshine, Kosciuszko, Kozlik's, Saxon, Boru, Borovika, Arrow, Yuu, Cobalto, Romanov, White Mischief, Khortytsa, Belaya Rus, Yarsk, Slawo, Zubkov, Nerminskaya, Belenkaya, Kedrovy Lev, Gzhelka, Baikal, Zyr, Polugar, Rakija, Przemyski, Shustov, Zolotaya Bochka, Beluga, Grey Goose, Ciroc, Belvedere, Stolichnaya Elit, Chopin, Wyborowa, Zyr, Purity, Belenkaya, Stoli, Monopolowa, Virgin, Posh, Ginovsk, Kissui, Black Cow, Zyr, Blackwood's, Pur, Royal Dragon, Babicka, Keglevich, Fulleria, Hlib Drah, Staraya Moskva, Hlib Drah, Staraya Moskva, Tomake, Elixir, Mamont, Hussar, Darom, Danzka, Wrazen, Korona, Ekaterina, Envy, Siedlecka, Baltika, Visher, Slavianskaya, Yubileynaya, Russkiy Standart, Khlibny Dar, Dvorichna, Khortytsa, Grey Goose, Ciroc, Belvedere, Chopin, Ketel One, Wyborowa, Zubrowka, Smirnoff, Skyy, Stolichnaya, Absolut, Tito's, Reyka, Finlandia, Svedka, Platinum, New Amsterdam, Pinnacle, Burnett's, Luksusowa, Wodka, Gordon's, Green Mark, Tvarscki, Karkov, Aristocrat, Popov, Gilbey's, Crystal Palace, Five O'Clock, Cavalier, Korski, UV Blue, Seagram's Extra Dry, McCormick, Kors, Exclusiv, Imperial, Moonshine, Kosciuszko, Kozlik's, Saxon, Boru, Borovika, Arrow, Yuu, Cobalto, Romanov, White Mischief, Khortytsa, Belaya Rus, Yarsk, Slawo, Zubkov, Nerminskaya, Belenkaya, Kedrovy Lev, Gzhelka, Baikal, Zyr, Polugar, Rakija, Przemyski, Shustov, Zolotaya Bochka, Beluga, Stolichnaya Elit, Purity, Monopolowa, Virgin, Posh, Ginovsk, Kissui, Black Cow, Blackwood's, Pur, Royal Dragon, Babicka, Keglevich, Fulleria, Staraya Moskva, Tomake, Elixir, Mamont, Hussar, Darom, Danzka, Wrazen, Korona, Ekaterina, Envy, Siedlecka, Baltika, Visher, Slavianskaya, Yubileynaya, Russkiy Standart, Khlibny Dar, Dvorichna, Khortytsa, Belenkaya, Stoli, Smirnoff, Svedka, Absolut, Ketel One, Tito's, Skyy, Finlandia, Stolichnaya, Reyka, New Amsterdam, Pinnacle, Burnett's, Luksusowa, Wodka, Gordon's, Green Mark, Zubrowka, Tvarscki, Karkov, Aristocrat, Popov, Gilbey's, Crystal Palace, Five O'Clock, Cavalier, Korski, UV Blue, Platinum, Seagram's Extra Dry, McCormick, Kors, Exclusiv, Imperial, Moonshine, Kosciuszko, Kozlik's, Saxon, Boru, Borovika, Arrow, Yuu, Cobalto, Romanov, White Mischief, Khortytsa, Belaya Rus, Yarsk, Slawo, Zubkov, Nerminskaya, Belenkaya, Kedrovy Lev, Gzhelka, Baikal, Zyr, Polugar, Rakija, Przemyski, Shustov, Zolotaya Bochka, Beluga, Grey Goose, Ciroc, Belvedere, Stolichnaya Elit, Chopin, Wyborowa, Purity, Monopolowa, Virgin, Posh, Ginovsk, Kissui, Black Cow, Blackwood's, Pur, Royal Dragon, Babicka, Keglevich, Fulleria, Staraya Moskva, Tomake, Elixir, Mamont, Hussar, Darom, Danzka, Wrazen, Korona, Ekaterina, Envy, Siedlecka, Baltika, Visher, Slavianskaya, Yubileynaya, Russkiy Standart, Khlibny Dar, Dvorichna, Khortytsa, Belenkaya, Stoli"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade Vodka, Skyy Vodka, New Amsterdam Vodka, Smirnoff Vodka, Absolute Vodka, Finlandia Vodka, Stoli Vodka, Prairie Organic Vodka, Deep Eddy Vodka, Belvedere Vodka"
+gemini-1.5-flash,"Absolut, Smirnoff, Ketel One, Tito's, Grey Goose, New Amsterdam,  Stoli,  Skyy,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Absolut, Luksusowa."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:07:13 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8daca6c22c2044cf</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Stolichnaya, Absolut, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's, Absolut, Grey Goose, Smirnoff, Finlandia, Belvedere, Skyy, New Amsterdam, Stoli"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, New Amsterdam, Pinnacle, Stoli,  Skyy,  Belvedere,  Chopin,  Tanqueray,  Tanqueray Ten,  Plymouth,  Beefeater,  Bombay Sapphire,  Hendricks,  Gin Mare,  Monkey 47"
+claude-3-sonnet-20240229,"Some affordable yet quality vodka brands well-suited for cocktails include: Tito's, Svedka, Smirnoff, New Amsterdam, Skyy, Luksusowa, Nikolai."
+grok-beta,"Smirnoff, Absolut, Svedka, Pinnacle, Titos, Stoli, Skyy, Kettle One, Finlandia, New Amsterdam."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, New Amsterdam, Svedka, Pinnacle, Smirnoff"
+gpt-4o-mini,"Titos, Absolut, SkYY, New Amsterdam, Smirnoff, Stolichnaya, Finlandia, Belvedere, Grey Goose"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Chopin, Belvedere, Stoli,  Tanqueray,  Tanqueray Ten,  Hendricks,  Beefeater,  Bombay Sapphire,  Plymouth,  Aviation,  St-Germain,  Lillet Blanc,  Campari,  Aperol,  Cynar,  Vermouth,  Martini,  Dubonnet,  Pimm's,  Jägermeister,  Amaretto,  Sambuca,  Grand Marnier,  Cointreau,  Triple Sec,  Tia Maria,  Kahlúa,  Bailey's,  Irish Cream,  Drambuie,  Southern Comfort,  Amaretto,  Disaronno,  Galliano,  Cynar,  Fernet Branca,  Cynar,  Fernet Branca."
+claude-3-sonnet-20240229,"For cocktail mixing, some vodka brands that offer a good balance of quality and affordability are: Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Aristocrat, Platinum."
+grok-beta,"Absolut,Smirnoff,Tito's,New Amsterdam,Svedka,Deep Eddy,Finlandia"
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Stolichnaya, Tito's Handmade, Smirnoff, New Amsterdam, Svedka, Belvedere"
+gpt-4o-mini,"Tito's Handmade Vodka, New Amsterdam Vodka, Smirnoff, Absolut, Skyy Vodka, Pinnacle Vodka, Svedka Vodka, Nikolai Vodka, Burnett's Vodka, Ciroc"
+gemini-1.5-flash,"Tito's, Absolut, Smirnoff, Ketel One, Grey Goose, New Amsterdam,  Stoli,  Chopin,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Luksusowa."
+grok-beta,"Absolut, Stolichnaya, Tito's, Smirnoff, Svedka, New Amsterdam, Pinnacle, Burnett's, Skyy, Karkov, Platinum 7X, UV Blue, Popov, Gordon's, Reyka"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, Tito's Handmade, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Tito's Handmade, Absolut, Skyy, Svedka, Belvedere, New Amsterdam, Smirnoff, Grey Goose, Finlandia, Stoli"
+gemini-1.5-flash,"Smirnoff, Tito's, Absolut, Ketel One, Grey Goose,  Stoli,  Tanqueray,  Belvedere,  Chopin,  Skyy,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Luksusowa."
+grok-beta,"Ketel One, Stolichnaya, Smirnoff, Absolut, Svedka, Tito's, New Amsterdam, Skyy"
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Stolichnaya, Tito's Handmade, Svedka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, Absolut, Stoli, New Amsterdam, Skyy, Pinnacle, Finlandia, Svedka, Burnett's"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Some vodka brands that offer a good balance of quality and affordability for cocktail mixing include: Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Burnett's."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:08:24 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8daca880bd80bd41</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, Tito's Handmade Vodka, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, New Amsterdam, Skyy, Pinnacle, Svedka, Finlandia, Belvedere, Grey Goose"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Nikolai, Luksusowa."
+grok-beta,"Absolut, Titos, Smirnoff, Svedka, Ketel One, Stolichnaya, Skyy, New Amsterdam, Ciroc, Pinnacle."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Tito's Handmade Vodka, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Absolut, Svedka, Smirnoff, New Amsterdam, Skyy, Burnett's, Pinnacle, Stoli, Grey Goose"
+gemini-1.5-flash,"Smirnoff, Tito's, Absolut, Ketel One, Grey Goose,  Stolichnaya,  New Amsterdam,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Luksusowa, Platinum."
+grok-beta,"Absolut, Stolichnaya, Svedka, New Amsterdam, Smirnoff, Skyy, Pinnacle, Tito's, Ketel One, Reyka, Finlandia, 360, Wodka, Sobieski, Luksusowa, Green Mark, Moskovskaya, Gray Goose, Belvedere, Chopin, Zakłos, Zyr, Kremlyovskaya, Khlebniy Dar, Jewel of Russia, Aristocrat, Burnett's, UV, Platinum, Monopolowa, Eristoff, Kauffman, Krolewska, Ultimat, Wyborowa, 42 Below, St. George, Blue Ice, Heritage, Ivanabitch, Prairie, Deep Eddy, Sparkle, Venus, Hartwall, Purity, Royal Dragon, Nero, Imperia, Hlibny Dar, State Line, Teton Glacier, Tru Vladimir, Smirnoff Black, Absolwent, Barbarossa, Biały Bocian, Bisongrass, Black Desert, Ciroc, Kremlin Award, Krupnik, Kurant, Little One, Meister Frost, Metropol, Myagkov, Navigator, Ostoya, Parlament, Putinka, Russian Standard, Saphire, Sazerac, Severoff, Shark, Siberian Blue, Smirnoff Twist, Starka, Stolitsa, Talisker, Tarczyn, Tatanka, Veda, Wawel, Zubrowka, ধ্রু, Rå, Arrow, Popcorn Sutton, 50 Cent, Kha'ran, স্বর্ণ, Loujel, Cowdery, Głęboka, Kobrówka, Mamont, Polar Ice, Snow Leopard, Taika, Zver, Yukon Jack, Cold River, Stolichnaya Elit, Xellent, Bison Grass, V.I.P., Happy, Cosmonaut, Millhouse, Soft Quadro, Zubowicz, Bimber, Whale骨, Prospero, Our, Cubed, Moscow, Espolòn, Cítrus, Squeezy, Alibi, Beefeater 24, Bristow, Crème de Ciel, G'Day, Damrak, Hisashi, Iwana, Jansen, Jeptha Creed, Jiwhaseon, Kleiner Feigling, Kolaid, Lumina, Matusalem, Nemiroff, Ołta, Perks, Portobello Road, Pyat Ozer, Rookwood, Rueda Imperial, Sabotage, Silver Bro, Spud, Tillen Farms, Veil, Vixen, Weller, Wodka One, Zorn, Adelphi, Barr Hill, Burn, Calandra's, Crannóg, Dr. All, Eleganza, Fügel, Gran, Henkell, Ilde, Jura, Kassen, Lekker, Montis, Nautilus, Orlow, Pemberton, Radico, Samsung, Taspinar, Ukiyo, Viva, Wabasso, Zanin, আকাশ, Irongate, Osmow's, Polkra, Whiskey del Cardenal, Yat, Z-33, Abbott's, Busnel, Dutch Barn, Elephanta, Femme Fatale, Guanajuato, Hidden Acres, Ilumbra, Joos, Keglevich, Limeburners, Medicina, Nestlé, Old Wives' Ales, Polugar, Roc, Sacco, Thalassia, Uki, Vau, Wisents, Xo, Ye, Zombie, হ্যারিকেন, রজস্ব, সাংঠি"
+llama-v3p1-70b-instruct,"Tito's Handmade Vodka, Grey Goose, Ketel One, Absolut, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Deep Eddy"
+gpt-4o-mini,"Smirnoff, Absolut, Tito's Handmade, Skyy, New Amsterdam, Svedka, Stoli, Belvedere, Finlandia, Pinnacle"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, Svedka, New Amsterdam, Skyy, Luksusowa."
+grok-beta,"Svedka, Ketel One, Absolut, Stolichnaya, Smirnoff, Belvedere, Grey Goose, Skyy, Tito's, Pinnacle"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Tito's Handmade Vodka, Svedka, New Amsterdam, Pinnacle, Smirnoff"
+gpt-4o-mini,"Tito's, Absolut, Smirnoff, Skyy, New Amsterdam, Stoli, Belvedere, Finlandia, Prairie Organic, Vesper"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Absolut, Svedka, Skyy, Pinnacle."
+grok-beta,"Absolut, Stolichnaya, Ketel One, Smirnoff, Svedka, New Amsterdam, Pinnacle, Skyy, Wodka, Luksusowa"
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Stolichnaya, Smirnoff, New Amsterdam, Tito's Handmade Vodka, Svedka, Pinnacle, Belvedere"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Skyy, New Amsterdam, Pinnacle, Ciroc, Stoli, Svedka, Prairie Organic"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose, New Amsterdam,  Stoli,  Tanqueray,  Belvedere,  Chopin,  Skyy,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Platinum, Skyy, Luksusowa."
+grok-beta,"Absolut, Stolichnaya, Tito's, Smirnoff, New Amsterdam, Svedka, Pinnacle, Grey Goose, Ketel One, Skyy."
+llama-v3p1-70b-instruct,"Absolut, Stolichnaya, Smirnoff, Ketel One, Tito's Handmade Vodka, New Amsterdam, Grey Goose, Belvedere, Svedka"
+gpt-4o-mini,"Skyy, Tito's Handmade, Absolut, Smirnoff, New Amsterdam, Burnett's, Pinnacle, Grey Goose, Ciroc"
+gemini-1.5-flash,"Tito's,  Smirnoff,  Ketel One,  Absolut,  Grey Goose,  New Amsterdam,  Stoli,  Tanqueray,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle, Absolut."
+grok-beta,"Smirnoff, Svedka, Absolut, Titos, Stolichnaya"
+llama-v3p1-70b-instruct,"Absolut, Stolichnaya, Ketel One, Grey Goose, Tito's Handmade Vodka, Smirnoff, New Amsterdam, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Svetka, Smirnoff, New Amsterdam, Skyy, Finlandia, Belvedere, Ciroc"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Smirnoff, Grey Goose, New Amsterdam,  Stoli,  Skyy,  Svedka,  Chopin,  Belvedere,  Ciroc,  Tanqueray,  Tanqueray  Ten,  Hendricks,  Bombay  Sapphire,  Beefeater,  Plymouth,  Gin Mare,  Monkey  47,  Sipsmith,  St  George,  Aviation,  Nolet's,  The  Botanist,  Malfy,  Martin  Miller's,  Fords,  Broker's,  Roku,  Barrel  Aged  Gin"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Absolut, Pinnacle, Deep Eddy."
+grok-beta,"Smirnoff, Stolichnaya, Absolut, Svedka, Ketel One, Tito's Handmade, Skyy, New Amsterdam, Pinnacle, UV Blue"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, New Amsterdam, Smirnoff, Svedka, Belvedere"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolute Vodka, Smirnoff, New Amsterdam Vodka, Svedka, Finlandia, Ciroc, Stoli, Belvedere, Grey Goose"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose, Chopin, Belvedere, Stoli,  Tanqueray,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Some good vodka brands for cocktail mixing that offer quality and affordability are: Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle."
+grok-beta,"Smirnoff, Absolut, Tito's, Stolichnaya, Grey Goose, Ketel One, New Amsterdam, Svedka, Finlandia, Ciroc"
+llama-v3p1-70b-instruct,"Absolut, Smirnoff, Ketel One, Grey Goose, Tito's Handmade Vodka, Stolichnaya, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade Vodka, New Amsterdam Vodka, Absolut Vodka, Smirnoff Vodka, Skyy Vodka, Svedka, Finlandia Vodka, Deep Eddy Vodka, Belvedere Vodka"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,  New Amsterdam,  Stoli,  Skyy,  Tanqueray,  Belvedere,  Chopin,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Luksusowa."
+grok-beta,"Absolut, Stolichnaya, Svedka, Smirnoff, Ketel One, Tito's, Grey Goose, Belvedere, Cîroc, Skyy, Kirkland Signature"
+llama-v3p1-70b-instruct,"Absolut, Stolichnaya, Smirnoff, Ketel One, Tito's, Grey Goose, Svedka, New Amsterdam"
+gpt-4o-mini,"Titos, Absolute, Smirnoff, New Amsterdam, Finlandia, Belvedere, Skyy, Tito's Handmade Vodka, Pinnacle, Three Olives"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Grey Goose, Tito's, New Amsterdam,  Stoli,  Tanqueray,  Belvedere,  Ciroc,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pinnacle, Aristocrat."
+grok-beta,"Stolichnaya, Smirnoff, Absolut, Svedka, New Amsterdam, Tito's, Ketel One, Skyy, Pinnacle, Finlandia, Kirkland Signature, Luksusowa, Reyka, Sobieski, Monopolowa, Green Mark, Eristoff, Gordons, Dutch Barn Orchard, Wodka."
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, New Amsterdam, Svedka, Smirnoff, Belvedere, Cîroc"
+gpt-4o-mini,"Tito's Handmade, Absolut, Skyy, Smirnoff, New Amsterdam, Ciroc, Stoli, Burnett's, Pinnacle, Finlandia"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, Chopin, Beluga, New Amsterdam,  Stoli,  Skyy,  Svedka"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, New Amsterdam, Luksusowa, Svedka, Skyy, Pinnacle."
+grok-beta,"Absolut, Svedka, Titos, Smirnoff, New Amsterdam, Kettle One, Skyy, Stoli, Luksusowa, Finlandia, Wodka, Reyka"
+llama-v3p1-70b-instruct,"Tito's Handmade Vodka, Grey Goose, Ketel One, Stolichnaya, Absolut, Svedka, New Amsterdam, Smirnoff, Burnett's"
+gpt-4o-mini,"Smirnoff, Tito's Handmade Vodka, Absolut, Skyy, New Amsterdam, Belvedere, Ketel One, Stoli, Crystal Head, Finlandia"
+gemini-1.5-flash,"Tito's, Smirnoff, Absolut, Ketel One, Grey Goose, New Amsterdam,  Svedka,  Stoli,  Skyy,  Tanqueray,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Skyy, Absolut."
+grok-beta,"Smirnoff, Svedka, New Amsterdam, Pinnacle, Stolichnaya, Tito's, Absolut, Finlandia, Skyy, Ketel One,"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Stolichnaya, New Amsterdam, Svedka, Absolut, Belvedere"
+gpt-4o-mini,"Tito's Handmade, New Amsterdam, Smirnoff, Crystal Head, Belvedere, Absolute, Prairie Organic, Finlandia, Van Gogh, Skyy"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose,  New Amsterdam,  Tanqueray,  Stoli,  Belvedere,  Ciroc,  Skyy"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Absolut, Svedka, Pinnacle."
+grok-beta,"Smirnoff, Svedka, Absolut, Tito's, New Amsterdam, Stolichnaya, Ketel One, Skyy, Pinnacle, Burnett's."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Tito's Handmade Vodka, New Amsterdam, Svedka, Smirnoff"
+gpt-4o-mini,"Tito's, Finlandia, Smirnoff, Belvedere, Absolut, Skyy, Gray Goose, New Amsterdam, Stoli, Prairie, Pinnacle"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Chopin, Belvedere,  Stoli,  Tanqueray,  New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Sobieski."
+grok-beta,"Svedka, Ketel One, Stolichnaya, Tito's, Smirnoff, Absolut, Skyy, New Amsterdam, Pinnacle, UV Vodka"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, Tito's Handmade Vodka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Smirnoff, Tito's Handmade, Absolut, Skyy, Stoli, New Amsterdam, Ciroc, Finlandia, Three Olives, Pinnacle"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, New Amsterdam,  Svedka,  Stoli"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, New Amsterdam, Svedka, Pinnacle."
+grok-beta,"Svedka, Absolut, Skyy, Smirnoff, New Amsterdam, Tito's, Pinnacle, Stoli, Ketel One, Three Olives."
+llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Tito's, Stolichnaya, New Amsterdam, Svedka, Smirnoff, Deep Eddy, Pinnacle"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, Absolut, Grey Goose, Skyy, New Amsterdam, Svedka, Belvedere, Stolichnaya, Prairie Organic Vodka"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, New Amsterdam,  Tanqueray,  Stoli,  Belvedere,  Ciroc,  Skyy."
+claude-3-sonnet-20240229,"Smirnoff, Tito's, New Amsterdam, Svedka, Luksusowa."
+grok-beta,"Ketel One, Stoli, Absolut, Svedka, Titos, Smirnoff, Skyy, New Amsterdam, Pinnacle, Grey Goose, Belvedere, Chopin, Ciroc, Finlandia, Luksusowa, Arbor Vitae, Grey Goose, Belvedere, Titos, Absolut, Smirnoff, New Amsterdam, Svedka, Stolichnaya, Skyy, Smirnoff, Titos, Absolut, Pinnacle, 50 Bleu, Skyy, Stolichnaya, Smirnoff, Absolut, Luksusowa, Sobieski, Burnetts, Crystal Head, Stolichnaya, Ciroc, Deep Eddy, Smirnoff, Svedka, Skyy, Belvedere, Finlandia, Effen, Arbor Vitae, 1800 Cristalino, Reyka, Ciroc, Chopin, New Amsterdam, Sobieski, Absolut, Grey Goose, Belvedere, Titos, Stolichnaya, New Amsterdam, Effen, Skyy, Finlandia, Pinnacle, Smirnoff, Luksusowa, Sobieski, Svedka, Deep Eddy, Ciroc, Reyka, Chopin, Effen, Crystal Head, 1800 Cristalino, Burnetts, 50 Bleu, Deep Eddy, Pinnacle, Reyka, Crystal Head, Burnetts, 50 Bleu"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, Tito's Handmade Vodka, New Amsterdam, Smirnoff, Burnett's, Luksusowa"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, New Amsterdam, Belvedere, Grey Goose, Stoli, Skyy, Pinnacle, Three Olives"
+gemini-1.5-flash,"Ketel One, Absolut, Grey Goose, Tito's, Smirnoff,  New Amsterdam,  Svedka,  Stoli,  Tanqueray,  Belvedere,  Chopin,  Ciroc"
+claude-3-sonnet-20240229,"For cocktail mixing, some vodka brands that offer good quality at an affordable price are: Tito's, Smirnoff, Skyy, New Amsterdam, Svedka."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 524: A timeout occurred</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">A timeout occurred</span>
+              <span class=""code-label"">Error code 524</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:11:06 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>The origin web server timed out responding to this request.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you're a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you're the owner of this website:</h3>
+      <p><span>The connection to the origin web server was made, but the origin web server timed out before responding. The likely cause is an overloaded background task, database or application, stressing the resources on your web server. To resolve, please work with your hosting provider or web development team to free up resources for your database or overloaded application.</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171926-Error-524"">Additional troubleshooting information here.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dacab730e52b045</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_524&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Tito's Handmade Vodka, Smirnoff, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Smirnoff, Tito's Handmade, Absolut, Skyy, Pinnacle, New Amsterdam, Ciroc"
+gemini-1.5-flash,"Tito's, Smirnoff, Absolut, Ketel One, Grey Goose, Chopin, Belvedere, Stoli"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Deep Eddy."
+grok-beta,"Smirnoff, Absolut, Svedka, Stolichnaya, Skyy"
+llama-v3p1-70b-instruct,"Tito's, Absolut, Ketel One, Grey Goose, Belvedere, Stolichnaya, Smirnoff, New Amsterdam, Svedka, Pinnacle"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Grey Goose, Skyy, Belvedere, New Amsterdam, Finlandia, Stoli, Svedka"
+gemini-1.5-flash,"Absolut, Smirnoff, Tito's, Ketel One, Grey Goose, New Amsterdam, Pinnacle, Svedka, Stoli,"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, Svedka, New Amsterdam, Luksusowa, Skyy."
+grok-beta,"Skyy, Tito's, Smirnoff, Absolut, New Amsterdam."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Svedka, New Amsterdam, Smirnoff"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Skyy, New Amsterdam, Svedka, Finlandia, Pinnacle, Belvedere, Stoli"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Grey Goose, Smirnoff, New Amsterdam, Svedka"
+claude-3-sonnet-20240229,"Some good vodka brands for cocktail mixing that offer quality and value are: Tito's, Smirnoff, Luksusowa, New Amsterdam, Svedka, Skyy."
+grok-beta,"Svedka, Absolut, New Amsterdam, Smirnoff, Pinnacle, Ketel One, Skyy, Finlandia, Grey Goose, Belvedere, Tito's."
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Stolichnaya, Smirnoff, Absolut, New Amsterdam, Deep Eddy"
+gpt-4o-mini,"Smirnoff, Tito's, Absolut, Skyy, New Amsterdam, Stoli, Prairie Organic, Finlandia, Crystal Head, Burnett's"
+gemini-1.5-flash,"Tito's,  Ketel One,  Absolut,  Grey Goose,  Smirnoff,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Absolut, Luksusowa, Sobieski."
+grok-beta,"Stolichnaya, Absolut, Svedka, Skyy, Tito's, Ketel One, Smirnoff, New Amsterdam, Pinnacle, Finlandia, Reyka, Grey Goose, Ciroc, Belvedere, Luksusowa, Wyborowa, Effen, Van Gogh, Burnett's, UV Vodka."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Svedka, Tito's Handmade Vodka, New Amsterdam, Smirnoff, Pinnacle"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Svedka, Finlandia, Belvedere, Skyy, Zubrowka, Grey Goose, New Amsterdam"
+gemini-1.5-flash,"Tito's, Absolut, Smirnoff, Ketel One, Grey Goose, Belvedere, Chopin,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Svedka, Absolut, Skyy, Pinnacle, Sobieski."
+grok-beta,"Smirnoff, Svedka, Titos, Absolut, New Amsterdam, Pinnacle, Skyy, Grey Goose, Belvedere, Ketel One,וח Ahabs"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Tito's Handmade Vodka, New Amsterdam, Svedka, Smirnoff, Belvedere, Pinnacle"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Belvedere, Grey Goose, Skyy, Finlandia, New Amsterdam, Deep Eddy, Stoli"
+gemini-1.5-flash,"Tito's, Absolut, Ketel One, Smirnoff, Grey Goose, New Amsterdam,  Stoli,  Tanqueray,  Belvedere,  Chopin"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka, Pinnacle, Deep Eddy."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:12:15 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dacae234ae2b087</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, New Amsterdam, Smirnoff, Svedka"
+gpt-4o-mini,"Tito's, Absolut, Smirnoff, Grey Goose, Stoli, Belvedere, New Amsterdam, Skyy, Finlandia, Crystal Head"
+gemini-1.5-flash,"Tito's, Smirnoff, Ketel One, Absolut, Grey Goose, Chopin, Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Absolut, Svedka, Skyy, Luksusowa."
+grok-beta,"Absolut, Tito's, Stolichnaya, Svedka, Smirnoff, Kettle One, Reyka, Skyy, New Amsterdam, Pinnacle"
+llama-v3p1-70b-instruct,"Absolut, Smirnoff, Stolichnaya, Grey Goose, Ketel One, Tito's Handmade Vodka, Svedka, New Amsterdam, Burnett's"
+gpt-4o-mini,"Absolut, Tito's Handmade, Smirnoff, Grey Goose, Pinnacle, Stolichnaya, Skyy, New Amsterdam, Svedka, Belvedere"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Smirnoff, Grey Goose"
+claude-3-sonnet-20240229,"Smirnoff, Tito's, New Amsterdam, Svedka, Luksusowa, Platinum."
+grok-beta,"Smirnoff, Stolichnaya, Tito's, Absolut, Svedka, Skyy, New Amsterdam, Ketel One, Platinum 7X, Luksusowa"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, Tito's Handmade Vodka, New Amsterdam, Burnett's, Pinnacle"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, New Amsterdam, Absolut, Skyy, Svedka, Grey Goose, Finlandia, Belvedere, Chopin"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, Stoli,  New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle, Absolut."
+grok-beta,"Smirnoff, Absolut, Svedka, Tito's, New Amsterdam, Skyy, Ketel One, Stoli, Pinnacle, Belvedere, Ciroc, Grey Goose, Effen, 360, UV, Finlandia, Stolichnaya, Burnett's, Monarch, Platinum."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Stolichnaya, Absolut, Svedka, New Amsterdam, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Absolut, Svedka, New Amsterdam, Smirnoff, Pinnacle, Skyy, Burnett's, Belvedere, Grey Goose"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Smirnoff, Grey Goose"
+claude-3-sonnet-20240229,"Tito's, Svedka, New Amsterdam, Smirnoff, Absolut, Skyy, Luksusowa, Pinnacle."
+grok-beta,"Absolut, Svedka, Smirnoff, Pinnacle, Stolichnaya, Skyy, Tito's, New Amsterdam, Finlandia, Ketel One"
+llama-v3p1-70b-instruct,"Tito's, Ketel One, Grey Goose, Belvedere, Stolichnaya, Absolut, Svedka, New Amsterdam, Pinnacle"
+gpt-4o-mini,"Tito's Handmade, Smirnoff, Absolut, Stoli, New Amsterdam, Skyy, Finlandia, Three Olives, Deep Eddy, Belvedere, Prairie Organic, Svedka"
+gemini-1.5-flash,"Tito's, Absolut, Ketel One, Smirnoff, Grey Goose, New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle."
+grok-beta,"Svedka, Skyy, Absolut, Smirnoff, New Amsterdam, Tito's, Grey Goose, Ketel One, Ciroc, Belvedere"
+llama-v3p1-70b-instruct,"Absolut, Stolichnaya, Ketel One, Tito's Handmade, Grey Goose, Belvedere, Smirnoff, New Amsterdam, Svedka, Burnett's"
+gpt-4o-mini,"Tito's Handmade, Ketel One, Smirnoff, Finlandia, Absolut, New Amsterdam, Skyy, Svedka, Belvedere, Russian Standard"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose, Belvedere, Chopin,  Stolichnaya,  Tanqueray,  Tanqueray No. Ten,  Plymouth,  Hendricks,  Beefeater,  Bombay Sapphire,  Gin Mare,  Aviation,  Monkey 47"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle, UV."
+grok-beta,"Smirnoff, Absolut, Stolichnaya, Svedka, Ketel One, Skyy, New Amsterdam, Pinnacle, UV Blue, Platinum"
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Smirnoff, Svedka, New Amsterdam, Tito's Handmade, Burnett's, Deep Eddy"
+gpt-4o-mini,"Tito's Handmade Vodka, Smirnoff, Absolut, New Amsterdam, Skyy, Belvedere, Stolichnaya, Finnish Vodka, Pinnacle, Svedka"
+gemini-1.5-flash,"Tito's, Smirnoff, Absolut, Ketel One, Grey Goose, Chopin, Belvedere, Stoli,"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Luksusowa."
+grok-beta,"Absolut,Tito's,Ketel One,Smirnoff,Svedka,New Amsterdam,Stoli,Vodka Belvedere,Three Olives,Pinnacle,лот							"
+llama-v3p1-70b-instruct,"Tito's Handmade Vodka, Ketel One, Grey Goose, Stolichnaya, Smirnoff, Absolut, New Amsterdam, Svedka, Burnett's, Pinnacle"
+gpt-4o-mini,"Tito's Handmade, New Amsterdam, Smirnoff, Absolut, Skyy, Svedka, Finlandia, Stolichnaya, Belvedere, Grey Goose"
+gemini-1.5-flash,"Smirnoff, Tito's, Absolut, Ketel One, Grey Goose, Chopin, Belvedere,  Stoli,  Tanqueray,  New Amsterdam,  Svedka"
+claude-3-sonnet-20240229,"Some vodka brands that offer good quality and value for cocktail mixing include: Tito's, New Amsterdam, Smirnoff, Skyy, Svedka, Tavalon, Luksusowa."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:13:27 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dacafe55ff269e7</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Absolut, Ketel One, Grey Goose, Stolichnaya, Tito's Handmade Vodka, New Amsterdam, Svedka, Smirnoff, Burnett's"
+gpt-4o-mini,"Tito's Handmade Vodka, Stoli, Grey Goose, New Amsterdam, Absolut, Smirnoff, Belvedere, Skyy, Finlandia, Deep Eddy"
+gemini-1.5-flash,"Smirnoff, Absolut, Ketel One, Tito's, Grey Goose, New Amsterdam,  Stoli,  Skyy,  Tanqueray,  Ciroc."
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Absolut, Svedka, Skyy."
+grok-beta,"Smirnoff, Absolut, Titos, Grey Goose, Stolichnaya, Kettle One, Svedka, Skyy, New Amsterdam, Pinnacle, Ciroc, Belvedere, Van Gogh, Finlandia, Sobieski."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Stolichnaya, Absolut, Tito's Handmade, New Amsterdam, Smirnoff, Svedka"
+gpt-4o-mini,"Tito's Handmade Vodka, Absolut, Smirnoff, Svedka, New Amsterdam, Pinnacle, Skyy, Stoli, Finlandia, Grey Goose"
+gemini-1.5-flash,"Tito's, Ketel One, Absolut, Smirnoff, Grey Goose, New Amsterdam"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, Skyy, New Amsterdam, Svedka, Pinnacle."
+grok-beta,"Error with Grok API: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class=""no-js ie6 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 7]>    <html class=""no-js ie7 oldie"" lang=""en-US""> <![endif]-->
+<!--[if IE 8]>    <html class=""no-js ie8 oldie"" lang=""en-US""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""no-js"" lang=""en-US""> <!--<![endif]-->
+<head>
+
+
+<title>api.x.ai | 520: Web server is returning an unknown error</title>
+<meta charset=""UTF-8"" />
+<meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" />
+<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge"" />
+<meta name=""robots"" content=""noindex, nofollow"" />
+<meta name=""viewport"" content=""width=device-width,initial-scale=1"" />
+<link rel=""stylesheet"" id=""cf_styles-css"" href=""/cdn-cgi/styles/main.css"" />
+
+
+</head>
+<body>
+<div id=""cf-wrapper"">
+    <div id=""cf-error-details"" class=""p-0"">
+        <header class=""mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"">
+            <h1 class=""inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"">
+              <span class=""inline-block"">Web server is returning an unknown error</span>
+              <span class=""code-label"">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">cloudflare.com</a> for more information.
+            </div>
+            <div class=""mt-3"">2024-10-30 16:14:29 UTC</div>
+        </header>
+        <div class=""my-8 bg-gradient-gray"">
+            <div class=""w-240 lg:w-full mx-auto"">
+                <div class=""clearfix md:px-8"">
+                  
+<div id=""cf-browser-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">You</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Browser
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-cloudflare-status"" class="" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    <span class=""cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    </a>
+  </div>
+  <span class=""md:block w-full truncate"">Atlanta</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    <a href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" target=""_blank"" rel=""noopener noreferrer"">
+    Cloudflare
+    </a>
+  </h3>
+  <span class=""leading-1.3 text-2xl text-green-success"">Working</span>
+</div>
+
+<div id=""cf-host-status"" class=""cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"">
+  <div class=""relative mb-10 md:m-0"">
+    
+    <span class=""cf-icon-server block md:hidden h-20 bg-center bg-no-repeat""></span>
+    <span class=""cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4""></span>
+    
+  </div>
+  <span class=""md:block w-full truncate"">api.x.ai</span>
+  <h3 class=""md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"">
+    
+    Host
+    
+  </h3>
+  <span class=""leading-1.3 text-2xl text-red-error"">Error</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=""w-240 lg:w-full mx-auto mb-8 lg:px-8"">
+            <div class=""clearfix"">
+                <div class=""w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+                <div class=""w-1/2 md:w-full float-left leading-relaxed"">
+                    <h2 class=""text-3xl font-normal leading-1.3 mb-4"">What can I do?</h2>
+                          <h3 class=""text-15 font-semibold mb-2"">If you are a visitor of this website:</h3>
+      <p class=""mb-6"">Please try again in a few minutes.</p>
+
+      <h3 class=""text-15 font-semibold mb-2"">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel=""noopener noreferrer"" href=""https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=""cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"">
+  <p class=""text-13"">
+    <span class=""cf-footer-item sm:block sm:mb-1"">Cloudflare Ray ID: <strong class=""font-semibold"">8dacb169c8a5bffb</strong></span>
+    <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    <span id=""cf-footer-item-ip"" class=""cf-footer-item hidden sm:block sm:mb-1"">
+      Your IP:
+      <button type=""button"" id=""cf-footer-ip-reveal"" class=""cf-footer-ip-reveal-btn"">Click to reveal</button>
+      <span class=""hidden"" id=""cf-footer-ip"">34.139.106.238</span>
+      <span class=""cf-footer-separator sm:hidden"">&bull;</span>
+    </span>
+    <span class=""cf-footer-item sm:block sm:mb-1""><span>Performance &amp; security by</span> <a rel=""noopener noreferrer"" href=""https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=api.x.ai"" id=""brand_link"" target=""_blank"">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById(""cf-footer-item-ip""),c=a.getElementById(""cf-footer-ip-reveal"");b&&""classList""in b&&(b.classList.remove(""hidden""),c.addEventListener(""click"",function(){c.classList.add(""hidden"");a.getElementById(""cf-footer-ip"").classList.remove(""hidden"")}))}var a=document;document.addEventListener&&a.addEventListener(""DOMContentLoaded"",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, Svedka, New Amsterdam, Smirnoff, Belvedere"
+gpt-4o-mini,"Tito's, Absolut, Smirnoff, New Amsterdam, Skyy, Stoli, Grey Goose, Belvedere, Finlandia, Pinnacle"
+gemini-1.5-flash,"Smirnoff, Ketel One, Absolut, Tito's, Grey Goose,  New Amsterdam,  Tanqueray,  Stoli,  Belvedere,  Chopin,  Skyy,  Ciroc,  Hangar 1,  Deep Eddy,  Milagro,  Prairie Organic,  Three Olives,  UV,  Svedka"
+claude-3-sonnet-20240229,"Tito's, New Amsterdam, Smirnoff, Absolut, Svedka, Skyy, Pinnacle."
+grok-beta,"Smirnoff, Absolut, Titos, Svedka, Finlandia, Ketel One, Stolichnaya, Grey Goose, Belvedere, Skyy, New Amsterdam, Pinnacle, Ciroc, Luksusowa, Wodka, Eristoff, Reyka, Monopolowa, Burnett, UV, Platinum, Western Son, Deep Eddy, Karkov, Sobieski, Aristocrat, Popov, Gordon's, McCormick, Arrow, Wolfschmidt, Oglethorpe, Vladimir, Georgian Bay, Taaka, Medea, Royal Gate, Yukon Jack, Denaka, Khortytsa, Pur, Minskaya, Smirnoff Ice, Absolute Citron, Absolut Vodka, Titos, Svedka, Ciroc, Luksusowa, Eristoff, Reyka, Monopolowa, Burnett, UV, Platinum, Western Son, Deep Eddy, Karkov, Sobieski, Aristocrat, Popov, Gordon's, McCormick, Arrow, Wolfschmidt, Oglethorpe, Vladimir, Georgian Bay, Taaka, Medea, Royal Gate, Yukon Jack, Denaka, Khortytsa, Pur, Minskaya, Smirnoff, Absolut, Titos, Svedka, Finlandia, Ketel One, Stolichnaya, Grey Goose, Belvedere, Skyy, New Amsterdam, Pinnacle, Ciroc, Luksusowa, Wodka, Eristoff, Reyka, Monopolowa, Burnett, UV, Platinum, Western Son, Deep Eddy, Karkov, Sobieski, Aristocrat, Popov, Gordon's, McCormick, Arrow, Wolfschmidt, Oglethorpe, Vladimir, Georgian Bay, Taaka, Medea, Royal Gate, Yukon Jack, Denaka, Khortytsa, Pur, Minskaya, Smirnoff Ice, Absolute Citron"
+llama-v3p1-70b-instruct,"Tito's, Grey Goose, Ketel One, Absolut, Stolichnaya, New Amsterdam, Smirnoff, Belvedere"
+gpt-4o-mini,"Tito's Handmade, Absolut, Smirnoff, Skyy, New Amsterdam, Burnett's, Stoli, Svedka, Vladivar, Finlandia"
+gemini-1.5-flash,"Smirnoff, Absolut, Tito's, Ketel One, Grey Goose, New Amsterdam,  Stolichnaya,  Skyy,  Tanqueray,  Belvedere"
+claude-3-sonnet-20240229,"Tito's, Smirnoff, New Amsterdam, Skyy, Svedka."
+grok-beta,"Svedka, Absolut, Tito's, Smirnoff, New Amsterdam, Skyy, Pinnacle, Effen, Stoli, Reyka."
+llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Tito's Handmade Vodka, Absolut, Stolichnaya, Svedka, New Amsterdam, Burnett's, Smirnoff"
