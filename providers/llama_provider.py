@@ -1,10 +1,10 @@
 import os
-from openai import AsyncOpenAI
+from openai import OpenAI
 from .base import LLMProvider
 
 class LlamaProvider(LLMProvider):
     def __init__(self):
-        self.client = AsyncOpenAI(
+        self.client = OpenAI(
             base_url="https://api.fireworks.ai/inference/v1",
             api_key=os.environ.get("FIREWORKS_API_KEY")
         )
@@ -13,14 +13,14 @@ class LlamaProvider(LLMProvider):
     def name(self) -> str:
         return "llama-v3p1-70b-instruct"
 
-    async def generate_response_async(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
+    def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ]
             
-            response = await self.client.chat.completions.create(
+            response = self.client.chat.completions.create(
                 model="accounts/fireworks/models/llama-v3p1-70b-instruct",
                 messages=messages,
                 temperature=temperature

@@ -1,18 +1,18 @@
 import os
-from openai import AsyncOpenAI
+from openai import OpenAI
 from .base import LLMProvider
 
 class OpenAIProvider(LLMProvider):
     def __init__(self):
-        self.client = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+        self.client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
         
     @property
     def name(self) -> str:
         return "gpt-4o-mini"
 
-    async def generate_response_async(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
+    def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
-            response = await self.client.chat.completions.create(
+            response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": system_prompt},

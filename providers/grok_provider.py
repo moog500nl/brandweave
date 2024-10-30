@@ -1,5 +1,5 @@
 import os
-import aiohttp
+import requests
 from .base import LLMProvider
 
 class GrokProvider(LLMProvider):
@@ -15,7 +15,7 @@ class GrokProvider(LLMProvider):
     def name(self) -> str:
         return "grok-beta"
 
-    async def generate_response_async(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
+    def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             payload = {
                 "messages": [
@@ -27,17 +27,17 @@ class GrokProvider(LLMProvider):
                 "temperature": temperature
             }
             
-            async with aiohttp.ClientSession() as session:
-                async with session.post(
-                    self.api_url,
-                    headers=self.headers,
-                    json=payload
-                ) as response:
-                    if response.status != 200:
-                        return f"Error with Grok API: {await response.text()}"
-                    
-                    data = await response.json()
-                    return data['choices'][0]['message']['content']
+            response = requests.post(
+                self.api_url,
+                headers=self.headers,
+                json=payload
+            )
+            
+            if response.status_code != 200:
+                return f"Error with Grok API: {response.text}"
+                
+            data = response.json()
+            return data['choices'][0]['message']['content']
             
         except Exception as e:
             return f"Error with Grok: {str(e)}"
