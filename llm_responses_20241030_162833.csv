@@ -1,0 +1,16 @@
+model,response,execution_time_seconds
+gpt-4o-mini,Grey Goose,0.60
+gemini-1.5-flash,Absolut,0.37
+claude-3-sonnet-20240229,Tito's,0.53
+grok-beta,Absolut,0.38
+llama-v3p1-70b-instruct,Grey Goose,0.72
+gpt-4o-mini,Grey Goose,0.29
+gemini-1.5-flash,Grey Goose,0.26
+claude-3-sonnet-20240229,Tito's,0.50
+grok-beta,Absolut,0.35
+llama-v3p1-70b-instruct,Grey Goose,2.12
+gpt-4o-mini,Belvedere,0.32
+gemini-1.5-flash,Absolut,0.25
+claude-3-sonnet-20240229,Tito's,0.33
+grok-beta,Grey Goose,0.38
+llama-v3p1-70b-instruct,Grey Goose,0.89
