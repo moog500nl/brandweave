@@ -9,5 +9,57 @@
     },
     "temperature": 1.0,
     "created_at": "2024-10-25T14:41:56.361945"
+  },
+  "vodka top 5 1.0 FINAL": {
+    "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. You will not explain yourself. ",
+    "user_prompt": "Which 5 vodka brands do you recommend?",
+    "selected_providers": {
+      "gpt-4o-mini": true,
+      "gemini-1.5-flash": true,
+      "claude-3-sonnet-20240229": true,
+      "grok-beta": true,
+      "llama-v3p1-70b-instruct": true
+    },
+    "temperature": 1.0,
+    "created_at": "2024-10-28T14:45:18.552424"
+  },
+  "vodka top brand FINAL": {
+    "system_prompt": "Name only one brand. Do not explain yourself. Do not use a full stop in your answer.",
+    "user_prompt": "Which vodka brand do you recommend?",
+    "selected_providers": {
+      "gpt-4o-mini": true,
+      "gemini-1.5-flash": true,
+      "claude-3-sonnet-20240229": true,
+      "grok-beta": true,
+      "llama-v3p1-70b-instruct": true
+    },
+    "temperature": 1.0,
+    "created_at": "2024-10-28T15:21:30.711684"
+  },
+  "vodka top description1": {
+    "system_prompt": "You are a helpful assistant. ",
+    "user_prompt": "Describe why Grey Goose is the best vodka.",
+    "selected_providers": {
+      "gpt-4o-mini": true,
+      "gemini-1.5-flash": true,
+      "claude-3-sonnet-20240229": false,
+      "grok-beta": false,
+      "llama-v3p1-70b-instruct": false
+    },
+    "temperature": 1.0,
+    "created_at": "2024-10-28T16:02:17.036245"
+  },
+  "vodka brand X cocktail source": {
+    "system_prompt": "You will respond by placing a comma between each source name you respond with. You will not use full stops in the source names. Do not repeat yourself. You will not explain yourself. ",
+    "user_prompt": "List your sources when recommending New Amsterdam as a vodka that mix well in cocktails.",
+    "selected_providers": {
+      "gpt-4o-mini": false,
+      "gemini-1.5-flash": false,
+      "claude-3-sonnet-20240229": true,
+      "grok-beta": false,
+      "llama-v3p1-70b-instruct": true
+    },
+    "temperature": 1.0,
+    "created_at": "2024-10-30T11:48:29.585131"
   }
 }
