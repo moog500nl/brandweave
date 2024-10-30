@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
@@ -149,16 +150,23 @@ def main():
                         status_containers[provider_name].info(f"Querying {provider_name}...")
                         
                         try:
+                            # Start timing
+                            start_time = time.time()
+                            
                             response = provider.generate_response(
                                 system_prompt,
                                 user_prompt,
                                 temperature
                             )
-                            responses.append((provider.name, response))
-                            status_containers[provider_name].success(f"{provider_name}: Response received")
+                            
+                            # Calculate execution time
+                            execution_time = time.time() - start_time
+                            
+                            responses.append((provider.name, response, f"{execution_time:.2f}"))
+                            status_containers[provider_name].success(f"{provider_name}: Response received in {execution_time:.2f}s")
                         except Exception as e:
                             error_msg = f"Error with {provider_name}: {str(e)}"
-                            responses.append((provider.name, error_msg))
+                            responses.append((provider.name, error_msg, "0.00"))
                             status_containers[provider_name].error(error_msg)
                         
                         # Update progress
