@@ -11,6 +11,15 @@ from utils.template_manager import (
 )
 import time
 
+def format_execution_time(seconds: float) -> str:
+    """Format execution time in minutes and seconds"""
+    minutes = int(seconds // 60)
+    remaining_seconds = int(seconds % 60)
+    
+    if minutes > 0:
+        return f"{minutes} minute{'s' if minutes != 1 else ''} and {remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
+    return f"{remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
+
 def initialize_providers():
     return {
         "gpt-4o-mini": OpenAIProvider(),
@@ -177,8 +186,8 @@ def main():
                 container.empty()
             progress_bar.empty()
             
-            # Display execution time
-            st.info(f"Total execution time: {total_execution_time:.2f} seconds")
+            # Display execution time in formatted string
+            st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
             
             # Save to CSV
             if responses:
