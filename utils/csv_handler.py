@@ -10,12 +10,9 @@ def save_responses_to_csv(responses: list[tuple[str, str]], execution_time: floa
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"llm_responses_{timestamp}.csv"
     
-    # Create DataFrame with responses
+    # Create DataFrame with responses only
     df = pd.DataFrame(responses, columns=['model', 'response'])
     
-    # Add execution time if provided
-    if execution_time is not None:
-        df['total_execution_time_seconds'] = execution_time
-    
+    # Save to CSV without execution time
     df.to_csv(filename, index=False, quoting=csv.QUOTE_MINIMAL)
     return filename
