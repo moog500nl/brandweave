@@ -1,4 +1,5 @@
 import streamlit as st
+import asyncio
 from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
@@ -18,6 +19,18 @@ def initialize_providers():
         "grok-beta": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider()
     }
+
+async def generate_responses_concurrently(providers, selected_providers, system_prompt, user_prompt, temperature):
+    tasks = []
+    for provider_name, provider in providers.items():
+        if selected_providers[provider_name]:
+            tasks.append(provider.generate_response_async(system_prompt, user_prompt, temperature))
+    
+    responses = await asyncio.gather(*tasks)
+    return [(name, resp) for (name, _), resp in zip(
+        [(n, p) for n, p in providers.items() if selected_providers[n]],
+        responses
+    )]
 
 def main():
     st.set_page_config(page_title="LLM Comparison Tool", layout="wide")
@@ -126,22 +139,19 @@ def main():
             st.error("Please enter a user prompt")
             return
 
-        responses = []
+        all_responses = []
         
         with st.spinner("Generating responses..."):
             for _ in range(num_submissions):
-                for provider_name, provider in providers.items():
-                    if selected_providers[provider_name]:
-                        response = provider.generate_response(
-                            system_prompt,
-                            user_prompt,
-                            temperature
-                        )
-                        responses.append((provider.name, response))
+                # Run concurrent API calls for each submission
+                responses = asyncio.run(generate_responses_concurrently(
+                    providers, selected_providers, system_prompt, user_prompt, temperature
+                ))
+                all_responses.extend(responses)
 
         # Save to CSV
-        if responses:
-            filename = save_responses_to_csv(responses)
+        if all_responses:
+            filename = save_responses_to_csv(all_responses)
             st.success(f"Responses have been saved to CSV file: {filename}")
             
             with open(filename, 'rb') as f:
