@@ -9,6 +9,7 @@ from utils.template_manager import (
     save_template, get_template, delete_template,
     list_templates
 )
+import time
 
 def initialize_providers():
     return {
@@ -139,6 +140,9 @@ def main():
         # Create status containers for each provider
         status_containers = {provider: st.empty() for provider in providers.keys()}
         
+        # Add execution time tracking
+        start_time = time.time()
+        
         try:
             for submission_idx in range(num_submissions):
                 progress_container.text(f"Processing submission {submission_idx + 1}/{num_submissions}")
@@ -165,14 +169,20 @@ def main():
                         current_call += 1
                         progress_bar.progress(current_call / total_calls)
             
+            # Calculate total execution time
+            total_execution_time = time.time() - start_time
+            
             progress_container.empty()
             for container in status_containers.values():
                 container.empty()
             progress_bar.empty()
             
+            # Display execution time
+            st.info(f"Total execution time: {total_execution_time:.2f} seconds")
+            
             # Save to CSV
             if responses:
-                filename = save_responses_to_csv(responses)
+                filename = save_responses_to_csv(responses, total_execution_time)
                 st.success(f"Responses have been saved to CSV file: {filename}")
                 
                 with open(filename, 'rb') as f:
