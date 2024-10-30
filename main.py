@@ -128,29 +128,67 @@ def main():
 
         responses = []
         
-        with st.spinner("Generating responses..."):
-            for _ in range(num_submissions):
+        # Create a progress container
+        progress_container = st.empty()
+        
+        # Calculate total number of API calls
+        total_calls = sum(1 for p in selected_providers.values() if p) * num_submissions
+        progress_bar = st.progress(0)
+        current_call = 0
+        
+        # Create status containers for each provider
+        status_containers = {provider: st.empty() for provider in providers.keys()}
+        
+        try:
+            for submission_idx in range(num_submissions):
+                progress_container.text(f"Processing submission {submission_idx + 1}/{num_submissions}")
+                
                 for provider_name, provider in providers.items():
                     if selected_providers[provider_name]:
-                        response = provider.generate_response(
-                            system_prompt,
-                            user_prompt,
-                            temperature
-                        )
-                        responses.append((provider.name, response))
-
-        # Save to CSV
-        if responses:
-            filename = save_responses_to_csv(responses)
-            st.success(f"Responses have been saved to CSV file: {filename}")
+                        # Update status for current provider
+                        status_containers[provider_name].info(f"Querying {provider_name}...")
+                        
+                        try:
+                            response = provider.generate_response(
+                                system_prompt,
+                                user_prompt,
+                                temperature
+                            )
+                            responses.append((provider.name, response))
+                            status_containers[provider_name].success(f"{provider_name}: Response received")
+                        except Exception as e:
+                            error_msg = f"Error with {provider_name}: {str(e)}"
+                            responses.append((provider.name, error_msg))
+                            status_containers[provider_name].error(error_msg)
+                        
+                        # Update progress
+                        current_call += 1
+                        progress_bar.progress(current_call / total_calls)
             
-            with open(filename, 'rb') as f:
-                st.download_button(
-                    label="Download CSV",
-                    data=f,
-                    file_name=filename,
-                    mime='text/csv'
-                )
+            progress_container.empty()
+            for container in status_containers.values():
+                container.empty()
+            progress_bar.empty()
+            
+            # Save to CSV
+            if responses:
+                filename = save_responses_to_csv(responses)
+                st.success(f"Responses have been saved to CSV file: {filename}")
+                
+                with open(filename, 'rb') as f:
+                    st.download_button(
+                        label="Download CSV",
+                        data=f,
+                        file_name=filename,
+                        mime='text/csv'
+                    )
+        except Exception as e:
+            st.error(f"An error occurred: {str(e)}")
+            # Clean up progress indicators
+            progress_container.empty()
+            for container in status_containers.values():
+                container.empty()
+            progress_bar.empty()
 
 if __name__ == "__main__":
     main()
