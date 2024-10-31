@@ -18,7 +18,8 @@ class OpenAIProvider(LLMProvider):
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                temperature=temperature
+                temperature=temperature,
+                max_tokens=1000
             )
             content = response.choices[0].message.content
             if content is None:

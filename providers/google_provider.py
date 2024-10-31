@@ -17,7 +17,8 @@ class GoogleProvider(LLMProvider):
             response = self.model.generate_content(
                 combined_prompt,
                 generation_config=genai.types.GenerationConfig(
-                    temperature=temperature
+                    temperature=temperature,
+                    max_output_tokens=1000           
                 )
             )
             return response.text.strip()

@@ -24,7 +24,8 @@ class GrokProvider(LLMProvider):
                 ],
                 "model": "grok-beta",
                 "stream": False,
-                "temperature": temperature
+                "temperature": temperature,
+                "max_tokens": 1000
             }
             
             response = requests.post(

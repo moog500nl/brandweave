@@ -23,7 +23,8 @@ class LlamaProvider(LLMProvider):
             response = self.client.chat.completions.create(
                 model="accounts/fireworks/models/llama-v3p1-70b-instruct",
                 messages=messages,
-                temperature=temperature
+                temperature=temperature,
+                max_tokens=1000
             )
             
             content = response.choices[0].message.content
