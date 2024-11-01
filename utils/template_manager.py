@@ -8,13 +8,20 @@ TEMPLATES_FILE = os.path.join(TEMPLATES_DIR, "prompt_templates.json")
 CUSTOM_NAMES_FILE = os.path.join(TEMPLATES_DIR, "custom_model_names.json")
 
 def ensure_templates_dir():
-    """Ensure templates directory exists"""
+    """Ensure templates directory and files exist"""
+    # Create templates directory if it doesn't exist
     if not os.path.exists(TEMPLATES_DIR):
         os.makedirs(TEMPLATES_DIR)
+    
+    # Create templates file if it doesn't exist
     if not os.path.exists(TEMPLATES_FILE):
-        save_templates({})
+        with open(TEMPLATES_FILE, 'w') as f:
+            json.dump({}, f, indent=2)
+    
+    # Create custom names file if it doesn't exist
     if not os.path.exists(CUSTOM_NAMES_FILE):
-        save_custom_names({})
+        with open(CUSTOM_NAMES_FILE, 'w') as f:
+            json.dump({}, f, indent=2)
 
 def load_templates() -> Dict:
     """Load all saved templates"""
