@@ -21,21 +21,12 @@ def format_execution_time(seconds: float) -> str:
     return f"{remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
 
 def initialize_providers():
-    # Define default model names - these could be moved to a configuration file
-    default_models = {
-        "openai": "gpt-4o-mini",
-        "google": "gemini-1.5-flash",
-        "anthropic": "claude-3-sonnet-20240229",
-        "grok": "grok-beta",
-        "llama": "accounts/fireworks/models/llama-v3p1-70b-instruct"
-    }
-    
     return {
-        default_models["openai"]: OpenAIProvider(model_name=default_models["openai"]),
-        default_models["google"]: GoogleProvider(model_name=default_models["google"]),
-        default_models["anthropic"]: AnthropicProvider(model_name=default_models["anthropic"]),
-        default_models["grok"]: GrokProvider(model_name=default_models["grok"]),
-        default_models["llama"]: LlamaProvider(model_name=default_models["llama"])
+        "gpt-4o-mini": OpenAIProvider(),
+        "gemini-1.5-flash": GoogleProvider(),
+        "claude-3-sonnet-20240229": AnthropicProvider(),
+        "grok-beta": GrokProvider(),
+        "llama-v3p1-70b-instruct": LlamaProvider()
     }
 
 def main():

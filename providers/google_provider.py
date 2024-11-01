@@ -3,11 +3,14 @@ import google.generativeai as genai
 from .base import LLMProvider
 
 class GoogleProvider(LLMProvider):
-    def __init__(self, model_name: str = "gemini-1.5-flash"):
-        super().__init__(model_name)
+    def __init__(self):
         genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
-        self.model = genai.GenerativeModel(model_name)
+        self.model = genai.GenerativeModel('gemini-1.5-flash')
         
+    @property
+    def name(self) -> str:
+        return "gemini-1.5-flash"
+
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             combined_prompt = f"{system_prompt}\n\n{user_prompt}"

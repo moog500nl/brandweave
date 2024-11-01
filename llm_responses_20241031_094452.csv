@@ -1,0 +1,16 @@
+model,response
+gpt-4o-mini,Grey Goose
+gemini-1.5-flash,Absolut
+claude-3-sonnet-20240229,Tito's
+grok-beta,Absolut
+llama-v3p1-70b-instruct,Grey Goose
+gpt-4o-mini,Belvedere
+gemini-1.5-flash,Absolut
+claude-3-sonnet-20240229,Tito's
+grok-beta,Grey Goose
+llama-v3p1-70b-instruct,Grey Goose
+gpt-4o-mini,Grey Goose
+gemini-1.5-flash,Grey Goose
+claude-3-sonnet-20240229,Ketel One
+grok-beta,Absolut
+llama-v3p1-70b-instruct,Grey Goose
