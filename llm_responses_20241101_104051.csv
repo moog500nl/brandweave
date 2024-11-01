@@ -1,0 +1,11 @@
+model,response
+gpt-4o-mini,"Grey Goose, Belvedere, Ketel One, Tito's Handmade, Absolut, Stolichnaya, Finlandia, Van Gogh, Ciroc, Skyy"
+gemini-1.5-flash,"Grey Goose, Belvedere, Absolut, Ketel One, Tito's, Chopin, Stoli,  Smirnoff,  Tanqueray,  Ciroc"
+claude-3-sonnet-20240229,"Tito's, Absolut, Grey Goose, Ketel One, Smirnoff, Skyy, Belvedere, Chopin, Ciroc, Stolichnaya."
+grok-beta,"Belvedere, Stolichnaya, Grey Goose, Absolut, Ketel One, Ciroc, Chopin, Smirnoff, Tito's, Hangar 1."
+accounts/fireworks/models/llama-v3p1-70b-instruct,"Grey Goose, Ketel One, Belvedere, Absolut, Stolichnaya, Smirnoff, Tito's, Cîroc, Pinnacle, New Amsterdam"
+gpt-4o-mini,"Grey Goose, Belvedere, Ketel One, Tito's Handmade, Absolut, Smirnoff, Skyy, Ciroc, Stolichnaya, Finlandia"
+gemini-1.5-flash,"Absolut, Belvedere, Chopin, Ciroc, Grey Goose, Ketel One, Stoli, Tito's,  Tanqueray,  Smirnoff"
+claude-3-sonnet-20240229,"Absolut, Grey Goose, Ketel One, Belvedere, Ciroc, Tito's, Smirnoff, Stolichnaya, Skyy, Svedka."
+grok-beta,"Absolut, Belvedere, Grey Goose, Ketel One, Stolichnaya, Titos, Ciroc, Smirnoff, Skyy, Van Gogh."
+accounts/fireworks/models/llama-v3p1-70b-instruct,"Absolut, Grey Goose, Ketel One, Stolichnaya, Smirnoff, Belvedere, Cîroc, Tito's, Svedka, Skyy"
