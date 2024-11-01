@@ -5,6 +5,7 @@ from datetime import datetime
 
 TEMPLATES_DIR = "templates"
 TEMPLATES_FILE = os.path.join(TEMPLATES_DIR, "prompt_templates.json")
+CUSTOM_NAMES_FILE = os.path.join(TEMPLATES_DIR, "custom_model_names.json")
 
 def ensure_templates_dir():
     """Ensure templates directory exists"""
@@ -12,6 +13,8 @@ def ensure_templates_dir():
         os.makedirs(TEMPLATES_DIR)
     if not os.path.exists(TEMPLATES_FILE):
         save_templates({})
+    if not os.path.exists(CUSTOM_NAMES_FILE):
+        save_custom_names({})
 
 def load_templates() -> Dict:
     """Load all saved templates"""
@@ -29,8 +32,9 @@ def save_templates(templates: Dict):
         json.dump(templates, f, indent=2)
 
 def save_template(name: str, system_prompt: str, user_prompt: str, 
-                 selected_providers: Dict[str, bool], temperature: float) -> bool:
-    """Save a new template with model settings"""
+                 selected_providers: Dict[str, bool], temperature: float,
+                 custom_names: Dict[str, str] = None) -> bool:
+    """Save a new template with model settings and custom names"""
     templates = load_templates()
     if not name:
         return False
@@ -40,6 +44,7 @@ def save_template(name: str, system_prompt: str, user_prompt: str,
         'user_prompt': user_prompt,
         'selected_providers': selected_providers,
         'temperature': temperature,
+        'custom_names': custom_names or {},
         'created_at': datetime.now().isoformat()
     }
     save_templates(templates)
@@ -62,3 +67,18 @@ def delete_template(name: str) -> bool:
 def list_templates() -> List[str]:
     """Get list of all template names"""
     return list(load_templates().keys())
+
+def load_custom_names() -> Dict[str, str]:
+    """Load saved custom model names"""
+    ensure_templates_dir()
+    try:
+        with open(CUSTOM_NAMES_FILE, 'r') as f:
+            return json.load(f)
+    except (json.JSONDecodeError, FileNotFoundError):
+        return {}
+
+def save_custom_names(custom_names: Dict[str, str]):
+    """Save custom model names"""
+    ensure_templates_dir()
+    with open(CUSTOM_NAMES_FILE, 'w') as f:
+        json.dump(custom_names, f, indent=2)

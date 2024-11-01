@@ -8,12 +8,12 @@ class OpenAIProvider(LLMProvider):
         
     @property
     def name(self) -> str:
-        return "gpt-4o-mini"
+        return "chatgpt-4o-latest"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="chatgpt-4o-latest",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}

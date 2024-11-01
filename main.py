@@ -7,7 +7,7 @@ from providers.llama_provider import LlamaProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
-    list_templates
+    list_templates, load_custom_names, save_custom_names
 )
 import time
 
@@ -36,17 +36,47 @@ def main():
     # Initialize providers
     providers = initialize_providers()
 
+    # Load custom names
+    if 'custom_names' not in st.session_state:
+        st.session_state.custom_names = load_custom_names()
+
     # Sidebar controls
     st.sidebar.header("Settings")
     
-    # Initialize selected providers with session state
+    # Model Settings Section
+    st.sidebar.subheader("Model Settings")
+    
+    # Initialize selected providers and custom names with session state
     selected_providers = {}
+    show_custom_names = st.sidebar.checkbox("Customize Model Names", 
+                                          value=st.session_state.get('show_custom_names', False))
+    st.session_state['show_custom_names'] = show_custom_names
+    
+    # Custom name inputs if enabled
+    if show_custom_names:
+        st.sidebar.markdown("---")
+        st.sidebar.subheader("Custom Model Names")
+        for provider_name in providers.keys():
+            custom_name = st.sidebar.text_input(
+                f"Custom name for {provider_name}",
+                value=st.session_state.custom_names.get(provider_name, provider_name),
+                key=f"custom_name_{provider_name}"
+            )
+            st.session_state.custom_names[provider_name] = custom_name
+        
+        if st.sidebar.button("Save Custom Names"):
+            save_custom_names(st.session_state.custom_names)
+            st.sidebar.success("Custom names saved!")
+    
+    # Provider selection checkboxes
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Select Models")
     for provider_name in providers.keys():
+        display_name = st.session_state.custom_names.get(provider_name, provider_name)
         selected_providers[provider_name] = st.sidebar.checkbox(
-            f"Use {provider_name}",
+            f"Use {display_name}",
             value=st.session_state.get(f'selected_{provider_name}', True)
         )
-        # Update session state
         st.session_state[f'selected_{provider_name}'] = selected_providers[provider_name]
 
     temperature = st.sidebar.slider(
@@ -88,6 +118,8 @@ def main():
                             st.session_state[f'selected_{provider_name}'] = selected
                     if 'temperature' in template:
                         st.session_state['temperature'] = template['temperature']
+                    if 'custom_names' in template:
+                        st.session_state.custom_names.update(template['custom_names'])
                     st.rerun()
             
             if st.sidebar.button("Delete Selected Template"):
@@ -121,7 +153,7 @@ def main():
         if st.button("Save as Template"):
             if new_template_name and system_prompt and user_prompt:
                 if save_template(new_template_name, system_prompt, user_prompt, 
-                               selected_providers, temperature):
+                               selected_providers, temperature, st.session_state.custom_names):
                     st.success(f"Template '{new_template_name}' saved successfully!")
                     st.rerun()
             else:
@@ -158,8 +190,11 @@ def main():
                 
                 for provider_name, provider in providers.items():
                     if selected_providers[provider_name]:
+                        # Get custom name for display
+                        display_name = st.session_state.custom_names.get(provider_name, provider_name)
+                        
                         # Update status for current provider
-                        status_containers[provider_name].info(f"Querying {provider_name}...")
+                        status_containers[provider_name].info(f"Querying {display_name}...")
                         
                         try:
                             response = provider.generate_response(
@@ -167,11 +202,12 @@ def main():
                                 user_prompt,
                                 temperature
                             )
-                            responses.append((provider.name, response))
-                            status_containers[provider_name].success(f"{provider_name}: Response received")
+                            # Use custom name in responses
+                            responses.append((display_name, response))
+                            status_containers[provider_name].success(f"{display_name}: Response received")
                         except Exception as e:
-                            error_msg = f"Error with {provider_name}: {str(e)}"
-                            responses.append((provider.name, error_msg))
+                            error_msg = f"Error with {display_name}: {str(e)}"
+                            responses.append((display_name, error_msg))
                             status_containers[provider_name].error(error_msg)
                         
                         # Update progress
