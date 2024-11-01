@@ -1,1 +1,7 @@
-{}
+{
+  "gpt-4o-mini": "chatgpt-4o-latest",
+  "gemini-1.5-flash": "gemini-1.5-flash",
+  "claude-3-sonnet-20240229": "claude-3-sonnet-20240229",
+  "grok-beta": "grok-beta",
+  "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct"
+}
