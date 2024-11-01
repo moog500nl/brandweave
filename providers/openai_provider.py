@@ -3,17 +3,14 @@ from openai import OpenAI
 from .base import LLMProvider
 
 class OpenAIProvider(LLMProvider):
-    def __init__(self):
+    def __init__(self, model_name: str = "gpt-4o-mini"):
+        super().__init__(model_name)
         self.client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
         
-    @property
-    def name(self) -> str:
-        return "gpt-4o-mini"
-
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+                model=self._model_name,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}

@@ -3,16 +3,13 @@ from openai import OpenAI
 from .base import LLMProvider
 
 class LlamaProvider(LLMProvider):
-    def __init__(self):
+    def __init__(self, model_name: str = "accounts/fireworks/models/llama-v3p1-70b-instruct"):
+        super().__init__(model_name)
         self.client = OpenAI(
             base_url="https://api.fireworks.ai/inference/v1",
             api_key=os.environ.get("FIREWORKS_API_KEY")
         )
         
-    @property
-    def name(self) -> str:
-        return "llama-v3p1-70b-instruct"
-
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             messages = [
@@ -21,7 +18,7 @@ class LlamaProvider(LLMProvider):
             ]
             
             response = self.client.chat.completions.create(
-                model="accounts/fireworks/models/llama-v3p1-70b-instruct",
+                model=self._model_name,
                 messages=messages,
                 temperature=temperature,
                 max_tokens=1000

@@ -3,17 +3,14 @@ import anthropic
 from .base import LLMProvider
 
 class AnthropicProvider(LLMProvider):
-    def __init__(self):
+    def __init__(self, model_name: str = "claude-3-sonnet-20240229"):
+        super().__init__(model_name)
         self.client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
         
-    @property
-    def name(self) -> str:
-        return "claude-3-sonnet-20240229"
-
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             message = self.client.messages.create(
-                model="claude-3-sonnet-20240229",
+                model=self._model_name,
                 max_tokens=1000,
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_prompt}],

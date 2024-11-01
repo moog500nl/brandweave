@@ -3,7 +3,8 @@ import requests
 from .base import LLMProvider
 
 class GrokProvider(LLMProvider):
-    def __init__(self):
+    def __init__(self, model_name: str = "grok-beta"):
+        super().__init__(model_name)
         self.api_key = os.environ.get("XAI_API_KEY")
         self.api_url = "https://api.x.ai/v1/chat/completions"
         self.headers = {
@@ -11,10 +12,6 @@ class GrokProvider(LLMProvider):
             "Authorization": f"Bearer {self.api_key}"
         }
         
-    @property
-    def name(self) -> str:
-        return "grok-beta"
-
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             payload = {
@@ -22,7 +19,7 @@ class GrokProvider(LLMProvider):
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                "model": "grok-beta",
+                "model": self._model_name,
                 "stream": False,
                 "temperature": temperature,
                 "max_tokens": 1000
