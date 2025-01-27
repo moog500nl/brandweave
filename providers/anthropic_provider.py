@@ -8,12 +8,12 @@ class AnthropicProvider(LLMProvider):
         
     @property
     def name(self) -> str:
-        return "claude-3-sonnet-20240229"
+        return "claude-3-5-sonnet-latest"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             message = self.client.messages.create(
-                model="claude-3-sonnet-20240229",
+                model="claude-3-5-sonnet-latest",
                 max_tokens=1000,
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_prompt}],

@@ -24,7 +24,7 @@ def initialize_providers():
     return {
         "gpt-4o-mini": OpenAIProvider(),
         "gemini-1.5-flash": GoogleProvider(),
-        "claude-3-sonnet-20240229": AnthropicProvider(),
+        "claude-3-5-sonnet-latest": AnthropicProvider(),
         "grok-beta": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider()
     }
