@@ -4,6 +4,7 @@ from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
 from providers.grok_provider import GrokProvider
 from providers.llama_provider import LlamaProvider
+from providers.perplexity_provider import PerplexityProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
@@ -26,7 +27,8 @@ def initialize_providers():
         "gemini-1.5-flash": GoogleProvider(),
         "claude-3-5-sonnet-latest": AnthropicProvider(),
         "grok-beta": GrokProvider(),
-        "llama-v3p1-70b-instruct": LlamaProvider()
+        "llama-v3p1-70b-instruct": LlamaProvider(),
+        "sonar-medium-chat": PerplexityProvider()
     }
 
 def main():

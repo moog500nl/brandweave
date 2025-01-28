@@ -1,0 +1,45 @@
+import os
+import requests
+from .base import LLMProvider
+
+class PerplexityProvider(LLMProvider):
+    def __init__(self):
+        self.api_key = os.environ.get("PERPLEXITY_API_KEY")
+        self.api_url = "https://api.perplexity.ai/chat/completions"
+        self.headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+        
+    @property
+    def name(self) -> str:
+        return "sonar-medium-chat"
+
+    def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
+        try:
+            payload = {
+                "model": "sonar",
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                "temperature": temperature,
+                "max_tokens": 1000,
+                "top_p": 0.9,
+                "stream": False
+            }
+            
+            response = requests.post(
+                self.api_url,
+                headers=self.headers,
+                json=payload
+            )
+            
+            if response.status_code != 200:
+                return f"Error with Perplexity API: {response.text}"
+                
+            data = response.json()
+            return data['choices'][0]['message']['content']
+            
+        except Exception as e:
+            return f"Error with Perplexity: {str(e)}"
