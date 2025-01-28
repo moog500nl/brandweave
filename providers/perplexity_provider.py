@@ -28,8 +28,8 @@ class PerplexityProvider(LLMProvider):
                 "top_p": 0.9,
                 "stream": False,
                 "response_format": {
-                    "type": "json_object",
-                    "schema": {
+                    "type": "json_schema",
+                    "json_schema": {
                         "type": "object",
                         "properties": {
                             "id": {"type": "string"},
