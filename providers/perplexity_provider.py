@@ -10,7 +10,7 @@ class PerplexityProvider(LLMProvider):
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
         }
-        
+
     @property
     def name(self) -> str:
         return "sonar-medium-chat"
@@ -28,18 +28,25 @@ class PerplexityProvider(LLMProvider):
                 "top_p": 0.9,
                 "stream": False
             }
-            
+
             response = requests.post(
                 self.api_url,
                 headers=self.headers,
                 json=payload
             )
-            
+
             if response.status_code != 200:
                 return f"Error with Perplexity API: {response.text}"
-                
+
             data = response.json()
-            return data['choices'][0]['message']['content']
-            
+            content = data['choices'][0]['message']['content']
+
+            # Include citations if they exist
+            if 'citations' in data:
+                citations = data['citations']
+                content += "\n\nSources:\n" + "\n".join(f"- {citation}" for citation in citations)
+
+            return content
+
         except Exception as e:
             return f"Error with Perplexity: {str(e)}"
