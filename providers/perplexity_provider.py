@@ -41,12 +41,15 @@ class PerplexityProvider(LLMProvider):
             data = response.json()
             content = data['choices'][0]['message']['content']
 
-            # Include citations if they exist
-            if 'citations' in data:
-                citations = data['citations']
-                content += "\n\nSources:\n" + "\n".join(f"- {citation}" for citation in citations)
+            # Create comma-separated output with content and citations
+            output_parts = [content]
 
-            return content
+            # Add citations if they exist
+            if 'citations' in data:
+                output_parts.extend(data['citations'])
+
+            # Join all parts with commas
+            return ','.join(output_parts)
 
         except Exception as e:
             return f"Error with Perplexity: {str(e)}"
