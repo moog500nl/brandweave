@@ -26,7 +26,55 @@ class PerplexityProvider(LLMProvider):
                 "temperature": temperature,
                 "max_tokens": 1000,
                 "top_p": 0.9,
-                "stream": False
+                "stream": False,
+                "response_format": {
+                    "type": "json_object",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "id": {"type": "string"},
+                            "model": {"type": "string"},
+                            "object": {"type": "string"},
+                            "created": {"type": "integer"},
+                            "citations": {
+                                "type": "array",
+                                "items": {"type": "string"}
+                            },
+                            "choices": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "index": {"type": "integer"},
+                                        "finish_reason": {"type": "string"},
+                                        "message": {
+                                            "type": "object",
+                                            "properties": {
+                                                "role": {"type": "string"},
+                                                "content": {"type": "string"}
+                                            }
+                                        },
+                                        "delta": {
+                                            "type": "object",
+                                            "properties": {
+                                                "role": {"type": "string"},
+                                                "content": {"type": "string"}
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "usage": {
+                                "type": "object",
+                                "properties": {
+                                    "prompt_tokens": {"type": "integer"},
+                                    "completion_tokens": {"type": "integer"},
+                                    "total_tokens": {"type": "integer"}
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             response = requests.post(
