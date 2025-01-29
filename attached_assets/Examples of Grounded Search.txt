@@ -1,0 +1,115 @@
+Examples of Grounded Search
+
+# And now re-run the same query with search grounding enabled.
+model = genai.GenerativeModel(
+    "gemini-1.5-flash-002",
+    tools="google_search_retrieval")
+
+response = model.generate_content("When and where is Taylor Swift's next concert?")
+rc = response.candidates[0]
+
+Markdown(rc.content.parts[0].text)
+
+
+Response metadata
+
+When search grounding is used, the model returns extra metadata that includes links to search suggestions, supporting documents and information on how the supporting documents were used.
+
+Each "grounding chunk" represents information retrieved from Google Search that was used in the grounded generation request. Following the URI will take you to the source.
+
+chunks = rc.grounding_metadata.grounding_chunks
+for chunk in chunks:
+    print(chunk)
+
+As part of the response, there is a standalone styled HTML content block that you use to link back to relevant search suggestions related to the generation.
+
+HTML(rc.grounding_metadata.search_entry_point.rendered_content)
+
+The grounding_supports in the metadata provide a way for you to correlate the grounding chunks used to the generated output text.
+
+supports = rc.grounding_metadata.grounding_supports
+for support in supports:
+    print(support)
+
+These supports can be used to highlight text in the response, or build tables of footnotes.
+
+import io
+
+markdown_buffer = io.StringIO()
+
+# Print the text with footnote markers.
+markdown_buffer.write("Supported text:\n\n")
+for support in supports:
+    markdown_buffer.write(" * ")
+    markdown_buffer.write(
+        response.text[support.segment.start_index : support.segment.end_index]
+    )
+
+    for i in support.grounding_chunk_indices:
+        chunk = chunks[i].web
+        markdown_buffer.write(f"<sup>[{i+1}]</sup>")
+
+    markdown_buffer.write("\n\n")
+
+
+# And print the footnotes.
+markdown_buffer.write("Citations:\n\n")
+for i, chunk in enumerate(chunks, start=1):
+    markdown_buffer.write(f"* {i}: [{chunk.web.title}]({chunk.web.uri})\n")
+
+
+Markdown(markdown_buffer.getvalue())
+
+Dynamic grounding
+
+In a context where you may not know in advance whether to enable search grounding or not, you can provide the model with a threshold over which it will use search grounding. This is helpful in conversational contexts, where not every turn of conversation requires search data to support a response.
+
+nosearch_model = genai.GenerativeModel("gemini-1.5-flash-002")
+chat = nosearch_model.start_chat()
+
+# No search grounding.
+r = chat.send_message("Hello friendly chatbot!")
+
+# Enable search for just this turn.
+r = chat.send_message(
+    "Who took home the 2023 cricket world cup?", tools="google_search_retrieval"
+)
+
+Markdown(r.text)
+
+HTML(r.candidates[0].grounding_metadata.search_entry_point.rendered_content)
+
+Or you can let the Gemini API calculate a likelihood that the response needs search backing, and define the threshold to use.
+
+# The dynamic retrieval score is a probability, so the threshold
+# must also be bound by [0, 1].
+search_config = {
+    "dynamic_retrieval_config": {"mode": "MODE_DYNAMIC", "dynamic_threshold": 0.5}
+}
+
+maybe_search_model = genai.GenerativeModel(
+    "gemini-1.5-flash-002", tools={"google_search_retrieval": search_config}
+)
+
+chat = maybe_search_model.start_chat()
+
+r = chat.send_message("Hello friendly chatbot!")
+rc = r.candidates[0]
+score = rc.grounding_metadata.retrieval_metadata.google_search_dynamic_retrieval_score
+print(f"First turn: {score=}")
+
+r = chat.send_message("Who took home the 2023 cricket world cup?")
+rc = r.candidates[0]
+score = rc.grounding_metadata.retrieval_metadata.google_search_dynamic_retrieval_score
+print(f"Second turn: {score=}")
+print()
+
+display(Markdown(r.text))
+
+HTML(rc.grounding_metadata.search_entry_point.rendered_content)
+
+
+
+
+
+
