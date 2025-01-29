@@ -81,29 +81,33 @@ class GroundedGoogleProvider(LLMProvider):
                 )
             )
 
-            # Extract the response text
-            response_text = response.text.strip()
+            # Get the first candidate's response
+            candidate = response.candidates[0]
 
-            # Get grounding metadata if available
-            grounding_data = {}
-            error_message = None
-
-            if hasattr(response.candidates[0], 'groundingMetadata'):
-                grounding_data, error_message = self._validate_and_process_sources(response.candidates[0].groundingMetadata)
-            else:
-                error_message = "No grounding metadata in response"
-
-            # Combine response text with metadata and any error messages
-            full_response = {
-                'response': response_text,
-                'grounding_data': grounding_data
+            # Build debug response with all available metadata
+            debug_response = {
+                'response': response.text.strip(),
+                'raw_metadata': {},
+                'debug_info': {}
             }
 
-            if error_message:
-                full_response['error'] = error_message
+            # Add grounding metadata if available
+            if hasattr(candidate, 'groundingMetadata'):
+                metadata = candidate.groundingMetadata
+                debug_response['debug_info']['has_grounding_metadata'] = True
 
-            # Return JSON string of the full response
-            return json.dumps(full_response, indent=2)
+                # Log all available attributes
+                for attr in dir(metadata):
+                    if not attr.startswith('_'):
+                        try:
+                            value = getattr(metadata, attr)
+                            debug_response['raw_metadata'][attr] = str(value)
+                        except Exception as attr_error:
+                            debug_response['debug_info'][f'error_getting_{attr}'] = str(attr_error)
+            else:
+                debug_response['debug_info']['has_grounding_metadata'] = False
+
+            return json.dumps(debug_response, indent=2)
 
         except Exception as e:
             return f"Error with Grounded Google: {str(e)}"
