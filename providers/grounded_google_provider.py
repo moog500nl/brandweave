@@ -12,7 +12,7 @@ class GroundedGoogleProvider(LLMProvider):
             "google_search_retrieval": {
                 "dynamic_retrieval_config": {
                     "mode": "MODE_DYNAMIC",
-                    "dynamic_threshold": 0.5
+                    "dynamic_threshold": 0.0
                 }
             }
         }

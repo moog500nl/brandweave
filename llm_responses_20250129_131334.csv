@@ -1,8 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""response"": ""ExpressVPN\nSurfshark\nNordVPN\nCyberGhost\nIPVanish\nPrivate Internet Access\nProton VPN"",
-  ""grounding_data"": {
-    ""dynamic_retrieval_score"": 0.5919312834739685,
-    ""sources"": []
-  }
-}"
