@@ -38,16 +38,16 @@ class GroundedGoogleProvider(LLMProvider):
 
         try:
             # Extract search score if available
-            if hasattr(metadata, 'retrieval_metadata'):
-                grounding_data['dynamic_retrieval_score'] = metadata.retrieval_metadata.google_search_dynamic_retrieval_score
+            if hasattr(metadata, 'retrievalMetadata'):
+                grounding_data['dynamic_retrieval_score'] = metadata.retrievalMetadata.googleSearchDynamicRetrievalScore
 
             # Extract and validate sources
-            if hasattr(metadata, 'grounding_chunks'):
-                if not metadata.grounding_chunks:
+            if hasattr(metadata, 'groundingChunks'):
+                if not metadata.groundingChunks:
                     error_message = "No grounding chunks found in response"
                 else:
                     sources = []
-                    for chunk in metadata.grounding_chunks:
+                    for chunk in metadata.groundingChunks:
                         if not hasattr(chunk, 'web'):
                             continue
 
@@ -88,8 +88,8 @@ class GroundedGoogleProvider(LLMProvider):
             grounding_data = {}
             error_message = None
 
-            if hasattr(response.candidates[0], 'grounding_metadata'):
-                grounding_data, error_message = self._validate_and_process_sources(response.candidates[0].grounding_metadata)
+            if hasattr(response.candidates[0], 'groundingMetadata'):
+                grounding_data, error_message = self._validate_and_process_sources(response.candidates[0].groundingMetadata)
             else:
                 error_message = "No grounding metadata in response"
 

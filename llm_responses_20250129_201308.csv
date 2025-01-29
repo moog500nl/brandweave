@@ -1,0 +1,71 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN."",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN."",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN."",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN."",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
+gemini-1.5-flash-grounded,"{
+  ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.5993605256080627
+  },
+  ""error"": ""No grounding chunks found in response""
+}"
