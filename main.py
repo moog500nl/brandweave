@@ -1,11 +1,12 @@
 import streamlit as st
 from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
+from providers.google_search_provider import GoogleSearchProvider  # Added import
 from providers.anthropic_provider import AnthropicProvider
 from providers.grok_provider import GrokProvider
 from providers.llama_provider import LlamaProvider
 from providers.perplexity_provider import PerplexityProvider
-from providers.deepseek_provider import DeepseekProvider #added import statement
+from providers.deepseek_provider import DeepseekProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
@@ -26,11 +27,12 @@ def initialize_providers():
     return {
         "gpt-4o-mini": OpenAIProvider(),
         "gemini-1.5-flash": GoogleProvider(),
+        "gemini-1.5-flash-search": GoogleSearchProvider(),  # Added new provider
         "claude-3-5-sonnet-latest": AnthropicProvider(),
         "grok-beta": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider(),
         "sonar-medium-chat": PerplexityProvider(),
-        "deepseek-v3": DeepseekProvider() #added Deepseek provider
+        "deepseek-v3": DeepseekProvider()
     }
 
 def main():
