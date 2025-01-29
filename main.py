@@ -7,7 +7,6 @@ from providers.llama_provider import LlamaProvider
 from providers.perplexity_provider import PerplexityProvider
 from providers.deepseek_provider import DeepseekProvider
 from providers.grounded_google_provider import GroundedGoogleProvider
-from providers.raw_grounded_google_provider import RawGroundedGoogleProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
@@ -19,7 +18,7 @@ def format_execution_time(seconds: float) -> str:
     """Format execution time in minutes and seconds"""
     minutes = int(seconds // 60)
     remaining_seconds = int(seconds % 60)
-    
+
     if minutes > 0:
         return f"{minutes} minute{'s' if minutes != 1 else ''} and {remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
     return f"{remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
@@ -29,7 +28,6 @@ def initialize_providers():
         "gpt-4o-mini": OpenAIProvider(),
         "gemini-1.5-flash": GoogleProvider(),
         "gemini-1.5-flash-grounded": GroundedGoogleProvider(),
-        "gemini-1.5-flash-raw-grounded": RawGroundedGoogleProvider(),
         "claude-3-5-sonnet-latest": AnthropicProvider(),
         "grok-beta": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider(),
