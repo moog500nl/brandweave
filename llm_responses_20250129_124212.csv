@@ -1,0 +1,11 @@
+model,response
+gemini-grounded-search,"Earth is the third planet from the Sun and the only known celestial body to support life.  It's a terrestrial planet, meaning it's rocky and has a solid surface, unlike gas giants like Jupiter.  Earth's surface is dynamic, featuring mountains, valleys, canyons, and plains.  A significant portion (approximately 70%) of its surface is covered by water, forming oceans that are crucial for life.  The atmosphere, composed primarily of nitrogen and oxygen, provides the breathable air essential for life and protects the planet from harmful radiation and meteoroids.  Earth has one moon and no rings.  Its age is estimated to be about 4.6 billion years old, roughly a third of the age of the universe.  It formed from the remnants of dead stars that coalesced into a massive cloud of gas and dust. This cloud eventually collapsed, forming the planet we inhabit today.
+
+Sources:
+[1] vedantu.com - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYuGyAkj6K-uS0jguSFREZLFHUJMe9YtTn5Hpe-_yv6zUfzdTiCp2SxFTtga_m-dvry6S3OMOEa7XrY3LxZUBqbvfQ-dZdIE2kNe8C6R2MX92tF8WWH0c7ziNfId7wPJKyXW8w==
+[2] wikipedia.org - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYsPP-Cdo2-emncEtcCqe4zW9mdoOhrqHLunHvV53oXgvKasmTIYGQHEHDuadmsXtjnNeYM7dEnA-o6i9Elzd5Tfhwan5s1-qba4gHrPH8u7_CC6X6XZr8Q1C9TFotM=
+[3] nasa.gov - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYvn08zW0CwbQ6v8T9gffz199sB8H028o9rFdZELcuRKnjY4I89i5tH5VNfibEkZbjyVMGCPnp5NEQmx_yEg890aPLDEeq3iCRJ7mETnAG22fq5D2id1wFmPMi2FCNJFiQ==
+[4] nasa.gov - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYs-NLniuXtQrRBw-kF9bsSLQ9BHrmTdrr09-afyycDEdv2bsr6kvmvHYABUPM_31blhswWiK-csUqIeNiH-j5uLLB7mYOV8W5l6nplvTnMGJRWpzdRTMrUD94DoUjH7Wd8jdtgOb8U=
+[5] youtube.com - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYtNMA2LrLT1r3xWmOrfN7jtmF9XaJ1itOZTHGEEkXTTFR_F6n1sqKdCacfie_9Zo8fTxcl8P_IMME1AN4IpNHLerjXkIHa3mFHX8YQ82dHIHRYqnAUaBs2UAHIsl9D4RzCBtNWwgQ==
+
+Dynamic Retrieval Score: 0.0"

@@ -6,7 +6,7 @@ class GoogleGroundedProvider(LLMProvider):
     def __init__(self):
         genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
         self.model = genai.GenerativeModel(
-            'gemini-1.5-flash-002',
+            'gemini-1.5-flash',
             tools="google_search_retrieval"
         )
         
