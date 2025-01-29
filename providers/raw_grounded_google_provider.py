@@ -33,9 +33,35 @@ class RawGroundedGoogleProvider(LLMProvider):
             )
 
             # Return raw response as JSON string
+            raw_metadata = {}
+            grounding_metadata = response.candidates[0].grounding_metadata
+
+            if hasattr(grounding_metadata, 'grounding_chunks'):
+                raw_metadata['grounding_chunks'] = [
+                    {'web': {'uri': chunk.web.uri, 'title': chunk.web.title}} 
+                    for chunk in grounding_metadata.grounding_chunks if hasattr(chunk, 'web')
+                ]
+
+            if hasattr(grounding_metadata, 'web_search_queries'):
+                raw_metadata['web_search_queries'] = grounding_metadata.web_search_queries
+
+            if hasattr(grounding_metadata, 'grounding_supports'):
+                raw_metadata['grounding_supports'] = [
+                    {
+                        'segment': {
+                            'start_index': support.segment.start_index,
+                            'end_index': support.segment.end_index,
+                            'text': support.segment.text
+                        },
+                        'grounding_chunk_indices': support.grounding_chunk_indices,
+                        'confidence_scores': support.confidence_scores
+                    }
+                    for support in grounding_metadata.grounding_supports
+                ]
+
             return json.dumps({
                 'response': response.text.strip(),
-                'metadata': response.candidates[0].grounding_metadata._json_data
+                'metadata': raw_metadata
             }, indent=2)
 
         except Exception as e:
