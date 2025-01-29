@@ -1,7 +1,0 @@
-model,response
-chatgpt-4o-latest,Mullvad
-gemini-1.5-flash,Mullvad
-claude-3-5-sonnet-latest,Mullvad VPN
-grok-beta,NordVPN
-llama-v3p1-70b-instruct,ProtonVPN
-sonar-medium-chat,"Error with Perplexity API: {""error"":{""message"":""[\""At body -> response_format -> ResponseFormatText -> type: Input should be 'text'\"", \""At body -> response_format -> ResponseFormatJSONSchema -> json_schema -> schema: Field required\"", \""At body -> response_format -> ResponseFormatRegex -> type: Input should be 'regex'\"", \""At body -> response_format -> ResponseFormatRegex -> regex: Field required\""]"",""type"":""bad_request"",""code"":400}}"

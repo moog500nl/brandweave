@@ -25,7 +25,6 @@ class PerplexityProvider(LLMProvider):
                 ],
                 "temperature": temperature,
                 "max_tokens": 1000,
-                "top_p": 0.9,
                 "stream": False
             }
 
