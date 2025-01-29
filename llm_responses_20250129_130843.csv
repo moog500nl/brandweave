@@ -1,0 +1,13 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""response"": ""The most recent Formula 1 Grand Prix, the Las Vegas Grand Prix, was won by George Russell driving for Mercedes.  This race took place on November 24th, 2024."",
+  ""grounding_data"": {
+    ""dynamic_retrieval_score"": 0.7778194546699524,
+    ""sources"": [
+      {
+        ""uri"": ""https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYv2l9Z6U3wWpr0lpX13gV3shb1mLAANDpCn3UFhFKkvgSH36QcZNMIK8LsRjDcUF6Aa9Zlpb1NqqmdZsS3SFbCHvArzUCTGUd-JH4UsF00_fXTiywXD2EvKK2AKpGDgSoA_XyzEbfARN5PS6tSzge48PsbdHmVhKOoX_mHCuo0sOSA2AVlguXenlgFQRnia8x3Wr2b9f1qwHkFNwkkPlssLgbPYXgpg5VSJZxfXEHdGQm-a622iCsI0"",
+        ""title"": ""gpfans.com""
+      }
+    ]
+  }
+}"
