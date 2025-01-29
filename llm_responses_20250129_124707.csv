@@ -1,8 +1,0 @@
-model,response
-gemini-grounded-search,"George Russell won the latest F1 Grand Prix, the 2024 Las Vegas Grand Prix.  This was a Mercedes 1-2 finish, with Lewis Hamilton in second place.  Max Verstappen finished fifth, but this was enough to secure his fourth F1 drivers' championship title.
-
-Sources:
-[1] racingnews365.com - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYvrwRLA0VAiijdaF7SYlDEzr3e7-hWR2oGea_hHWYEO1JCYxNUuVxKxp0-DFf1vUUfzaNqmL8fS-BZX8vjWKYUxZHyRv9QEutJUxfOmPEI96rghhmVgW5LwhQM_ufmeAcVHwqaxbWBo_Pd3SybJVHIU0reHWpc96C20
-[2] gpfans.com - https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYuvJ3oUzxsp1qB1gkrmYfTjyg22w2MS8_JWjGlIt_vSniadK4ALtTNUAez6op03u8P_o3wYXFLR_FJzWUPyJhOMrxzaWl1ZpC_d0QiNf8DSOEZrvNr49UyKj97SKVdhvCGjZqVr43qpJlkGIEER2IC_lDCivKcj2IaQKwWp_fxDxJ-n1lVEiHLI0zd8AjmwebGFh2RS9ZV-MyulfuWnJnUBSTvMDifRUnsNDkI4nLDiPBdxUSCieL5v
-
-Dynamic Retrieval Score: 0.0"
