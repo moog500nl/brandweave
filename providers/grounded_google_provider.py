@@ -10,7 +10,8 @@ class GroundedGoogleProvider(LLMProvider):
         search_config = {
             "google_search_retrieval": {
                 "dynamic_retrieval_config": {
-                    "mode": "MODE_UNSPECIFIED"
+                    "mode": "MODE_DYNAMIC",
+                    "dynamic_threshold": 0.0
                 }
             }
         }
@@ -40,55 +41,67 @@ class GroundedGoogleProvider(LLMProvider):
                 )
             )
 
-            # Initialize the basic response structure
-            output = {
-                "response": response.text.strip()
+            # Get the first candidate's response
+            candidate = response.candidates[0]
+
+            # Build raw debug response with all metadata
+            raw_response = {
+                'response': response.text.strip(),
+                'raw_metadata': {},
+                'debug_info': {}
             }
 
-            # Process metadata if available
-            if hasattr(response.candidates[0], 'grounding_metadata'):
-                metadata = response.candidates[0].grounding_metadata
+            # Add grounding metadata if available
+            if hasattr(candidate, 'groundingMetadata'):
+                metadata = candidate.groundingMetadata
+                raw_response['debug_info']['has_grounding_metadata'] = True
 
-                # Initialize grounding_data structure
-                grounding_data = {}
+                # Log all available attributes
+                for attr in dir(metadata):
+                    if not attr.startswith('_'):
+                        try:
+                            value = getattr(metadata, attr)
+                            raw_response['raw_metadata'][attr] = str(value)
+                        except Exception as attr_error:
+                            raw_response['debug_info'][f'error_getting_{attr}'] = str(attr_error)
+            else:
+                raw_response['debug_info']['has_grounding_metadata'] = False
 
-                # Extract retrieval score if available
-                if hasattr(metadata, 'retrieval_metadata'):
-                    grounding_data['dynamic_retrieval_score'] = (
-                        metadata.retrieval_metadata.google_search_dynamic_retrieval_score
+            # Build CSV-friendly processed response
+            processed_response = {
+                "Response": response.text.strip(),
+                "RetrievalScore": "",
+                "URLs": ""
+            }
+
+            # Process metadata for CSV format if available
+            if hasattr(candidate, 'groundingMetadata'):
+                metadata = candidate.groundingMetadata
+
+                # Get retrieval score
+                if hasattr(metadata, 'retrievalMetadata'):
+                    processed_response['RetrievalScore'] = str(
+                        metadata.retrievalMetadata.googleSearchDynamicRetrievalScore
                     )
 
-                # Extract sources and follow redirects
-                if hasattr(metadata, 'grounding_chunks'):
-                    sources = []
-                    for chunk in metadata.grounding_chunks:
+                # Get and follow redirect URLs
+                if hasattr(metadata, 'groundingChunks'):
+                    urls = []
+                    for chunk in metadata.groundingChunks:
                         if hasattr(chunk, 'web'):
-                            # Follow redirect to get actual URL
                             actual_url = self._follow_redirect(chunk.web.uri)
-                            sources.append({
-                                'uri': actual_url,
-                                'title': chunk.web.title
-                            })
-                    if sources:
-                        grounding_data['sources'] = sources
+                            urls.append(actual_url)
+                    processed_response['URLs'] = "; ".join(urls)
 
-                # Add grounding data if we collected any
-                if grounding_data:
-                    output['grounding_data'] = grounding_data
-
-            # Convert to CSV-friendly format
-            csv_output = {
-                "Response": output['response'],
-                "RetrievalScore": (
-                    output.get('grounding_data', {}).get('dynamic_retrieval_score', "")
-                ),
-                "URLs": "; ".join(
-                    source['uri'] 
-                    for source in output.get('grounding_data', {}).get('sources', [])
-                )
-            }
-
-            return json.dumps(csv_output)
+            # Return both responses as a dictionary
+            return json.dumps({
+                'raw_response': raw_response,
+                'processed_response': processed_response
+            }, indent=2)
 
         except Exception as e:
-            return f"Error with Grounded Google: {str(e)}"
+            error_response = {
+                'raw_response': {'error': f"Error with Grounded Google: {str(e)}"},
+                'processed_response': {'error': f"Error with Grounded Google: {str(e)}"}
+            }
+            return json.dumps(error_response, indent=2)
