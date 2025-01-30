@@ -1,0 +1,12 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""* ExpressVPN\n* NordVPN\n* Surfshark\n* Private Internet Access\n* Proton VPN"",
+  ""urls"": [
+    ""https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYtiF8u7JP_P7tL6by5mXo_Xzcfu4X0u9BRaPhtP5S6GkGHWPorqYWLgwV_e79DHfFmKhJa1r7iRrko_ix2eF56iTeGMpEWXQfETu20pyAUsPb87Dj7Er2xPv5DzmZ4D2E2dR4R1ll5SKw=="",
+    ""https://www.safetydetectives.com/blog/best-vpns-for-multiple-devices/"",
+    ""https://www.youtube.com/watch?v=-UUWTacQmo0"",
+    ""https://www.techradar.com/vpn/best-mobile-vpn"",
+    ""https://www.security.org/vpn/best/multi-device/""
+  ],
+  ""avg_logprobs"": -0.015793121996380034
+}"
