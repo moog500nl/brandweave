@@ -1,0 +1,6 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""NordVPN, Surfshark, ExpressVPN, Proton VPN, Private Internet Access, Windscribe, Norton VPN, Hotspot Shield, IPVanish, CyberGhost VPN, UltraVPN, Kaspersky Secure Connection, NordLayer."",
+  ""urls"": [],
+  ""avg_logprobs"": -0.00218290581621907
+}"

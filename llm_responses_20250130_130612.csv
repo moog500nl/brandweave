@@ -1,0 +1,6 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""NordVPN\nSurfshark\nExpressVPN\nIPVanish\nProton VPN\nPrivate Internet Access (PIA)\nWindscribe\nCyberGhost\nHide.me"",
+  ""urls"": [],
+  ""avg_logprobs"": -0.046731327519272316
+}"

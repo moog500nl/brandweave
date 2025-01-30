@@ -1,8 +1,6 @@
 import os
 import json
 import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 import google.generativeai as genai
 from .base import LLMProvider
 
@@ -17,48 +15,16 @@ class GroundedGoogleProvider(LLMProvider):
             }
         }
         self.model = genai.GenerativeModel('gemini-1.5-flash', tools=search_config)
-        # Configure session with retries
-        self.session = requests.Session()
-        retries = Retry(
-            total=3,
-            backoff_factor=0.5,
-            status_forcelist=[500, 502, 503, 504],
-            allowed_methods=["HEAD", "GET"]
-        )
-        self.session.mount("http://", HTTPAdapter(max_retries=retries))
-        self.session.mount("https://", HTTPAdapter(max_retries=retries))
 
     @property
     def name(self) -> str:
         return "gemini-1.5-flash-grounded"
 
     def _follow_redirect(self, url: str) -> str:
-        """Follow URL redirect with improved error handling and retry logic"""
+        """Follow URL redirect and return the final URL"""
         try:
-            # First try HEAD request with shorter timeout
-            response = self.session.head(
-                url, 
-                allow_redirects=True, 
-                timeout=3,
-                headers={'User-Agent': 'Mozilla/5.0'}
-            )
-
-            if response.status_code == 200:
-                return response.url
-
-            # If HEAD fails, try GET
-            response = self.session.get(
-                url, 
-                allow_redirects=True, 
-                timeout=5,
-                headers={'User-Agent': 'Mozilla/5.0'}
-            )
-
-            if response.status_code == 200:
-                return response.url
-
-            return url  # Return original if both attempts fail
-
+            response = requests.head(url, allow_redirects=True, timeout=5)
+            return response.url if response.status_code == 200 else url
         except Exception as e:
             print(f"Error following redirect for {url}: {str(e)}")
             return url
@@ -86,10 +52,7 @@ class GroundedGoogleProvider(LLMProvider):
                     for chunk in metadata.grounding_chunks:
                         if hasattr(chunk, 'web'):
                             actual_url = self._follow_redirect(chunk.web.uri)
-                            if actual_url != chunk.web.uri:  # Only add if redirect was successful
-                                urls.append(actual_url)
-                            else:
-                                print(f"Failed to resolve redirect for: {chunk.web.uri}")
+                            urls.append(actual_url)
 
             # Extract avg_logprobs directly from candidate
             avg_logprobs = getattr(candidate, 'avg_logprobs', None)
