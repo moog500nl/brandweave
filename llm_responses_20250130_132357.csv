@@ -1,0 +1,6 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""NordVPN, Surfshark, Private Internet Access, ExpressVPN, IPVanish, Proton VPN, Mullvad, Windscribe."",
+  ""urls"": [],
+  ""avg_logprobs"": -0.03109810749689738
+}"
