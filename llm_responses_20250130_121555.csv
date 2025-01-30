@@ -1,0 +1,15 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""raw_response"": {
+    ""response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+    ""raw_metadata"": {},
+    ""debug_info"": {
+      ""has_grounding_metadata"": false
+    }
+  },
+  ""processed_response"": {
+    ""Response"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
+    ""RetrievalScore"": """",
+    ""URLs"": """"
+  }
+}"
