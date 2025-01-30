@@ -1,0 +1,12 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""* ExpressVPN\n* NordVPN\n* Private Internet Access (PIA)\n* Proton VPN\n* Surfshark\n* CyberGhost VPN\n* Hotspot Shield\n* Norton Secure VPN\n* IPVanish\n* UltraVPN"",
+  ""urls"": [
+    ""https://www.tomsguide.com/best-picks/most-secure-vpn"",
+    ""https://www.techradar.com/vpn/most-secure-vpns-best-encryption"",
+    ""https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYtlinV3HP9pkuUIbz0NgLsY-VAz1iGJ5jZ6qcLsD94B3rrZEnWpiMGx5NQaEptRDIX6CfQQSrFxxoUUrupWlshlJWv8vsCNZPhJY9ITpdC1FgG24ucRNeBIWA=="",
+    ""https://www.security.org/vpn/best/"",
+    ""https://www.safewise.com/resources/best-vpn-internet-security-service/""
+  ],
+  ""avg_logprobs"": -0.004112843186297315
+}"

@@ -1,0 +1,12 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""* NordVPN\n* Surfshark\n* Private Internet Access (PIA)\n* ExpressVPN\n* IPVanish\n* Proton VPN\n* Mullvad\n* Windscribe"",
+  ""urls"": [
+    ""https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYuP4nimjb8jEEYLvnGPB41XyYMNoyZWD7zFtP7BPHUjp8wHYHL9LwemUWYi06tC-VBcVF7qVcPdnyD66u6rXmh5R9_ZRhU22ut0aQGMDPbMUzOOTn396nryYTPaOAFc0lo8YxR_sow="",
+    ""https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUBnsYuvYXATMbrYwWmSDU60-Zy3apztrAnDk3_lstQMeC2QlCqm3_JzhBS1mMz4oVzTXhnKR5zcxAemHuPIH0CkMkEy399HL2UiWXqlgxEgz0pGhR6PcjrImAbdHtLURn0AhhzBPdi4JFw9YU6zJ3C_NElY2ukbc7rocNuRLLfMG7kapqPQfx3lumA="",
+    ""https://www.security.org/vpn/best/fastest/"",
+    ""https://www.tomsguide.com/best-picks/torrenting-vpn-torrents"",
+    ""https://www.techradar.com/vpn/fastest-vpn""
+  ],
+  ""avg_logprobs"": -0.011779134337966507
+}"
