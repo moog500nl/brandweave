@@ -1,0 +1,12 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""Based on the provided text, several VPN brands are cited as being strong options for privacy,  including:\n\n* ExpressVPN\n* ProtonVPN\n* NordVPN\n* Surfshark\n* Private Internet Access\n\nThe sources do not definitively declare one as the single \""best\"" for privacy, as different sources highlight different providers for various reasons."",
+  ""urls"": [
+    ""https://www.privacyjournal.net/best-vpn/"",
+    ""https://www.cloudwards.net/best-vpn-for-privacy/"",
+    ""https://www.techradar.com/vpn/most-secure-vpns-best-encryption"",
+    ""https://www.tomsguide.com/best-picks/best-vpn"",
+    ""https://www.security.org/vpn/best/""
+  ],
+  ""avg_logprobs"": null
+}"

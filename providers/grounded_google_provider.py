@@ -54,13 +54,8 @@ class GroundedGoogleProvider(LLMProvider):
                             actual_url = self._follow_redirect(chunk.web.uri)
                             urls.append(actual_url)
 
-            # Extract avg_logprobs if available
-            avg_logprobs = None
-            if hasattr(candidate, 'safety_ratings'):
-                for rating in candidate.safety_ratings:
-                    if hasattr(rating, 'avg_logprobs'):
-                        avg_logprobs = rating.avg_logprobs
-                        break
+            # Extract avg_logprobs directly from candidate
+            avg_logprobs = getattr(candidate, 'avg_logprobs', None)
 
             # Return JSON with content, URLs and avg_logprobs
             return json.dumps({
