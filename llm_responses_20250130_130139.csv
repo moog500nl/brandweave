@@ -1,6 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""ExpressVPN, NordVPN, Surfshark, CyberGhost, IPVanish, Private Internet Access, Proton VPN"",
-  ""urls"": [],
-  ""avg_logprobs"": -0.035963245060132897
-}"
