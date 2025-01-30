@@ -7,7 +7,6 @@ from .base import LLMProvider
 class GroundedGoogleProvider(LLMProvider):
     def __init__(self):
         genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
-        # Configure grounded search with dynamic retrieval
         search_config = {
             "google_search_retrieval": {
                 "dynamic_retrieval_config": {
@@ -30,15 +29,6 @@ class GroundedGoogleProvider(LLMProvider):
             print(f"Error following redirect for {url}: {str(e)}")
             return url
 
-    def _extract_urls_from_sources(self, sources) -> list:
-        """Extract and follow redirects for URLs from sources"""
-        urls = []
-        for source in sources:
-            if 'uri' in source:
-                actual_url = self._follow_redirect(source['uri'])
-                urls.append(actual_url)
-        return urls
-
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
             combined_prompt = f"{system_prompt}\n\n{user_prompt}"
@@ -50,38 +40,52 @@ class GroundedGoogleProvider(LLMProvider):
                 )
             )
 
-            # Get the candidate response
-            candidate = response.candidates[0]
-            response_text = response.text.strip()
-
-            # Initialize the output structure
+            # Initialize the basic response structure
             output = {
-                "response": response_text,
-                "dynamic_retrieval_score": None,
-                "urls": []
+                "response": response.text.strip()
             }
 
-            # Extract metadata if available
-            if hasattr(candidate, 'grounding_metadata'):
-                metadata = candidate.grounding_metadata
+            # Process metadata if available
+            if hasattr(response.candidates[0], 'grounding_metadata'):
+                metadata = response.candidates[0].grounding_metadata
 
-                # Get dynamic retrieval score
+                # Initialize grounding_data structure
+                grounding_data = {}
+
+                # Extract retrieval score if available
                 if hasattr(metadata, 'retrieval_metadata'):
-                    output['dynamic_retrieval_score'] = metadata.retrieval_metadata.google_search_dynamic_retrieval_score
+                    grounding_data['dynamic_retrieval_score'] = (
+                        metadata.retrieval_metadata.google_search_dynamic_retrieval_score
+                    )
 
-                # Extract and follow URLs from sources
+                # Extract sources and follow redirects
                 if hasattr(metadata, 'grounding_chunks'):
+                    sources = []
                     for chunk in metadata.grounding_chunks:
                         if hasattr(chunk, 'web'):
+                            # Follow redirect to get actual URL
                             actual_url = self._follow_redirect(chunk.web.uri)
-                            output['urls'].append(actual_url)
+                            sources.append({
+                                'uri': actual_url,
+                                'title': chunk.web.title
+                            })
+                    if sources:
+                        grounding_data['sources'] = sources
 
-            # Convert the output to a CSV-friendly format
-            # URLs will be joined with semicolons to keep them in one column
+                # Add grounding data if we collected any
+                if grounding_data:
+                    output['grounding_data'] = grounding_data
+
+            # Convert to CSV-friendly format
             csv_output = {
                 "Response": output['response'],
-                "RetrievalScore": output['dynamic_retrieval_score'] if output['dynamic_retrieval_score'] is not None else "",
-                "URLs": "; ".join(output['urls']) if output['urls'] else ""
+                "RetrievalScore": (
+                    output.get('grounding_data', {}).get('dynamic_retrieval_score', "")
+                ),
+                "URLs": "; ".join(
+                    source['uri'] 
+                    for source in output.get('grounding_data', {}).get('sources', [])
+                )
             }
 
             return json.dumps(csv_output)
