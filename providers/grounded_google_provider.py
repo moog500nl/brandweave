@@ -10,8 +10,7 @@ class GroundedGoogleProvider(LLMProvider):
         search_config = {
             "google_search_retrieval": {
                 "dynamic_retrieval_config": {
-                    "mode": "MODE_DYNAMIC",
-                    "dynamic_threshold": 0.0
+                    "mode": "MODE_UNSPECIFIED"
                 }
             }
         }
@@ -55,16 +54,26 @@ class GroundedGoogleProvider(LLMProvider):
                             actual_url = self._follow_redirect(chunk.web.uri)
                             urls.append(actual_url)
 
-            # Return simple JSON with just content and URLs
+            # Extract avg_logprobs if available
+            avg_logprobs = None
+            if hasattr(candidate, 'safety_ratings'):
+                for rating in candidate.safety_ratings:
+                    if hasattr(rating, 'avg_logprobs'):
+                        avg_logprobs = rating.avg_logprobs
+                        break
+
+            # Return JSON with content, URLs and avg_logprobs
             return json.dumps({
                 'text': content_text,
-                'urls': urls
+                'urls': urls,
+                'avg_logprobs': avg_logprobs
             }, indent=2)
 
         except Exception as e:
             error_response = {
                 'error': str(e),
                 'text': None,
-                'urls': []
+                'urls': [],
+                'avg_logprobs': None
             }
             return json.dumps(error_response, indent=2)

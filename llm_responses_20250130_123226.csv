@@ -1,0 +1,9 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""ExpressVPN"",
+  ""urls"": [
+    ""https://www.safetydetectives.com/blog/best-vpns-for-multiple-devices/"",
+    ""https://www.top10vpn.com/best-vpn/"",
+    ""https://www.tomsguide.com/best-picks/best-vpn""
+  ]
+}"
