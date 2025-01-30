@@ -41,41 +41,30 @@ class GroundedGoogleProvider(LLMProvider):
                 )
             )
 
-            # Build raw response object
-            raw_response = {
-                'response': response.text.strip(),
-                'grounding_data': {}
-            }
+            # Get candidate and extract text content
+            candidate = response.candidates[0]
+            content_text = response.text.strip()
 
-            # Extract metadata if available
-            if hasattr(response.candidates[0], 'groundingMetadata'):
-                metadata = response.candidates[0].groundingMetadata
-
-                # Get retrieval score
-                if hasattr(metadata, 'retrievalMetadata'):
-                    raw_response['grounding_data']['dynamic_retrieval_score'] = (
-                        metadata.retrievalMetadata.googleSearchDynamicRetrievalScore
-                    )
-
-                # Extract and follow redirect URLs
-                if hasattr(metadata, 'groundingChunks'):
-                    sources = []
-                    for chunk in metadata.groundingChunks:
+            # Get actual URLs from grounding chunks
+            urls = []
+            if hasattr(candidate, 'grounding_metadata'):
+                metadata = candidate.grounding_metadata
+                if hasattr(metadata, 'grounding_chunks'):
+                    for chunk in metadata.grounding_chunks:
                         if hasattr(chunk, 'web'):
                             actual_url = self._follow_redirect(chunk.web.uri)
-                            sources.append({
-                                'uri': actual_url,
-                                'title': chunk.web.title
-                            })
-                    raw_response['grounding_data']['sources'] = sources
+                            urls.append(actual_url)
 
-            # Return JSON string
-            return json.dumps(raw_response, indent=2)
+            # Return simple JSON with just content and URLs
+            return json.dumps({
+                'text': content_text,
+                'urls': urls
+            }, indent=2)
 
         except Exception as e:
             error_response = {
-                'error': f"Error with Grounded Google: {str(e)}",
-                'response': None,
-                'grounding_data': {}
+                'error': str(e),
+                'text': None,
+                'urls': []
             }
             return json.dumps(error_response, indent=2)
