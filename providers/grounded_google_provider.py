@@ -22,19 +22,23 @@ class GroundedGoogleProvider(LLMProvider):
 
     def _follow_redirect(self, url: str) -> str:
         """Follow URL redirect and return the final URL"""
-        try:
-            # Try HEAD first
-            response = requests.head(url, allow_redirects=True, timeout=10)
-            if response.status_code in [200, 301, 302, 307, 308]:
-                return response.url
-            
-            # If HEAD fails, try GET
-            response = requests.get(url, allow_redirects=True, timeout=10, stream=True)
-            response.close()  # Close connection immediately since we only need headers
-            if response.status_code in [200, 301, 302, 307, 308]:
-                return response.url
-            
+        if not url.startswith("https://vertexaisearch.cloud.google.com/grounding-api-redirect/"):
             return url
+            
+        try:
+            session = requests.Session()
+            response = session.get(
+                url,
+                allow_redirects=True,
+                timeout=15,
+                headers={
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                }
+            )
+            final_url = response.url
+            response.close()
+            session.close()
+            return final_url if final_url != url else url
         except Exception as e:
             print(f"Error following redirect for {url}: {str(e)}")
             return url
