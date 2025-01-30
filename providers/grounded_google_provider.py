@@ -11,8 +11,7 @@ class GroundedGoogleProvider(LLMProvider):
         search_config = {
             "google_search_retrieval": {
                 "dynamic_retrieval_config": {
-                    "mode": "MODE_DYNAMIC",
-                    "dynamic_threshold": 0.0
+                    "mode": "MODE_UNSPECIFIED"
                 }
             }
         }
@@ -29,46 +28,16 @@ class GroundedGoogleProvider(LLMProvider):
             return response.url if response.status_code == 200 else url
         except Exception as e:
             print(f"Error following redirect for {url}: {str(e)}")
-            return url  # Return original URL if redirect fails
+            return url
 
-    def _validate_and_process_sources(self, metadata) -> tuple[dict, str]:
-        """Validate and process sources from metadata"""
-        grounding_data = {}
-        error_message = None
-
-        try:
-            # Extract search score if available
-            if hasattr(metadata, 'retrievalMetadata'):
-                grounding_data['dynamic_retrieval_score'] = metadata.retrievalMetadata.googleSearchDynamicRetrievalScore
-
-            # Extract and validate sources
-            if hasattr(metadata, 'groundingChunks'):
-                if not metadata.groundingChunks:
-                    error_message = "No grounding chunks found in response"
-                else:
-                    sources = []
-                    for chunk in metadata.groundingChunks:
-                        if not hasattr(chunk, 'web'):
-                            continue
-
-                        # Follow redirect to get actual URL
-                        actual_url = self._follow_redirect(chunk.web.uri)
-                        if actual_url:
-                            sources.append({
-                                'uri': actual_url,
-                                'title': chunk.web.title
-                            })
-
-                    if not sources:
-                        error_message = "No valid sources found in grounding chunks"
-                    grounding_data['sources'] = sources
-            else:
-                error_message = "No grounding metadata available"
-
-        except Exception as e:
-            error_message = f"Error processing sources: {str(e)}"
-
-        return grounding_data, error_message
+    def _extract_urls_from_sources(self, sources) -> list:
+        """Extract and follow redirects for URLs from sources"""
+        urls = []
+        for source in sources:
+            if 'uri' in source:
+                actual_url = self._follow_redirect(source['uri'])
+                urls.append(actual_url)
+        return urls
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
@@ -81,33 +50,41 @@ class GroundedGoogleProvider(LLMProvider):
                 )
             )
 
-            # Get the first candidate's response
+            # Get the candidate response
             candidate = response.candidates[0]
+            response_text = response.text.strip()
 
-            # Build debug response with all available metadata
-            debug_response = {
-                'response': response.text.strip(),
-                'raw_metadata': {},
-                'debug_info': {}
+            # Initialize the output structure
+            output = {
+                "response": response_text,
+                "dynamic_retrieval_score": None,
+                "urls": []
             }
 
-            # Add grounding metadata if available
-            if hasattr(candidate, 'groundingMetadata'):
-                metadata = candidate.groundingMetadata
-                debug_response['debug_info']['has_grounding_metadata'] = True
+            # Extract metadata if available
+            if hasattr(candidate, 'grounding_metadata'):
+                metadata = candidate.grounding_metadata
 
-                # Log all available attributes
-                for attr in dir(metadata):
-                    if not attr.startswith('_'):
-                        try:
-                            value = getattr(metadata, attr)
-                            debug_response['raw_metadata'][attr] = str(value)
-                        except Exception as attr_error:
-                            debug_response['debug_info'][f'error_getting_{attr}'] = str(attr_error)
-            else:
-                debug_response['debug_info']['has_grounding_metadata'] = False
+                # Get dynamic retrieval score
+                if hasattr(metadata, 'retrieval_metadata'):
+                    output['dynamic_retrieval_score'] = metadata.retrieval_metadata.google_search_dynamic_retrieval_score
 
-            return json.dumps(debug_response, indent=2)
+                # Extract and follow URLs from sources
+                if hasattr(metadata, 'grounding_chunks'):
+                    for chunk in metadata.grounding_chunks:
+                        if hasattr(chunk, 'web'):
+                            actual_url = self._follow_redirect(chunk.web.uri)
+                            output['urls'].append(actual_url)
+
+            # Convert the output to a CSV-friendly format
+            # URLs will be joined with semicolons to keep them in one column
+            csv_output = {
+                "Response": output['response'],
+                "RetrievalScore": output['dynamic_retrieval_score'] if output['dynamic_retrieval_score'] is not None else "",
+                "URLs": "; ".join(output['urls']) if output['urls'] else ""
+            }
+
+            return json.dumps(csv_output)
 
         except Exception as e:
             return f"Error with Grounded Google: {str(e)}"
