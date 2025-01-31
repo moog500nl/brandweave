@@ -1,5 +1,6 @@
 import streamlit as st
 import logging
+import os
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -9,7 +10,7 @@ def main():
     try:
         logger.debug("Starting Streamlit application")
 
-        # Basic Streamlit configuration from original code
+        # Basic Streamlit configuration with explicit network settings
         st.set_page_config(
             page_title="Brandweave LLM Diagnostics",
             layout="wide",
@@ -18,12 +19,16 @@ def main():
 
         logger.debug("Page config set")
 
-        # Basic page elements from original code
-        st.title("🤖 Brandweave LLM Diagnostics")
-        st.write("Welcome to the LLM Diagnostics Platform!")
+        # Basic page elements
+        st.write("# 🤖 Brandweave LLM Diagnostics")
+        st.write("Testing connection...")
 
-        # Simple test elements from original code
-        st.sidebar.header("Settings")
+        # Add some debug information to the page
+        st.write("Debug Information:")
+        st.write(f"- Python Path: {os.getenv('PYTHONPATH', 'Not set')}")
+        st.write(f"- Current Directory: {os.getcwd()}")
+
+        logger.debug("Basic UI elements added")
 
         # Test input from original code
         user_input = st.text_input("Enter some text to test", "Hello, world!")
@@ -31,6 +36,7 @@ def main():
             st.write("You entered:", user_input)
 
         logger.debug("UI elements added")
+
 
     except Exception as e:
         logger.error(f"Error in main: {str(e)}", exc_info=True)
