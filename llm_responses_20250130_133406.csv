@@ -1,9 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""Several sources identify NordVPN, Surfshark, and ExpressVPN as top-performing VPNs in 2025.  However, different sources highlight different strengths.\n\n* **NordVPN:** Consistently ranked highly across multiple reviews, often cited as the \""best overall\"" or \""best for most people\"" due to its strong performance and features.\n\n* **Surfshark:** Frequently praised for its value for money and affordability.  While also performing well overall, its lower price point makes it a compelling choice.\n\n* **ExpressVPN:** Often lauded for its ease of use and strong performance, particularly in streaming.\n\nOther VPN services mentioned include:\n\n* **Proton VPN:**  Highly rated for its privacy features and security.\n\n* **Private Internet Access:**  Recommended for advanced users, suggesting a steeper learning curve but more comprehensive controls.\n\n* **Norton VPN:**  Praised for its inclusion in a full security suite.\n\n* **Windscribe:**  Highlighted as a good free VPN option, although paid VPNs generally offer superior speed, security and support.\n\n\nIt's crucial to note that the \""best\"" VPN depends on individual needs and priorities.  Consider what features are most important to you (e.g., speed, security, ease of use, streaming capabilities, price) before making a selection.  While these are highly-rated VPNs, always conduct your own research to ensure they meet your specific requirements."",
-  ""urls"": [
-    ""https://www.independent.co.uk/extras/indybest/gadgets-tech/best-vpn-b2674581.html"",
-    ""https://softwarelab.org/best-vpn-providers/""
-  ],
-  ""avg_logprobs"": -0.3847293007495867
-}"

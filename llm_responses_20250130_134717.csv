@@ -1,6 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""There is no single \""best\"" EV brand, as the ideal choice depends on individual needs and preferences.  However, Tesla and BYD consistently rank among the top brands globally for sales volume.  Other brands like Rivian, Lucid, Cadillac, and several European manufacturers (Audi, BMW, Mercedes-Benz, Volkswagen) also receive positive reviews and hold significant market share."",
-  ""urls"": [],
-  ""avg_logprobs"": -0.16102932628832364
-}"

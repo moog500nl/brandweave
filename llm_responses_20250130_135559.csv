@@ -1,6 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""NordVPN is frequently cited as the most popular VPN brand."",
-  ""urls"": [],
-  ""avg_logprobs"": -0.014920107447184049
-}"

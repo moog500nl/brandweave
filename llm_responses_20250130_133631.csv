@@ -1,6 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""Based on the provided reviews from multiple sources, NordVPN is frequently cited as the most popular VPN among gamers.  However, several sources also highlight ExpressVPN and Surfshark as strong contenders, each praised for different aspects like speed, ease of use, or affordability."",
-  ""urls"": [],
-  ""avg_logprobs"": -0.16821647573400428
-}"

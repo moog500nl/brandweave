@@ -1,6 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""Based on the provided reviews from January 2025,  NordVPN is frequently cited as the best overall VPN.  However, several sources also highly recommend Surfshark and ExpressVPN as excellent alternatives.  The \""best\"" VPN ultimately depends on individual needs and priorities."",
-  ""urls"": [],
-  ""avg_logprobs"": -0.06990633512798108
-}"

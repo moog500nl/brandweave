@@ -1,8 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""NordVPN, Surfshark, ExpressVPN, Proton VPN, Private Internet Access, Windscribe, Hotspot Shield, Norton Secure VPN, IPVanish, CyberGhost VPN, UltraVPN"",
-  ""urls"": [
-    ""https://www.security.org/vpn/best/""
-  ],
-  ""avg_logprobs"": -0.016527870216885128
-}"

@@ -1,6 +1,0 @@
-model,response
-gemini-1.5-flash-grounded,"{
-  ""text"": ""NordVPN"",
-  ""urls"": [],
-  ""avg_logprobs"": -9.53625052109904e-07
-}"
