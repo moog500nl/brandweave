@@ -3,5 +3,6 @@
   "gemini-1.5-flash": "gemini-1.5-flash",
   "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
   "grok-beta": "grok-beta",
-  "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct"
+  "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+  "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded"
 }
