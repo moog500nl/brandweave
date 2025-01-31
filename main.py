@@ -41,20 +41,7 @@ def main():
     st.sidebar.header("Settings")
 
     # Template management
-    template_tab, settings_tab = st.sidebar.tabs(["Templates", "Settings"])
-
-    with template_tab:
-        # Template selection
-        selected_template = st.selectbox(
-            "Choose Template",
-            ["Custom"] + list(templates.keys())
-        )
-
-        # Template management buttons
-        if selected_template != "Custom":
-            if st.button("Delete Template"):
-                delete_template(selected_template)
-                st.rerun()
+    settings_tab, template_tab = st.sidebar.tabs(["Settings", "Templates"])
 
     with settings_tab:
         # Model selection
@@ -73,6 +60,19 @@ def main():
             value=0.7,
             step=0.1
         )
+
+    with template_tab:
+        # Template selection
+        selected_template = st.selectbox(
+            "Choose Template",
+            ["Custom"] + list(templates.keys())
+        )
+
+        # Template management buttons
+        if selected_template != "Custom":
+            if st.button("Delete Template"):
+                delete_template(selected_template)
+                st.rerun()
 
     # Input areas
     col1, col2 = st.columns(2)
