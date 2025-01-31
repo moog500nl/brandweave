@@ -7,10 +7,7 @@ from providers.llama_provider import LlamaProvider
 from providers.perplexity_provider import PerplexityProvider
 from providers.deepseek_provider import DeepseekProvider
 from providers.grounded_google_provider import GroundedGoogleProvider
-
-# Initialize session state for API query counter
-if 'api_queries' not in st.session_state:
-    st.session_state.api_queries = 0
+from utils.template_manager import load_templates, save_template, delete_template
 
 def initialize_providers():
     return {
@@ -24,26 +21,6 @@ def initialize_providers():
         "deepseek-v3": DeepseekProvider()
     }
 
-def get_templates():
-    return {
-        "General Comparison": {
-            "system": "You are a helpful assistant providing detailed comparisons.",
-            "user": "Please analyze and compare the following:"
-        },
-        "Technical Analysis": {
-            "system": "You are a technical expert providing in-depth technical analysis.",
-            "user": "Please provide a technical analysis of:"
-        },
-        "Creative Writing": {
-            "system": "You are a creative writing assistant helping with content creation.",
-            "user": "Please write creatively about:"
-        },
-        "Brand Analysis": {
-            "system": "You are a brand analysis expert providing detailed brand insights.",
-            "user": "Please analyze the following brand:"
-        }
-    }
-
 def main():
     # Page configuration
     st.set_page_config(
@@ -52,51 +29,59 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    # Title and API Query Counter
-    col1, col2 = st.columns([3, 1])
-    with col1:
-        st.title("🤖 Brandweave LLM Diagnostics")
-        st.write("Welcome to the LLM Diagnostics Platform!")
-    with col2:
-        st.metric("API Queries Made", st.session_state.api_queries)
+    # Title
+    st.title("🤖 Brandweave LLM Diagnostics")
+    st.write("Welcome to the LLM Diagnostics Platform!")
 
     # Initialize providers
     providers = initialize_providers()
-    templates = get_templates()
+    templates = load_templates()
 
     # Sidebar controls
     st.sidebar.header("Settings")
 
-    # Template selection
-    selected_template = st.sidebar.selectbox(
-        "Choose Template",
-        ["Custom"] + list(templates.keys())
-    )
+    # Template management
+    template_tab, settings_tab = st.sidebar.tabs(["Templates", "Settings"])
 
-    # Model selection
-    selected_providers = {}
-    for provider_name in providers.keys():
-        selected_providers[provider_name] = st.sidebar.checkbox(
-            f"Use {provider_name}",
-            value=True
+    with template_tab:
+        # Template selection
+        selected_template = st.selectbox(
+            "Choose Template",
+            ["Custom"] + list(templates.keys())
         )
 
-    # Temperature control
-    temperature = st.sidebar.slider(
-        "Temperature",
-        min_value=0.0,
-        max_value=1.0,
-        value=0.7,
-        step=0.1
-    )
+        # Template management buttons
+        if selected_template != "Custom":
+            if st.button("Delete Template"):
+                delete_template(selected_template)
+                st.rerun()
+
+    with settings_tab:
+        # Model selection
+        selected_providers = {}
+        for provider_name in providers.keys():
+            selected_providers[provider_name] = st.checkbox(
+                f"Use {provider_name}",
+                value=True
+            )
+
+        # Temperature control
+        temperature = st.slider(
+            "Temperature",
+            min_value=0.0,
+            max_value=1.0,
+            value=0.7,
+            step=0.1
+        )
 
     # Input areas
     col1, col2 = st.columns(2)
     with col1:
         if selected_template != "Custom":
+            template_data = templates[selected_template]
             system_prompt = st.text_area(
                 "System Prompt",
-                value=templates[selected_template]["system"],
+                value=template_data.get("system_prompt", ""),
                 height=150
             )
         else:
@@ -106,9 +91,10 @@ def main():
             )
     with col2:
         if selected_template != "Custom":
+            template_data = templates[selected_template]
             user_prompt = st.text_area(
                 "User Prompt",
-                value=templates[selected_template]["user"],
+                value=template_data.get("user_prompt", ""),
                 height=150
             )
         else:
@@ -116,6 +102,22 @@ def main():
                 "User Prompt",
                 height=150
             )
+
+    # Save template option
+    if selected_template == "Custom":
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            new_template_name = st.text_input("Template Name")
+        with col2:
+            if st.button("Save Template") and new_template_name:
+                save_template(
+                    new_template_name,
+                    system_prompt,
+                    user_prompt,
+                    selected_providers,
+                    temperature
+                )
+                st.rerun()
 
     # Generate button
     if st.button("Generate Responses"):
@@ -139,8 +141,6 @@ def main():
                         )
                         st.write(f"### {provider_name}")
                         st.write(response)
-                        # Increment API query counter
-                        st.session_state.api_queries += 1
                     except Exception as e:
                         st.error(f"Error with {provider_name}: {str(e)}")
 
