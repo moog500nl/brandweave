@@ -13,7 +13,7 @@ class PerplexityProvider(LLMProvider):
 
     @property
     def name(self) -> str:
-        return "sonar-medium-chat"
+        return "sonar"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:

@@ -6,6 +6,7 @@ from providers.grok_provider import GrokProvider
 from providers.llama_provider import LlamaProvider
 from providers.grounded_google_provider import GroundedGoogleProvider
 from providers.perplexity_provider import PerplexityProvider
+from providers.deepseek_provider import DeepseekProvider #Added import for DeepseekProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
@@ -30,7 +31,8 @@ def initialize_providers():
         "grok-beta": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider(),
         "gemini-1.5-flash-grounded": GroundedGoogleProvider(),
-        "sonar-medium-chat": PerplexityProvider()
+        "sonar-medium-chat": PerplexityProvider(),
+        "deepseek-v3": DeepseekProvider() #Added DeepseekProvider to the dictionary
     }
 
 def main():
