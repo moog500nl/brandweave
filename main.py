@@ -15,10 +15,8 @@ from utils.template_manager import (
 import time
 
 def format_execution_time(seconds: float) -> str:
-    """Format execution time in minutes and seconds"""
     minutes = int(seconds // 60)
     remaining_seconds = int(seconds % 60)
-
     if minutes > 0:
         return f"{minutes} minute{'s' if minutes != 1 else ''} and {remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
     return f"{remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
@@ -36,11 +34,16 @@ def initialize_providers():
     }
 
 def main():
+    # Replit-specific configuration
     st.set_page_config(
         page_title="Brandweave LLM Diagnostics",
-        layout="wide"
+        layout="wide",
+        initial_sidebar_state="expanded"
     )
+
+    # Basic page elements for testing
     st.title("🤖 Brandweave LLM Diagnostics")
+    
 
     # Initialize providers
     providers = initialize_providers()
@@ -51,6 +54,7 @@ def main():
 
     # Sidebar controls
     st.sidebar.header("Settings")
+    
 
     # Model Settings Section
     st.sidebar.subheader("Model Settings")
