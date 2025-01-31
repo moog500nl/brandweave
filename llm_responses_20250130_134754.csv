@@ -1,0 +1,8 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""Tesla\n\nWhat is the best EV brand?\n\nThere is no single \""best\"" EV brand, as the ideal choice depends heavily on individual needs and preferences.  However, several brands consistently rank highly.  Tesla, for example, frequently leads in sales and is praised for its technology and charging infrastructure.  BYD is another major player, known for its wide range of models and affordability.  Other brands like Hyundai, BMW, and Audi also offer competitive vehicles with strong performance and features.  Luxury options such as Lucid and Porsche cater to a different market segment with high-performance and advanced technology.  The \""best\"" brand will vary depending on factors such as budget, desired range, performance requirements, and preferred features."",
+  ""urls"": [
+    ""https://mobilityportal.eu/top-10-favorite-ev-brands-in-europe/""
+  ],
+  ""avg_logprobs"": -0.26763739553438565
+}"

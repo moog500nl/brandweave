@@ -1,0 +1,6 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""Security is the most important attribute of a VPN.  A VPN's primary function is to protect user privacy and data by encrypting internet traffic and masking the user's IP address.  Therefore, robust security features such as strong encryption (like AES-256), secure protocols (like OpenVPN), and a lack of IP and DNS leaks are paramount.  A VPN without strong security is essentially useless."",
+  ""urls"": [],
+  ""avg_logprobs"": -0.12598503337186925
+}"

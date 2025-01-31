@@ -1,0 +1,10 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""Based on the provided reviews from various sources, several VPNs consistently rank highly among the gaming community in 2025:\n\n* **NordVPN:** Frequently cited as the best overall VPN for gaming due to its exceptional speed, low latency, extensive server network, and robust security features, including its Meshnet feature for local multiplayer gaming.  Many reviews highlight its performance for various gaming needs.\n\n* **Surfshark:** Praised for its affordability and speed, often described as having the best ping (lowest latency), making it ideal for a smooth gaming experience.  Its unlimited connections are also a major plus.\n\n* **ExpressVPN:**  Consistently ranked among the top VPNs for gaming, particularly praised for its user-friendly interface, making it an excellent choice for beginners.  However, it is generally more expensive than other options.  Its strong security features are another major benefit.\n\n* **CyberGhost:**  Often recommended for its affordability and dedicated gaming servers optimized for speed.\n\n* **Private Internet Access (PIA):** This VPN receives positive mentions for its security and ease of use, particularly for beginners and mobile gaming.\n\n\nOther VPNs mentioned include IPVanish, ProtonVPN, and VyprVPN, each offering specific advantages.  ProtonVPN, in particular, is sometimes recommended as a free option, though free services usually compromise on speed and security compared to paid options.  The best choice ultimately depends on individual needs and priorities (speed, security, budget, ease of use)."",
+  ""urls"": [
+    ""https://cybernews.com/best-vpn/vpn-for-gaming/"",
+    ""https://travelsecurely.com/best-vpn-for-gaming/"",
+    ""https://www.safetydetectives.com/blog/best-vpns-for-gaming/""
+  ],
+  ""avg_logprobs"": -0.44113169120266693
+}"

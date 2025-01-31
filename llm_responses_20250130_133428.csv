@@ -1,0 +1,11 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""Several sources identify NordVPN as a top choice for gamers in 2025, citing its speed, low ping times, strong security, and versatile apps.  However, other VPNs are also highly recommended depending on specific needs and preferences.\n\nHere's a summary of the best VPN brands for gamers, according to various sources:\n\n* **NordVPN:** Consistently ranked among the best overall, praised for speed, security, and a large server network.  Specifically noted as ideal for professional gamers and streamers.\n\n* **ExpressVPN:**  A premium option, lauded for its user-friendliness, especially for console gaming.  It offers excellent performance but comes at a higher price point.\n\n* **Surfshark:**  A strong contender, praised for its affordability and unlimited connections, making it suitable for PC gaming and augmented reality (AR) games on Android.\n\n* **CyberGhost VPN:**  Highlights include dedicated gaming servers and strong automation features, making it a good choice for Mac gaming.\n\n* **Private Internet Access (PIA):**  Recommended for its ease of use, particularly for mobile gaming.\n\n* **ProtonVPN:**  A viable free option for gamers who prioritize security and speed.\n\n* **IPVanish:**  Noted for its reliability, security, and excellent in-game performance, although it's also mentioned as being good for torrenting.\n\n* **Other Notable Mentions:** VyprVPN (very fast), PrivateVPN (minimalist), TunnelBear (beginner-friendly), and Hotspot Shield (fast speeds and intuitive apps) are also suggested by some sources.\n\n\nIt's important to note that the \""best\"" VPN can vary based on individual needs and priorities (speed, security, price, device compatibility, server locations, etc.).  It is recommended to try out a few services if possible, taking advantage of free trials or money-back guarantees, before committing to a long-term subscription."",
+  ""urls"": [
+    ""https://cyberinsider.com/vpn/best/gaming/"",
+    ""https://www.tomsguide.com/best-picks/best-gaming-vpn"",
+    ""https://www.security.org/vpn/best/gamers/"",
+    ""https://www.safetydetectives.com/blog/best-vpns-for-gaming/""
+  ],
+  ""avg_logprobs"": -0.21603539977410827
+}"

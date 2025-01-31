@@ -1,0 +1,6 @@
+model,response
+gemini-1.5-flash-grounded,"{
+  ""text"": ""Tesla"",
+  ""urls"": [],
+  ""avg_logprobs"": -6.615794973185984e-06
+}"
