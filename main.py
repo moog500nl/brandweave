@@ -8,6 +8,7 @@ from providers.perplexity_provider import PerplexityProvider
 from providers.deepseek_provider import DeepseekProvider
 from providers.grounded_google_provider import GroundedGoogleProvider
 from utils.template_manager import load_templates, save_template, delete_template
+from utils.csv_handler import save_responses_to_csv
 
 def initialize_providers():
     return {
@@ -59,6 +60,16 @@ def main():
             max_value=1.0,
             value=0.7,
             step=0.1
+        )
+
+        # Number of repetitions
+        num_repetitions = st.number_input(
+            "Number of times to repeat prompt",
+            min_value=1,
+            max_value=10,
+            value=1,
+            step=1,
+            help="Each selected LLM will receive the prompt this many times"
         )
 
     with template_tab:
@@ -129,20 +140,40 @@ def main():
             st.error("Please enter a user prompt")
             return
 
-        # Generate responses
+        # List to store all responses for CSV
+        all_responses = []
+
+        # Generate responses for each provider
         for provider_name, provider in providers.items():
             if selected_providers[provider_name]:
-                with st.spinner(f"Querying {provider_name}..."):
-                    try:
-                        response = provider.generate_response(
-                            system_prompt,
-                            user_prompt,
-                            temperature
-                        )
-                        st.write(f"### {provider_name}")
-                        st.write(response)
-                    except Exception as e:
-                        st.error(f"Error with {provider_name}: {str(e)}")
+                st.write(f"### {provider_name}")
+
+                # Generate multiple responses per provider
+                for i in range(num_repetitions):
+                    with st.spinner(f"Querying {provider_name} (Attempt {i+1}/{num_repetitions})..."):
+                        try:
+                            response = provider.generate_response(
+                                system_prompt,
+                                user_prompt,
+                                temperature
+                            )
+                            # Add response to the display with attempt number if multiple attempts
+                            if num_repetitions > 1:
+                                st.write(f"Attempt {i+1}:")
+                            st.write(response)
+
+                            # Add to responses list for CSV
+                            all_responses.append((f"{provider_name}_attempt_{i+1}", response))
+
+                        except Exception as e:
+                            error_msg = f"Error with {provider_name}: {str(e)}"
+                            st.error(error_msg)
+                            all_responses.append((f"{provider_name}_attempt_{i+1}", error_msg))
+
+        # Save all responses to CSV
+        if all_responses:
+            csv_filename = save_responses_to_csv(all_responses)
+            st.success(f"Responses saved to {csv_filename}")
 
 if __name__ == "__main__":
     main()
