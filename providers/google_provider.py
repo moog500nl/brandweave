@@ -5,11 +5,11 @@ from .base import LLMProvider
 class GoogleProvider(LLMProvider):
     def __init__(self):
         genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.0-flash-exp')
         
     @property
     def name(self) -> str:
-        return "gemini-1.5-flash"
+        return "gemini-2.0-flash-exp"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
