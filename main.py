@@ -1,4 +1,6 @@
 import streamlit as st
+import asyncio
+import aiohttp
 from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
@@ -6,7 +8,7 @@ from providers.grok_provider import GrokProvider
 from providers.llama_provider import LlamaProvider
 from providers.grounded_google_provider import GroundedGoogleProvider
 from providers.perplexity_provider import PerplexityProvider
-from providers.deepseek_provider import DeepseekProvider #Added import for DeepseekProvider
+from providers.deepseek_provider import DeepseekProvider
 from utils.csv_handler import save_responses_to_csv
 from utils.template_manager import (
     save_template, get_template, delete_template,
@@ -32,8 +34,44 @@ def initialize_providers():
         "llama-v3p1-70b-instruct": LlamaProvider(),
         "gemini-1.5-flash-grounded": GroundedGoogleProvider(),
         "sonar-medium-chat": PerplexityProvider(),
-        "deepseek-v3": DeepseekProvider() #Added DeepseekProvider to the dictionary
+        "deepseek-v3": DeepseekProvider()
     }
+
+async def generate_concurrent_responses(providers, selected_providers, system_prompt, user_prompt, temperature, num_submissions, progress_container, progress_bar, status_containers):
+    responses = []
+    total_calls = sum(1 for p in selected_providers.values() if p) * num_submissions
+    current_call = 0
+
+    async def process_provider(provider_name, provider, submission_idx):
+        nonlocal current_call
+        display_name = st.session_state.custom_names.get(provider_name, provider_name)
+        status_containers[provider_name].info(f"Querying {display_name}...")
+
+        try:
+            response = provider.generate_response(
+                system_prompt,
+                user_prompt,
+                temperature
+            )
+            responses.append((display_name, response))
+            status_containers[provider_name].success(f"{display_name}: Response received")
+        except Exception as e:
+            error_msg = f"Error with {display_name}: {str(e)}"
+            responses.append((display_name, error_msg))
+            status_containers[provider_name].error(error_msg)
+
+        current_call += 1
+        progress_bar.progress(current_call / total_calls)
+
+    tasks = []
+    for submission_idx in range(num_submissions):
+        progress_container.text(f"Processing submission {submission_idx + 1}/{num_submissions}")
+        for provider_name, provider in providers.items():
+            if selected_providers[provider_name]:
+                tasks.append(process_provider(provider_name, provider, submission_idx))
+
+    await asyncio.gather(*tasks)
+    return responses
 
 def main():
     st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
@@ -174,68 +212,37 @@ def main():
             st.error("Please enter a user prompt")
             return
 
-        responses = []
-        
-        # Create a progress container
         progress_container = st.empty()
-        
-        # Calculate total number of API calls
-        total_calls = sum(1 for p in selected_providers.values() if p) * num_submissions
         progress_bar = st.progress(0)
-        current_call = 0
-        
-        # Create status containers for each provider
         status_containers = {provider: st.empty() for provider in providers.keys()}
-        
-        # Add execution time tracking
         start_time = time.time()
-        
+
         try:
-            for submission_idx in range(num_submissions):
-                progress_container.text(f"Processing submission {submission_idx + 1}/{num_submissions}")
-                
-                for provider_name, provider in providers.items():
-                    if selected_providers[provider_name]:
-                        # Get custom name for display
-                        display_name = st.session_state.custom_names.get(provider_name, provider_name)
-                        
-                        # Update status for current provider
-                        status_containers[provider_name].info(f"Querying {display_name}...")
-                        
-                        try:
-                            response = provider.generate_response(
-                                system_prompt,
-                                user_prompt,
-                                temperature
-                            )
-                            # Use custom name in responses
-                            responses.append((display_name, response))
-                            status_containers[provider_name].success(f"{display_name}: Response received")
-                        except Exception as e:
-                            error_msg = f"Error with {display_name}: {str(e)}"
-                            responses.append((display_name, error_msg))
-                            status_containers[provider_name].error(error_msg)
-                        
-                        # Update progress
-                        current_call += 1
-                        progress_bar.progress(current_call / total_calls)
-            
-            # Calculate total execution time
+            responses = asyncio.run(generate_concurrent_responses(
+                providers,
+                selected_providers,
+                system_prompt,
+                user_prompt,
+                temperature,
+                num_submissions,
+                progress_container,
+                progress_bar,
+                status_containers
+            ))
+
             total_execution_time = time.time() - start_time
-            
+
             progress_container.empty()
             for container in status_containers.values():
                 container.empty()
             progress_bar.empty()
-            
-            # Display execution time in formatted string
+
             st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
-            
-            # Save to CSV
+
             if responses:
                 filename = save_responses_to_csv(responses, total_execution_time)
                 st.success(f"Responses have been saved to CSV file: {filename}")
-                
+
                 with open(filename, 'rb') as f:
                     st.download_button(
                         label="Download CSV",
@@ -245,7 +252,6 @@ def main():
                     )
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
-            # Clean up progress indicators
             progress_container.empty()
             for container in status_containers.values():
                 container.empty()
