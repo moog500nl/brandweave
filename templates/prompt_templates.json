@@ -15,40 +15,52 @@
     "user_prompt": "Name 10 VPN Brands.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
-      "claude-3-sonnet-20240229": true,
-      "grok-beta": true,
-      "llama-v3p1-70b-instruct": true
+      "gemini-2.0-flash-exp": true,
+      "claude-3-5-sonnet-latest": true,
+      "grok-beta": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
       "gpt-4o-mini": "chatgpt-4o-latest",
       "gemini-1.5-flash": "gemini-1.5-flash",
-      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229",
+      "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
-      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct"
+      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
+      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-16T13:20:13.987024"
+    "created_at": "2025-02-07T11:01:10.289883"
   },
   "Name 5 X Brands": {
     "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. You will not explain yourself. ",
     "user_prompt": "Name 5 VPN Brands.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
-      "claude-3-sonnet-20240229": true,
-      "grok-beta": true,
-      "llama-v3p1-70b-instruct": true
+      "gemini-2.0-flash-exp": true,
+      "claude-3-5-sonnet-latest": true,
+      "grok-beta": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
       "gpt-4o-mini": "chatgpt-4o-latest",
       "gemini-1.5-flash": "gemini-1.5-flash",
-      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229",
+      "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
-      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct"
+      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
+      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-17T12:45:33.011272"
+    "created_at": "2025-02-07T11:56:28.133879"
   },
   "Name 1 X Brand": {
     "system_prompt": "Provide the brand name only. You will not explain yourself. Do not add a full stop at the end of the brand name.",
