@@ -41,11 +41,12 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     responses = []
     total_calls = sum(1 for p in selected_providers.values() if p) * num_submissions
     current_call = 0
+    providers_per_submission = sum(1 for p in selected_providers.values() if p)
 
     async def process_provider(provider_name, provider, submission_idx):
         nonlocal current_call
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
-        status_containers[provider_name].info(f"Querying {display_name}...")
+        status_containers[provider_name].info(f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions})")
 
         try:
             response = provider.generate_response(
@@ -54,18 +55,20 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
                 temperature
             )
             responses.append((display_name, response))
-            status_containers[provider_name].success(f"{display_name}: Response received")
+            status_containers[provider_name].success(f"{display_name}: Response received (Submission {submission_idx + 1}/{num_submissions})")
         except Exception as e:
             error_msg = f"Error with {display_name}: {str(e)}"
             responses.append((display_name, error_msg))
             status_containers[provider_name].error(error_msg)
 
         current_call += 1
-        progress_bar.progress(current_call / total_calls)
+        progress = current_call / total_calls
+        progress_bar.progress(progress)
+        submission_progress = (current_call - 1) // providers_per_submission + 1
+        progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
 
     tasks = []
     for submission_idx in range(num_submissions):
-        progress_container.text(f"Processing submission {submission_idx + 1}/{num_submissions}")
         for provider_name, provider in providers.items():
             if selected_providers[provider_name]:
                 tasks.append(process_provider(provider_name, provider, submission_idx))
@@ -73,7 +76,7 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     await asyncio.gather(*tasks)
     return responses
 
-def main():
+async def async_main():
     st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
     st.title("🤖 Brandweave LLM Diagnostics")
 
@@ -86,16 +89,16 @@ def main():
 
     # Sidebar controls
     st.sidebar.header("Settings")
-    
+
     # Model Settings Section
     st.sidebar.subheader("Model Settings")
-    
+
     # Initialize selected providers and custom names with session state
     selected_providers = {}
     show_custom_names = st.sidebar.checkbox("Customize Model Names", 
-                                          value=st.session_state.get('show_custom_names', False))
+                                       value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
-    
+
     # Custom name inputs if enabled
     if show_custom_names:
         st.sidebar.markdown("---")
@@ -107,11 +110,11 @@ def main():
                 key=f"custom_name_{provider_name}"
             )
             st.session_state.custom_names[provider_name] = custom_name
-        
+
         if st.sidebar.button("Save Custom Names"):
             save_custom_names(st.session_state.custom_names)
             st.sidebar.success("Custom names saved!")
-    
+
     # Provider selection checkboxes
     st.sidebar.markdown("---")
     st.sidebar.subheader("Select Models")
@@ -142,14 +145,14 @@ def main():
     # Template Management in Sidebar
     st.sidebar.header("Template Management")
     template_names = list_templates()
-    
+
     if template_names:
         selected_template = st.sidebar.selectbox(
             "Load Template",
             [""] + template_names,
             index=0
         )
-        
+
         if selected_template:
             if st.sidebar.button("Load Selected Template"):
                 template = get_template(selected_template)
@@ -165,7 +168,7 @@ def main():
                     if 'custom_names' in template:
                         st.session_state.custom_names.update(template['custom_names'])
                     st.rerun()
-            
+
             if st.sidebar.button("Delete Selected Template"):
                 if delete_template(selected_template):
                     st.sidebar.success(f"Template '{selected_template}' deleted!")
@@ -218,7 +221,7 @@ def main():
         start_time = time.time()
 
         try:
-            responses = asyncio.run(generate_concurrent_responses(
+            responses = await generate_concurrent_responses(
                 providers,
                 selected_providers,
                 system_prompt,
@@ -228,7 +231,7 @@ def main():
                 progress_container,
                 progress_bar,
                 status_containers
-            ))
+            )
 
             total_execution_time = time.time() - start_time
 
@@ -258,4 +261,4 @@ def main():
             progress_bar.empty()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(async_main())
