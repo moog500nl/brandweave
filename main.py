@@ -72,10 +72,9 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         progress = current_call / total_calls
         progress_bar.progress(progress)
         
-        # Calculate submission progress based on non-Google providers
-        if not is_google:
-            submission_progress = (current_call - 1) // (providers_per_submission - sum(1 for p in providers.values() if isinstance(p, (GoogleProvider, GroundedGoogleProvider)) and selected_providers[p.name])) + 1
-            progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
+        # Calculate submission progress including all providers
+        submission_progress = (current_call - 1) // providers_per_submission + 1
+        progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
 
     # Create semaphore for non-Google providers
     general_semaphore = asyncio.Semaphore(3)  # Allow 3 concurrent calls for other providers
