@@ -77,18 +77,18 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
             submission_progress = (current_call - 1) // (providers_per_submission - sum(1 for p in providers.values() if isinstance(p, (GoogleProvider, GroundedGoogleProvider)) and selected_providers[p.name])) + 1
             progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
 
-    # Create semaphore specifically for Google API
-    google_semaphore = asyncio.Semaphore(1)  # Max 1 concurrent call for Google API
-    general_semaphore = asyncio.Semaphore(3)  # Allow more concurrent calls for other providers
+    # Create semaphores for concurrent execution
+    google_semaphore = asyncio.Semaphore(2)  # Allow 2 concurrent Google calls
+    general_semaphore = asyncio.Semaphore(3)  # Allow 3 concurrent calls for other providers
 
     async def rate_limited_provider(provider_name, provider, submission_idx):
-        # Use Google-specific semaphore and delay for Google providers
+        # Use appropriate semaphore based on provider type
         if isinstance(provider, (GoogleProvider, GroundedGoogleProvider)):
             async with google_semaphore:
-                await asyncio.sleep(6)  # Ensure we stay under 10 requests/minute for Google
                 return await process_provider(provider_name, provider, submission_idx)
         else:
-            # Other providers can run with higher concurrency
+            async with general_semaphore:
+                return await process_provider(provider_name, provider, submission_idx)
             async with general_semaphore:
                 return await process_provider(provider_name, provider, submission_idx)
 
