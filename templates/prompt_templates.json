@@ -63,44 +63,56 @@
     "created_at": "2025-02-07T11:56:28.133879"
   },
   "Name 1 X Brand": {
-    "system_prompt": "Provide the brand name only. You will not explain yourself. Do not add a full stop at the end of the brand name.",
+    "system_prompt": "Provide the brand name only. Do not mention anything else. Do not add a full stop at the end of the brand name.",
     "user_prompt": "Name one VPN Brand.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
-      "claude-3-sonnet-20240229": true,
-      "grok-beta": true,
-      "llama-v3p1-70b-instruct": true
+      "gemini-2.0-flash-exp": true,
+      "claude-3-5-sonnet-latest": true,
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
       "gpt-4o-mini": "chatgpt-4o-latest",
       "gemini-1.5-flash": "gemini-1.5-flash",
-      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229",
+      "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
-      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct"
+      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
+      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-17T12:59:42.799490"
+    "created_at": "2025-02-12T14:22:13.093493"
   },
   "Familiarity with Brand X": {
     "system_prompt": "Answer using a 5 point scale where 1 = Very Unfamiliar to 5 = Very Familiar. Do not explain yourself. Do not add a full stop to your answer.",
-    "user_prompt": "Are you familiar with the VPN brand Tunnelbear?",
+    "user_prompt": "How familiar are you with the VPN brand Hotspot Shield?",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
-      "claude-3-sonnet-20240229": true,
-      "grok-beta": true,
-      "llama-v3p1-70b-instruct": true
+      "gemini-2.0-flash-exp": true,
+      "claude-3-5-sonnet-latest": true,
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
       "gpt-4o-mini": "chatgpt-4o-latest",
       "gemini-1.5-flash": "gemini-1.5-flash",
-      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229",
+      "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
-      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct"
+      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
+      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-17T13:07:34.639003"
+    "created_at": "2025-02-11T12:53:39.686552"
   },
   "10 Attribute Ranking": {
     "system_prompt": "Answer by ranking them in terms of importance, in order, separated by commas. Do not explain yourself. List only the attributes.",
@@ -124,14 +136,17 @@
     "created_at": "2025-01-22T09:39:07.436711"
   },
   "5 Attribute Ranking": {
-    "system_prompt": "Answer by ranking them in terms of importance, in order, separated by commas. Do not explain yourself. List only the attributes.",
-    "user_prompt": "List 5 different attributes that VPNs should be evaluated on.",
+    "system_prompt": "You will respond by placing a comma between each attribute you respond with. You will not use full stops in the attributes. Do not repeat yourself. You don't need to mention anything else, just state the attributes.",
+    "user_prompt": "List the 5 most important attributes that VPNs should be evaluated on.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
+      "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-beta": false,
-      "llama-v3p1-70b-instruct": true
+      "grok-2-1212": true,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
@@ -140,9 +155,11 @@
       "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
       "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-22T09:51:05.254282"
+    "created_at": "2025-02-13T15:42:07.936835"
   },
   "1 Attribute Ranking": {
     "system_prompt": "Answer with only one attribute. Do not explain yourself. ",
@@ -167,13 +184,16 @@
   },
   "5 Best Attribute": {
     "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. You will not explain yourself. ",
-    "user_prompt": "Rank the best 5 VPN brands for Privacy & Logging Policy, in order.",
+    "user_prompt": "Name the best 5 VPN brands for speed.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
+      "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-beta": false,
-      "llama-v3p1-70b-instruct": true
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
@@ -182,19 +202,24 @@
       "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
       "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-22T10:43:47.381509"
+    "created_at": "2025-02-12T11:24:49.589659"
   },
   "Best Single Brand": {
-    "system_prompt": "Name only the best brand. Name only one. You will not explain yourself. ",
-    "user_prompt": "Name the best VPN brand.",
+    "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. Do not mention anything else.",
+    "user_prompt": "Name 10 VPN Brands.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
+      "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-beta": false,
-      "llama-v3p1-70b-instruct": true
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
@@ -203,9 +228,11 @@
       "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
       "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-22T16:53:57.357748"
+    "created_at": "2025-02-12T14:21:43.746287"
   },
   "Best Single Brand - B": {
     "system_prompt": "Name only one brand. You will not explain yourself.  Do not add a full stop at the end of the brand name.",
@@ -313,14 +340,17 @@
     "created_at": "2025-01-24T13:56:08.251859"
   },
   "Best Single Brand by Single Attribute - (SOO)": {
-    "system_prompt": "Name only the best brand. Name only one. You will not explain yourself. Do not add a fullstop to the end of the brand name.",
+    "system_prompt": "Name only the best brand. Name only one. Do not mention anything else. Do not add a fullstop to the end of the brand name.",
     "user_prompt": "Name the best VPN brand for privacy. I don't care about any other attributes.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
+      "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-beta": false,
-      "llama-v3p3-70b-instruct": true
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
@@ -329,19 +359,24 @@
       "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
       "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-27T10:48:59.983705"
+    "created_at": "2025-02-12T14:25:13.230659"
   },
-  "Best Single brand by Single Attribute (CO)": {
-    "system_prompt": "Name only the best brand. Name only one. You will not explain yourself.  Do not add a full stop to the end of the brand name.",
+  "Best Single Brand by Single Attribute - (CO)": {
+    "system_prompt": "Name only the best brand. Name only one. Do not mention anything else. Do not add a full stop to the end of the brand name.",
     "user_prompt": "Name the best VPN brand for privacy.",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
+      "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-beta": false,
-      "llama-v3p3-70b-instruct": true
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
@@ -350,8 +385,10 @@
       "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
       "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-27T10:49:58.693441"
+    "created_at": "2025-02-12T14:26:11.495743"
   }
 }

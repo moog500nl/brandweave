@@ -13,7 +13,7 @@ class GrokProvider(LLMProvider):
         
     @property
     def name(self) -> str:
-        return "grok-beta"
+        return "grok-2-1212"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
@@ -22,7 +22,7 @@ class GrokProvider(LLMProvider):
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                "model": "grok-beta",
+                "model": "grok-2-1212",
                 "stream": False,
                 "temperature": temperature,
                 "max_tokens": 1000

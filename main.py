@@ -30,7 +30,7 @@ def initialize_providers():
         "gpt-4o-mini": OpenAIProvider(),
         "gemini-2.0-flash-exp": GoogleProvider(),
         "claude-3-5-sonnet-latest": AnthropicProvider(),
-        "grok-beta": GrokProvider(),
+        "grok-2-1212": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider(),
         "gemini-1.5-flash-grounded": GroundedGoogleProvider(),
         "sonar-medium-chat": PerplexityProvider(),
