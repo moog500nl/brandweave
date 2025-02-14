@@ -46,7 +46,14 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     async def process_provider(provider_name, provider, submission_idx):
         nonlocal current_call
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
-        status_containers[provider_name].info(f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions})")
+        is_google = isinstance(provider, (GoogleProvider, GroundedGoogleProvider))
+        
+        if is_google:
+            status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions}, waiting for rate limit)"
+        else:
+            status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions})"
+            
+        status_containers[provider_name].info(status_msg)
 
         try:
             response = provider.generate_response(
@@ -64,8 +71,11 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         current_call += 1
         progress = current_call / total_calls
         progress_bar.progress(progress)
-        submission_progress = (current_call - 1) // providers_per_submission + 1
-        progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
+        
+        # Calculate submission progress based on non-Google providers
+        if not is_google:
+            submission_progress = (current_call - 1) // (providers_per_submission - sum(1 for p in providers.values() if isinstance(p, (GoogleProvider, GroundedGoogleProvider)) and selected_providers[p.name])) + 1
+            progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
 
     # Create semaphore specifically for Google API
     google_semaphore = asyncio.Semaphore(1)  # Max 1 concurrent call for Google API
