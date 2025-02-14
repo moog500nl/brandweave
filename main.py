@@ -67,11 +67,19 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         submission_progress = (current_call - 1) // providers_per_submission + 1
         progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
 
+    # Create semaphore to limit concurrent API calls
+    semaphore = asyncio.Semaphore(3)  # Max 3 concurrent calls
+
+    async def rate_limited_provider(provider_name, provider, submission_idx):
+        async with semaphore:
+            await asyncio.sleep(0.5)  # Add small delay between calls
+            return await process_provider(provider_name, provider, submission_idx)
+
     tasks = []
     for submission_idx in range(num_submissions):
         for provider_name, provider in providers.items():
             if selected_providers[provider_name]:
-                tasks.append(process_provider(provider_name, provider, submission_idx))
+                tasks.append(rate_limited_provider(provider_name, provider, submission_idx))
 
     await asyncio.gather(*tasks)
     return responses
