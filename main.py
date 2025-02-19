@@ -137,17 +137,17 @@ async def async_main():
                         st.error("CSV file must contain a 'question' column")
                         return
                     st.success(f"Loaded {len(questions_df)} questions from CSV")
+
+                # Add Generate Responses button here after successful file load
+                if st.button("Generate Responses", key="multi_prompt_generate"):
+                    if not any(selected_providers.values()):
+                        st.error("Please select at least one LLM provider")
+                        return
             except Exception as e:
                 st.error(f"Error processing file: {str(e)}")
                 return
 
-            # Add Generate Responses button after file processing
-            if st.button("Generate Responses", key="multi_prompt_generate"):
-                if not any(selected_providers.values()):
-                    st.error("Please select at least one LLM provider")
-                    return
-
-                progress_container = st.empty()
+            progress_container = st.empty()
                 progress_bar = st.progress(0)
                 status_containers = {provider: st.empty() for provider in providers.keys()}
                 start_time = time.time()
