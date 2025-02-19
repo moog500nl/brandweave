@@ -148,9 +148,9 @@ async def async_main():
                 return
 
             progress_container = st.empty()
-                progress_bar = st.progress(0)
-                status_containers = {provider: st.empty() for provider in providers.keys()}
-                start_time = time.time()
+            progress_bar = st.progress(0)
+            status_containers = {provider: st.empty() for provider in providers.keys()}
+            start_time = time.time()
 
                 try:
                     all_responses = []
