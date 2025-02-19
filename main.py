@@ -275,15 +275,6 @@ async def render_multi_prompt():
             key="multi_system_prompt_input"  
         )
 
-    with col2:
-        user_prompt = st.text_area(
-            "User Prompt",
-            value=st.session_state.get('multi_user_prompt', ''),
-            height=150,
-            placeholder="Enter user prompt here...",
-            key="multi_user_prompt_input"  
-        )
-
     st.write("Multi-prompt additional features coming soon!")
 
 async def async_main():
