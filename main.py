@@ -38,6 +38,7 @@ def initialize_providers():
     }
 
 async def generate_concurrent_responses(providers, selected_providers, system_prompt, user_prompt, temperature, num_submissions, progress_container, progress_bar, status_containers):
+    # Existing generate_concurrent_responses function remains unchanged
     responses = []
     total_calls = sum(1 for p in selected_providers.values() if p) * num_submissions
     current_call = 0
@@ -47,12 +48,12 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         nonlocal current_call
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
         is_google = isinstance(provider, (GoogleProvider, GroundedGoogleProvider))
-        
+
         if is_google:
             status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions}, waiting for rate limit)"
         else:
             status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions})"
-            
+
         status_containers[provider_name].info(status_msg)
 
         try:
@@ -71,16 +72,13 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         current_call += 1
         progress = current_call / total_calls
         progress_bar.progress(progress)
-        
-        # Calculate submission progress including all providers
+
         submission_progress = (current_call - 1) // providers_per_submission + 1
         progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
 
-    # Create semaphore for non-Google providers
-    general_semaphore = asyncio.Semaphore(3)  # Allow 3 concurrent calls for other providers
+    general_semaphore = asyncio.Semaphore(3)
 
     async def rate_limited_provider(provider_name, provider, submission_idx):
-        # Google providers already have rate limiting built in
         if isinstance(provider, (GoogleProvider, GroundedGoogleProvider)):
             return await process_provider(provider_name, provider, submission_idx)
         else:
@@ -96,10 +94,7 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     await asyncio.gather(*tasks)
     return responses
 
-async def async_main():
-    st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
-    st.title("🤖 Brandweave LLM Diagnostics")
-
+async def render_single_prompt():
     # Initialize providers
     providers = initialize_providers()
 
@@ -116,7 +111,7 @@ async def async_main():
     # Initialize selected providers and custom names with session state
     selected_providers = {}
     show_custom_names = st.sidebar.checkbox("Customize Model Names", 
-                                       value=st.session_state.get('show_custom_names', False))
+                                    value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
 
     # Custom name inputs if enabled
@@ -179,7 +174,6 @@ async def async_main():
                 if template:
                     st.session_state['system_prompt'] = template['system_prompt']
                     st.session_state['user_prompt'] = template['user_prompt']
-                    # Load model settings if they exist
                     if 'selected_providers' in template:
                         for provider_name, selected in template['selected_providers'].items():
                             st.session_state[f'selected_{provider_name}'] = selected
@@ -220,7 +214,7 @@ async def async_main():
         if st.button("Save as Template"):
             if new_template_name and system_prompt and user_prompt:
                 if save_template(new_template_name, system_prompt, user_prompt, 
-                               selected_providers, temperature, st.session_state.custom_names):
+                            selected_providers, temperature, st.session_state.custom_names):
                     st.success(f"Template '{new_template_name}' saved successfully!")
                     st.rerun()
             else:
@@ -279,6 +273,22 @@ async def async_main():
             for container in status_containers.values():
                 container.empty()
             progress_bar.empty()
+
+async def render_multi_prompt():
+    st.write("Multi-prompt feature coming soon!")
+
+async def async_main():
+    st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
+    st.title("🤖 Brandweave LLM Diagnostics")
+
+    # Create tabs
+    tab1, tab2 = st.tabs(["Single Prompt", "Multi-prompt"])
+
+    with tab1:
+        await render_single_prompt()
+
+    with tab2:
+        await render_multi_prompt()
 
 if __name__ == "__main__":
     asyncio.run(async_main())
