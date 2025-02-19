@@ -322,6 +322,11 @@ async def generate_multi_prompt_responses(providers, selected_providers, system_
     return responses
 
 async def render_multi_prompt():
+    providers = initialize_providers()
+
+    if 'custom_names' not in st.session_state:
+        st.session_state.custom_names = load_custom_names()
+
     col1, col2 = st.columns(2)
 
     with col1:
@@ -355,7 +360,10 @@ async def render_multi_prompt():
             st.session_state['multi_prompts'] = []
 
     if st.button("Generate Responses", key="multi_prompt_generate"):
-        if not any(st.session_state.get('selected_providers', {}).values()):
+        selected_providers = {name: st.session_state.get(f'selected_{name}', False) 
+                            for name in providers.keys()}
+
+        if not any(selected_providers.values()):
             st.error("Please select at least one LLM provider in the settings")
             return
 
@@ -375,7 +383,7 @@ async def render_multi_prompt():
         try:
             responses = await generate_multi_prompt_responses(
                 providers,
-                st.session_state.get('selected_providers', {}),
+                selected_providers,
                 system_prompt,
                 st.session_state['multi_prompts'],
                 st.session_state.get('temperature', 0.7),
