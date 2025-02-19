@@ -163,7 +163,6 @@ async def async_main():
                     user_prompt = row['question']
 
                     for submission in range(num_submissions):
-                        responses = []
                         for provider_name, provider in providers.items():
                             if selected_providers[provider_name]:
                                 display_name = st.session_state.custom_names.get(provider_name, provider_name)
