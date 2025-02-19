@@ -97,8 +97,17 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     return responses
 
 async def async_main():
-    st.set_page_config(page_title="Single Prompt Diagnostics", layout="wide")
-    st.title("🤖 Single Prompt Diagnostics")
+    st.set_page_config(page_title="LLM Diagnostics", layout="wide")
+    
+    # Create tabs for different diagnostic modes
+    tab1, tab2 = st.tabs(["🎯 Single Prompt Diagnostics", "🎮 Multi-Prompt Diagnostics"])
+    
+    with tab1:
+        st.header("Single Prompt Diagnostics")
+    
+    with tab2:
+        st.header("Multi-Prompt Diagnostics")
+        st.info("Multi-Prompt Diagnostics functionality coming soon...")
 
     # Initialize providers
     providers = initialize_providers()
@@ -194,11 +203,12 @@ async def async_main():
                     st.sidebar.success(f"Template '{selected_template}' deleted!")
                     st.rerun()
 
-    # Main content
-    col1, col2 = st.columns(2)
+    # Main content for Single Prompt Diagnostics
+    with tab1:
+        col1, col2 = st.columns(2)
 
-    with col1:
-        system_prompt = st.text_area(
+        with col1:
+            system_prompt = st.text_area(
             "System Prompt",
             value=st.session_state.get('system_prompt', ''),
             height=150,
