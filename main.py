@@ -1,8 +1,6 @@
 import streamlit as st
 import asyncio
 import aiohttp
-import pandas as pd
-from datetime import datetime
 from providers.openai_provider import OpenAIProvider
 from providers.google_provider import GoogleProvider
 from providers.anthropic_provider import AnthropicProvider
@@ -49,12 +47,12 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         nonlocal current_call
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
         is_google = isinstance(provider, (GoogleProvider, GroundedGoogleProvider))
-
+        
         if is_google:
             status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions}, waiting for rate limit)"
         else:
             status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions})"
-
+            
         status_containers[provider_name].info(status_msg)
 
         try:
@@ -73,7 +71,7 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         current_call += 1
         progress = current_call / total_calls
         progress_bar.progress(progress)
-
+        
         # Calculate submission progress including all providers
         submission_progress = (current_call - 1) // providers_per_submission + 1
         progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
@@ -99,126 +97,11 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     return responses
 
 async def async_main():
-    st.set_page_config(page_title="LLM Diagnostics", layout="wide")
+    st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
+    st.title("🤖 Brandweave LLM Diagnostics")
 
-    # Create tabs for different diagnostic modes
-    tab1, tab2 = st.tabs(["🎯 Single Prompt Diagnostics", "🎮 Multi-Prompt Diagnostics"])
-
-    with tab1:
-        st.header("Single Prompt Diagnostics")
-
-    with tab2:
-        st.header("Multi-Prompt Diagnostics")
-
-        # System prompt for all questions
-        system_prompt = st.text_area(
-            "System Prompt (applied to all questions)",
-            value=st.session_state.get('multi_system_prompt', ''),
-            height=150,
-            placeholder="Enter system prompt here..."
-        )
-
-        # File uploader for CSV and TXT files
-        uploaded_file = st.file_uploader("Upload file with questions (CSV or TXT)", type=['csv', 'txt'])
-
-        if uploaded_file is not None:
-            try:
-                if uploaded_file.name.endswith('.txt'):
-                    # Read TXT file line by line as questions
-                    content = uploaded_file.getvalue().decode('utf-8')
-                    questions = [line.strip() for line in content.split('\n') if line.strip()]
-                    questions_df = pd.DataFrame({'question': questions})
-                    actual_questions = len(questions_df) - 1 if len(questions_df) > 0 else 0
-                    st.success(f"Loaded {actual_questions} questions from TXT file")
-                else:
-                    # Read CSV file
-                    questions_df = pd.read_csv(uploaded_file)
-                    if 'question' not in questions_df.columns:
-                        st.error("CSV file must contain a 'question' column")
-                        return
-                    st.success(f"Loaded {len(questions_df)} questions from CSV")
-
-                # Add Generate Responses button here after successful file load
-                if st.button("Generate Responses", key="multi_prompt_generate"):
-                    if not any(selected_providers.values()):
-                        st.error("Please select at least one LLM provider")
-                        return
-            except Exception as e:
-                st.error(f"Error processing file: {str(e)}")
-                return
-
-            progress_container = st.empty()
-            progress_bar = st.progress(0)
-            status_containers = {provider: st.empty() for provider in providers.keys()}
-            start_time = time.time()
-
-            try:
-                all_responses = []
-                total_questions = len(questions_df)
-                question_index = 0
-
-                # Process each question multiple times based on num_submissions
-                for q_idx, row in questions_df.iterrows():
-                    question_index += 1
-                    user_prompt = row['question']
-
-                    for submission in range(num_submissions):
-                        for provider_name, provider in providers.items():
-                            if selected_providers[provider_name]:
-                                display_name = st.session_state.custom_names.get(provider_name, provider_name)
-                                status_containers[provider_name].info(f"Processing {display_name} - Question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
-
-                                try:
-                                    response = provider.generate_response(
-                                        system_prompt,
-                                        user_prompt,
-                                        temperature
-                                    )
-                                    all_responses.append((display_name, question_index, response))
-                                    status_containers[provider_name].success(f"{display_name}: Response received for Q{question_index}")
-                                except Exception as e:
-                                    error_msg = f"Error with {display_name}: {str(e)}"
-                                    all_responses.append((display_name, question_index, error_msg))
-                                    status_containers[provider_name].error(error_msg)
-
-                                # Update progress
-                                progress = (question_index * num_submissions + submission) / (total_questions * num_submissions)
-                                progress_bar.progress(progress)
-                                progress_container.text(f"Processing question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
-
-                    total_execution_time = time.time() - start_time
-
-                    progress_container.empty()
-                    for container in status_containers.values():
-                        container.empty()
-                    progress_bar.empty()
-
-                    st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
-
-                    if all_responses:
-                        # Create filename with timestamp
-                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                        filename = f"multi_prompt_responses_{timestamp}.csv"
-
-                        # Save responses to CSV
-                        df = pd.DataFrame(all_responses, columns=['model', 'q_number', 'response'])
-                        df.to_csv(filename, index=False)
-
-                        st.success(f"Responses have been saved to CSV file: {filename}")
-
-                        with open(filename, 'rb') as f:
-                            st.download_button(
-                                label="Download CSV",
-                                data=f,
-                                file_name=filename,
-                                mime='text/csv'
-                            )
-                except Exception as e:
-                    st.error(f"Error processing file: {str(e)}")
-
-    # Initialize providers and selected providers
+    # Initialize providers
     providers = initialize_providers()
-    selected_providers = {} # Moved here
 
     # Load custom names
     if 'custom_names' not in st.session_state:
@@ -231,6 +114,7 @@ async def async_main():
     st.sidebar.subheader("Model Settings")
 
     # Initialize selected providers and custom names with session state
+    selected_providers = {}
     show_custom_names = st.sidebar.checkbox("Customize Model Names", 
                                        value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
@@ -310,12 +194,11 @@ async def async_main():
                     st.sidebar.success(f"Template '{selected_template}' deleted!")
                     st.rerun()
 
-    # Main content for Single Prompt Diagnostics
-    with tab1:
-        col1, col2 = st.columns(2)
+    # Main content
+    col1, col2 = st.columns(2)
 
-        with col1:
-            system_prompt = st.text_area(
+    with col1:
+        system_prompt = st.text_area(
             "System Prompt",
             value=st.session_state.get('system_prompt', ''),
             height=150,
@@ -343,7 +226,7 @@ async def async_main():
             else:
                 st.error("Please provide template name and both prompts")
 
-    if st.button("Generate Responses", key="single_prompt_generate"):
+    if st.button("Generate Responses"):
         if not any(selected_providers.values()):
             st.error("Please select at least one LLM provider")
             return
