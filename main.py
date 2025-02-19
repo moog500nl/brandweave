@@ -137,8 +137,11 @@ async def async_main():
                         st.error("CSV file must contain a 'question' column")
                         return
                     st.success(f"Loaded {len(questions_df)} questions from CSV")
-                    
-                    if st.button("Generate Responses"):
+            except Exception as e:
+                st.error(f"Error processing file: {str(e)}")
+                return
+
+            if st.button("Generate Responses"):
                         if not any(selected_providers.values()):
                             st.error("Please select at least one LLM provider")
                             return
