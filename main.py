@@ -116,15 +116,23 @@ async def async_main():
             placeholder="Enter system prompt here..."
         )
         
-        # File uploader for CSV
-        uploaded_file = st.file_uploader("Upload CSV file with questions", type=['csv'])
+        # File uploader for CSV and TXT files
+        uploaded_file = st.file_uploader("Upload file with questions (CSV or TXT)", type=['csv', 'txt'])
         
         if uploaded_file is not None:
             try:
-                questions_df = pd.read_csv(uploaded_file)
-                if 'question' not in questions_df.columns:
-                    st.error("CSV file must contain a 'question' column")
+                if uploaded_file.name.endswith('.txt'):
+                    # Read TXT file line by line as questions
+                    content = uploaded_file.getvalue().decode('utf-8')
+                    questions = [line.strip() for line in content.split('\n') if line.strip()]
+                    questions_df = pd.DataFrame({'question': questions})
+                    st.success(f"Loaded {len(questions_df)} questions from TXT file")
                 else:
+                    # Read CSV file
+                    questions_df = pd.read_csv(uploaded_file)
+                    if 'question' not in questions_df.columns:
+                        st.error("CSV file must contain a 'question' column")
+                        return
                     st.success(f"Loaded {len(questions_df)} questions from CSV")
                     
                     if st.button("Generate Responses"):
