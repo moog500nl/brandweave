@@ -137,12 +137,12 @@
   },
   "5 Attribute Ranking": {
     "system_prompt": "You will respond by placing a comma between each attribute you respond with. You will not use full stops in the attributes. Do not repeat yourself. You don't need to mention anything else, just state the attributes.",
-    "user_prompt": "List the 5 most important attributes that VPNs should be evaluated on.",
+    "user_prompt": "List these 5 VPN attributes in order of importance. server locations, speed, security, price, privacy.",
     "selected_providers": {
       "gpt-4o-mini": true,
       "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-2-1212": true,
+      "grok-2-1212": false,
       "llama-v3p1-70b-instruct": true,
       "gemini-1.5-flash-grounded": false,
       "sonar-medium-chat": false,
@@ -159,17 +159,20 @@
       "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-02-13T15:42:07.936835"
+    "created_at": "2025-02-17T10:36:57.129403"
   },
   "1 Attribute Ranking": {
-    "system_prompt": "Answer with only one attribute. Do not explain yourself. ",
-    "user_prompt": "List the most important attribute VPNs should be evaluated on.",
+    "system_prompt": "Answer exactly with only one attribute from the list provided. Do not mention anything else. Do not use a full stop.",
+    "user_prompt": "Server Locations, Speed, Security, Price or Privacy. Which is the the most important VPN attribute?",
     "selected_providers": {
       "gpt-4o-mini": true,
-      "gemini-1.5-flash": true,
+      "gemini-2.0-flash-exp": true,
       "claude-3-5-sonnet-latest": true,
-      "grok-beta": false,
-      "llama-v3p1-70b-instruct": true
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": true,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": true
     },
     "temperature": 1.0,
     "custom_names": {
@@ -178,9 +181,11 @@
       "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
       "grok-beta": "grok-beta",
       "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
-    "created_at": "2025-01-22T10:26:52.562310"
+    "created_at": "2025-02-17T11:14:19.295610"
   },
   "5 Best Attribute": {
     "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. You will not explain yourself. ",
@@ -390,5 +395,31 @@
       "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
     },
     "created_at": "2025-02-12T14:26:11.495743"
+  },
+  "Attribute Ranking - Why?": {
+    "system_prompt": "Respond using only 1-2 sentences.",
+    "user_prompt": "Why is ExpressVPN the best VPN for price?",
+    "selected_providers": {
+      "gpt-4o-mini": false,
+      "gemini-2.0-flash-exp": false,
+      "claude-3-5-sonnet-latest": false,
+      "grok-2-1212": false,
+      "llama-v3p1-70b-instruct": false,
+      "gemini-1.5-flash-grounded": false,
+      "sonar-medium-chat": false,
+      "deepseek-v3": false
+    },
+    "temperature": 1.0,
+    "custom_names": {
+      "gpt-4o-mini": "chatgpt-4o-latest",
+      "gemini-1.5-flash": "gemini-1.5-flash",
+      "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
+      "grok-beta": "grok-beta",
+      "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+      "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
+      "sonar-medium-chat": "sonar",
+      "claude-3-sonnet-20240229": "claude-3-sonnet-20240229"
+    },
+    "created_at": "2025-02-17T13:23:23.667062"
   }
 }
