@@ -271,7 +271,8 @@ async def render_multi_prompt():
             "System Prompt",
             value=st.session_state.get('multi_system_prompt', ''),
             height=150,
-            placeholder="Enter system prompt here..."
+            placeholder="Enter system prompt here...",
+            key="multi_system_prompt_input"  
         )
 
     with col2:
@@ -279,7 +280,8 @@ async def render_multi_prompt():
             "User Prompt",
             value=st.session_state.get('multi_user_prompt', ''),
             height=150,
-            placeholder="Enter user prompt here..."
+            placeholder="Enter user prompt here...",
+            key="multi_user_prompt_input"  
         )
 
     st.write("Multi-prompt additional features coming soon!")
