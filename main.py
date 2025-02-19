@@ -263,6 +263,64 @@ async def render_single_prompt():
                 container.empty()
             progress_bar.empty()
 
+async def generate_multi_prompt_responses(providers, selected_providers, system_prompt, prompts, temperature, num_submissions, progress_container, progress_bar, status_containers):
+    responses = []
+    total_calls = len(prompts) * sum(1 for p in selected_providers.values() if p) * num_submissions
+    current_call = 0
+    providers_per_submission = sum(1 for p in selected_providers.values() if p)
+
+    async def process_provider(provider_name, provider, prompt, q_number, submission_idx):
+        nonlocal current_call
+        display_name = st.session_state.custom_names.get(provider_name, provider_name)
+        is_google = isinstance(provider, (GoogleProvider, GroundedGoogleProvider))
+
+        if is_google:
+            status_msg = f"Processing Q{q_number}: {display_name}... (Submission {submission_idx + 1}/{num_submissions}, waiting for rate limit)"
+        else:
+            status_msg = f"Processing Q{q_number}: {display_name}... (Submission {submission_idx + 1}/{num_submissions})"
+
+        status_containers[provider_name].info(status_msg)
+
+        try:
+            response = provider.generate_response(
+                system_prompt,
+                prompt,
+                temperature
+            )
+            responses.append((display_name, q_number, response))
+            status_containers[provider_name].success(f"Q{q_number} - {display_name}: Response received (Submission {submission_idx + 1}/{num_submissions})")
+        except Exception as e:
+            error_msg = f"Error with {display_name}: {str(e)}"
+            responses.append((display_name, q_number, error_msg))
+            status_containers[provider_name].error(error_msg)
+
+        current_call += 1
+        progress = current_call / total_calls
+        progress_bar.progress(progress)
+
+        total_submissions = len(prompts) * num_submissions
+        current_submission = ((current_call - 1) // providers_per_submission) + 1
+        progress_container.text(f"Processing submission {current_submission}/{total_submissions} ({int(progress * 100)}% complete)")
+
+    general_semaphore = asyncio.Semaphore(3)
+
+    async def rate_limited_provider(provider_name, provider, prompt, q_number, submission_idx):
+        if isinstance(provider, (GoogleProvider, GroundedGoogleProvider)):
+            return await process_provider(provider_name, provider, prompt, q_number, submission_idx)
+        else:
+            async with general_semaphore:
+                return await process_provider(provider_name, provider, prompt, q_number, submission_idx)
+
+    tasks = []
+    for submission_idx in range(num_submissions):
+        for q_number, prompt in enumerate(prompts, 1):
+            for provider_name, provider in providers.items():
+                if selected_providers[provider_name]:
+                    tasks.append(rate_limited_provider(provider_name, provider, prompt, q_number, submission_idx))
+
+    await asyncio.gather(*tasks)
+    return responses
+
 async def render_multi_prompt():
     col1, col2 = st.columns(2)
 
@@ -296,7 +354,63 @@ async def render_multi_prompt():
             st.error(f"Error processing file: {str(e)}")
             st.session_state['multi_prompts'] = []
 
-    st.write("Multi-prompt additional features coming soon!")
+    if st.button("Generate Responses", key="multi_prompt_generate"):
+        if not any(st.session_state.get('selected_providers', {}).values()):
+            st.error("Please select at least one LLM provider in the settings")
+            return
+
+        if not system_prompt:
+            st.error("Please enter a system prompt")
+            return
+
+        if not st.session_state.get('multi_prompts'):
+            st.error("Please upload a file with prompts")
+            return
+
+        progress_container = st.empty()
+        progress_bar = st.progress(0)
+        status_containers = {provider: st.empty() for provider in providers.keys()}
+        start_time = time.time()
+
+        try:
+            responses = await generate_multi_prompt_responses(
+                providers,
+                st.session_state.get('selected_providers', {}),
+                system_prompt,
+                st.session_state['multi_prompts'],
+                st.session_state.get('temperature', 0.7),
+                st.session_state.get('num_submissions', 1),
+                progress_container,
+                progress_bar,
+                status_containers
+            )
+
+            total_execution_time = time.time() - start_time
+
+            progress_container.empty()
+            for container in status_containers.values():
+                container.empty()
+            progress_bar.empty()
+
+            st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
+
+            if responses:
+                filename = save_responses_to_csv(responses, total_execution_time, is_multi_prompt=True)
+                st.success(f"Responses have been saved to CSV file: {filename}")
+
+                with open(filename, 'rb') as f:
+                    st.download_button(
+                        label="Download CSV",
+                        data=f,
+                        file_name=filename,
+                        mime='text/csv'
+                    )
+        except Exception as e:
+            st.error(f"An error occurred: {str(e)}")
+            progress_container.empty()
+            for container in status_containers.values():
+                container.empty()
+            progress_bar.empty()
 
 async def async_main():
     st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
