@@ -152,8 +152,8 @@ async def async_main():
             status_containers = {provider: st.empty() for provider in providers.keys()}
             start_time = time.time()
 
-                try:
-                    all_responses = []
+            try:
+                all_responses = []
                     total_questions = len(questions_df)
                     question_index = 0
 
