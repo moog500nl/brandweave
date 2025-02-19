@@ -49,12 +49,12 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         nonlocal current_call
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
         is_google = isinstance(provider, (GoogleProvider, GroundedGoogleProvider))
-        
+
         if is_google:
             status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions}, waiting for rate limit)"
         else:
             status_msg = f"Querying {display_name}... (Submission {submission_idx + 1}/{num_submissions})"
-            
+
         status_containers[provider_name].info(status_msg)
 
         try:
@@ -73,7 +73,7 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
         current_call += 1
         progress = current_call / total_calls
         progress_bar.progress(progress)
-        
+
         # Calculate submission progress including all providers
         submission_progress = (current_call - 1) // providers_per_submission + 1
         progress_container.text(f"Processing submission {submission_progress}/{num_submissions} ({int(progress * 100)}% complete)")
@@ -100,16 +100,16 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
 
 async def async_main():
     st.set_page_config(page_title="LLM Diagnostics", layout="wide")
-    
+
     # Create tabs for different diagnostic modes
     tab1, tab2 = st.tabs(["🎯 Single Prompt Diagnostics", "🎮 Multi-Prompt Diagnostics"])
-    
+
     with tab1:
         st.header("Single Prompt Diagnostics")
-    
+
     with tab2:
         st.header("Multi-Prompt Diagnostics")
-        
+
         # System prompt for all questions
         system_prompt = st.text_area(
             "System Prompt (applied to all questions)",
@@ -117,10 +117,10 @@ async def async_main():
             height=150,
             placeholder="Enter system prompt here..."
         )
-        
+
         # File uploader for CSV and TXT files
         uploaded_file = st.file_uploader("Upload file with questions (CSV or TXT)", type=['csv', 'txt'])
-        
+
         if uploaded_file is not None:
             try:
                 if uploaded_file.name.endswith('.txt'):
@@ -141,7 +141,7 @@ async def async_main():
                 st.error(f"Error processing file: {str(e)}")
                 return
 
-            if st.button("Generate Responses"):
+            if st.button("Generate Responses", key="multi_prompt_generate"): # Added unique key here
                 if not any(selected_providers.values()):
                     st.error("Please select at least one LLM provider")
                     return
@@ -168,7 +168,7 @@ async def async_main():
                             progress_bar,
                             status_containers
                         )
-                        
+
                         # Format responses with question number
                         for model, response in responses:
                             all_responses.append((model, q_idx + 1, response))
@@ -186,13 +186,13 @@ async def async_main():
                         # Create filename with timestamp
                         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                         filename = f"multi_prompt_responses_{timestamp}.csv"
-                        
+
                         # Save responses to CSV
                         df = pd.DataFrame(all_responses, columns=['model', 'q_number', 'response'])
                         df.to_csv(filename, index=False)
-                        
+
                         st.success(f"Responses have been saved to CSV file: {filename}")
-                        
+
                         with open(filename, 'rb') as f:
                             st.download_button(
                                 label="Download CSV",
@@ -330,7 +330,7 @@ async def async_main():
             else:
                 st.error("Please provide template name and both prompts")
 
-    if st.button("Generate Responses"):
+    if st.button("Generate Responses", key="single_prompt_generate"): # Added unique key here
         if not any(selected_providers.values()):
             st.error("Please select at least one LLM provider")
             return
