@@ -38,7 +38,6 @@ def initialize_providers():
     }
 
 async def generate_concurrent_responses(providers, selected_providers, system_prompt, user_prompt, temperature, num_submissions, progress_container, progress_bar, status_containers):
-    # Existing generate_concurrent_responses function remains unchanged
     responses = []
     total_calls = sum(1 for p in selected_providers.values() if p) * num_submissions
     current_call = 0
@@ -95,26 +94,20 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     return responses
 
 async def render_single_prompt():
-    # Initialize providers
     providers = initialize_providers()
 
-    # Load custom names
     if 'custom_names' not in st.session_state:
         st.session_state.custom_names = load_custom_names()
 
-    # Sidebar controls
     st.sidebar.header("Settings")
 
-    # Model Settings Section
     st.sidebar.subheader("Model Settings")
 
-    # Initialize selected providers and custom names with session state
     selected_providers = {}
     show_custom_names = st.sidebar.checkbox("Customize Model Names", 
                                     value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
 
-    # Custom name inputs if enabled
     if show_custom_names:
         st.sidebar.markdown("---")
         st.sidebar.subheader("Custom Model Names")
@@ -130,7 +123,6 @@ async def render_single_prompt():
             save_custom_names(st.session_state.custom_names)
             st.sidebar.success("Custom names saved!")
 
-    # Provider selection checkboxes
     st.sidebar.markdown("---")
     st.sidebar.subheader("Select Models")
     for provider_name in providers.keys():
@@ -157,7 +149,6 @@ async def render_single_prompt():
         value=1
     )
 
-    # Template Management in Sidebar
     st.sidebar.header("Template Management")
     template_names = list_templates()
 
@@ -188,7 +179,6 @@ async def render_single_prompt():
                     st.sidebar.success(f"Template '{selected_template}' deleted!")
                     st.rerun()
 
-    # Main content
     col1, col2 = st.columns(2)
 
     with col1:
@@ -207,7 +197,6 @@ async def render_single_prompt():
             placeholder="Enter user prompt here..."
         )
 
-    # Template Save Section
     col3, col4 = st.columns(2)
     with col3:
         new_template_name = st.text_input("Template Name", placeholder="Enter name to save as template")
@@ -275,13 +264,30 @@ async def render_single_prompt():
             progress_bar.empty()
 
 async def render_multi_prompt():
-    st.write("Multi-prompt feature coming soon!")
+    col1, col2 = st.columns(2)
+
+    with col1:
+        system_prompt = st.text_area(
+            "System Prompt",
+            value=st.session_state.get('multi_system_prompt', ''),
+            height=150,
+            placeholder="Enter system prompt here..."
+        )
+
+    with col2:
+        user_prompt = st.text_area(
+            "User Prompt",
+            value=st.session_state.get('multi_user_prompt', ''),
+            height=150,
+            placeholder="Enter user prompt here..."
+        )
+
+    st.write("Multi-prompt additional features coming soon!")
 
 async def async_main():
     st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
     st.title("🤖 Brandweave LLM Diagnostics")
 
-    # Create tabs
     tab1, tab2 = st.tabs(["Single Prompt", "Multi-prompt"])
 
     with tab1:
