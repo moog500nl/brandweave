@@ -142,65 +142,66 @@ async def async_main():
                 return
 
             if st.button("Generate Responses"):
-                        if not any(selected_providers.values()):
-                            st.error("Please select at least one LLM provider")
-                            return
+                if not any(selected_providers.values()):
+                    st.error("Please select at least one LLM provider")
+                    return
 
-                        progress_container = st.empty()
-                        progress_bar = st.progress(0)
-                        status_containers = {provider: st.empty() for provider in providers.keys()}
-                        start_time = time.time()
+                progress_container = st.empty()
+                progress_bar = st.progress(0)
+                status_containers = {provider: st.empty() for provider in providers.keys()}
+                start_time = time.time()
 
-                        all_responses = []
-                        total_questions = len(questions_df)
+                try:
+                    all_responses = []
+                    total_questions = len(questions_df)
 
-                        for q_idx, row in questions_df.iterrows():
-                            user_prompt = row['question']
-                            responses = await generate_concurrent_responses(
-                                providers,
-                                selected_providers,
-                                system_prompt,
-                                user_prompt,
-                                temperature,
-                                1,  # Single submission per question
-                                progress_container,
-                                progress_bar,
-                                status_containers
+                    for q_idx, row in questions_df.iterrows():
+                        user_prompt = row['question']
+                        responses = await generate_concurrent_responses(
+                            providers,
+                            selected_providers,
+                            system_prompt,
+                            user_prompt,
+                            temperature,
+                            1,  # Single submission per question
+                            progress_container,
+                            progress_bar,
+                            status_containers
+                        )
+                        
+                        # Format responses with question number
+                        for model, response in responses:
+                            all_responses.append((model, q_idx + 1, response))
+
+                    total_execution_time = time.time() - start_time
+
+                    progress_container.empty()
+                    for container in status_containers.values():
+                        container.empty()
+                    progress_bar.empty()
+
+                    st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
+
+                    if all_responses:
+                        # Create filename with timestamp
+                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                        filename = f"multi_prompt_responses_{timestamp}.csv"
+                        
+                        # Save responses to CSV
+                        df = pd.DataFrame(all_responses, columns=['model', 'q_number', 'response'])
+                        df.to_csv(filename, index=False)
+                        
+                        st.success(f"Responses have been saved to CSV file: {filename}")
+                        
+                        with open(filename, 'rb') as f:
+                            st.download_button(
+                                label="Download CSV",
+                                data=f,
+                                file_name=filename,
+                                mime='text/csv'
                             )
-                            
-                            # Format responses with question number
-                            for model, response in responses:
-                                all_responses.append((model, q_idx + 1, response))
-
-                        total_execution_time = time.time() - start_time
-
-                        progress_container.empty()
-                        for container in status_containers.values():
-                            container.empty()
-                        progress_bar.empty()
-
-                        st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
-
-                        if all_responses:
-                            # Create filename with timestamp
-                            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                            filename = f"multi_prompt_responses_{timestamp}.csv"
-                            
-                            # Save responses to CSV
-                            df = pd.DataFrame(all_responses, columns=['model', 'q_number', 'response'])
-                            df.to_csv(filename, index=False)
-                            
-                            st.success(f"Responses have been saved to CSV file: {filename}")
-                            
-                            with open(filename, 'rb') as f:
-                                st.download_button(
-                                    label="Download CSV",
-                                    data=f,
-                                    file_name=filename,
-                                    mime='text/csv'
-                                )
-            except Exception as e:
-                st.error(f"Error processing CSV file: {str(e)}")
+                except Exception as e:
+                    st.error(f"Error processing file: {str(e)}")
 
     # Initialize providers
     providers = initialize_providers()
