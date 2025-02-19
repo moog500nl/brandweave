@@ -154,16 +154,16 @@ async def async_main():
 
             try:
                 all_responses = []
-                    total_questions = len(questions_df)
-                    question_index = 0
+                total_questions = len(questions_df)
+                question_index = 0
 
-                    # Process each question multiple times based on num_submissions
-                    for q_idx, row in questions_df.iterrows():
-                        question_index += 1
-                        user_prompt = row['question']
-                        
-                        for submission in range(num_submissions):
-                            responses = []
+                # Process each question multiple times based on num_submissions
+                for q_idx, row in questions_df.iterrows():
+                    question_index += 1
+                    user_prompt = row['question']
+                    
+                    for submission in range(num_submissions):
+                        responses = []
                             for provider_name, provider in providers.items():
                                 if selected_providers[provider_name]:
                                     display_name = st.session_state.custom_names.get(provider_name, provider_name)
