@@ -203,8 +203,9 @@ async def async_main():
                 except Exception as e:
                     st.error(f"Error processing file: {str(e)}")
 
-    # Initialize providers
+    # Initialize providers and selected providers
     providers = initialize_providers()
+    selected_providers = {} # Moved here
 
     # Load custom names
     if 'custom_names' not in st.session_state:
@@ -217,7 +218,6 @@ async def async_main():
     st.sidebar.subheader("Model Settings")
 
     # Initialize selected providers and custom names with session state
-    selected_providers = {}
     show_custom_names = st.sidebar.checkbox("Customize Model Names", 
                                        value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
