@@ -97,8 +97,8 @@ async def generate_concurrent_responses(providers, selected_providers, system_pr
     return responses
 
 async def async_main():
-    st.set_page_config(page_title="Brandweave LLM Diagnostics", layout="wide")
-    st.title("🤖 Brandweave LLM Diagnostics")
+    st.set_page_config(page_title="Single Prompt Diagnostics", layout="wide")
+    st.title("🤖 Single Prompt Diagnostics")
 
     # Initialize providers
     providers = initialize_providers()
