@@ -284,7 +284,7 @@ async def render_multi_prompt():
     if uploaded_file is not None:
         try:
             content = uploaded_file.read().decode()
-            prompts = [prompt.strip() for prompt in content.split(',') if prompt.strip()]
+            prompts = [prompt.strip() for prompt in content.splitlines() if prompt.strip()]
 
             st.subheader("Extracted Prompts")
             for i, prompt in enumerate(prompts, 1):
