@@ -128,7 +128,8 @@ async def async_main():
                     content = uploaded_file.getvalue().decode('utf-8')
                     questions = [line.strip() for line in content.split('\n') if line.strip()]
                     questions_df = pd.DataFrame({'question': questions})
-                    st.success(f"Loaded {len(questions_df)} questions from TXT file")
+                    actual_questions = len(questions_df) - 1 if len(questions_df) > 0 else 0
+                    st.success(f"Loaded {actual_questions} questions from TXT file")
                 else:
                     # Read CSV file
                     questions_df = pd.read_csv(uploaded_file)
