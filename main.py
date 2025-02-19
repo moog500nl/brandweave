@@ -141,7 +141,8 @@ async def async_main():
                 st.error(f"Error processing file: {str(e)}")
                 return
 
-            if st.button("Generate Responses", key="multi_prompt_generate"): # Added unique key here
+            # Add Generate Responses button after file processing
+            if st.button("Generate Responses", key="multi_prompt_generate"):
                 if not any(selected_providers.values()):
                     st.error("Please select at least one LLM provider")
                     return
@@ -330,7 +331,7 @@ async def async_main():
             else:
                 st.error("Please provide template name and both prompts")
 
-    if st.button("Generate Responses", key="single_prompt_generate"): # Added unique key here
+    if st.button("Generate Responses", key="single_prompt_generate"):
         if not any(selected_providers.values()):
             st.error("Please select at least one LLM provider")
             return
