@@ -275,6 +275,27 @@ async def render_multi_prompt():
             key="multi_system_prompt_input"  
         )
 
+    uploaded_file = st.file_uploader(
+        "Upload a file containing user prompts (CSV or TXT)",
+        type=['csv', 'txt'],
+        key="multi_prompt_file_uploader"
+    )
+
+    if uploaded_file is not None:
+        try:
+            content = uploaded_file.read().decode()
+            prompts = [prompt.strip() for prompt in content.split(',') if prompt.strip()]
+
+            st.subheader("Extracted Prompts")
+            for i, prompt in enumerate(prompts, 1):
+                st.write(f"{i}. {prompt}")
+
+            st.session_state['multi_prompts'] = prompts
+            st.success(f"Successfully loaded {len(prompts)} prompts from the file")
+        except Exception as e:
+            st.error(f"Error processing file: {str(e)}")
+            st.session_state['multi_prompts'] = []
+
     st.write("Multi-prompt additional features coming soon!")
 
 async def async_main():
