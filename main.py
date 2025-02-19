@@ -161,14 +161,14 @@ async def async_main():
                 for q_idx, row in questions_df.iterrows():
                     question_index += 1
                     user_prompt = row['question']
-                    
+
                     for submission in range(num_submissions):
                         responses = []
                         for provider_name, provider in providers.items():
                             if selected_providers[provider_name]:
                                 display_name = st.session_state.custom_names.get(provider_name, provider_name)
                                 status_containers[provider_name].info(f"Processing {display_name} - Question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
-                                
+
                                 try:
                                     response = provider.generate_response(
                                         system_prompt,
@@ -181,11 +181,11 @@ async def async_main():
                                     error_msg = f"Error with {display_name}: {str(e)}"
                                     all_responses.append((display_name, question_index, error_msg))
                                     status_containers[provider_name].error(error_msg)
-                            
-                            # Update progress
-                            progress = (question_index * num_submissions + submission) / (total_questions * num_submissions)
-                            progress_bar.progress(progress)
-                            progress_container.text(f"Processing question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
+
+                                # Update progress
+                                progress = (question_index * num_submissions + submission) / (total_questions * num_submissions)
+                                progress_bar.progress(progress)
+                                progress_container.text(f"Processing question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
 
                     total_execution_time = time.time() - start_time
 
