@@ -155,24 +155,37 @@ async def async_main():
                 try:
                     all_responses = []
                     total_questions = len(questions_df)
+                    question_index = 0
 
+                    # Process each question multiple times based on num_submissions
                     for q_idx, row in questions_df.iterrows():
+                        question_index += 1
                         user_prompt = row['question']
-                        responses = await generate_concurrent_responses(
-                            providers,
-                            selected_providers,
-                            system_prompt,
-                            user_prompt,
-                            temperature,
-                            1,  # Single submission per question
-                            progress_container,
-                            progress_bar,
-                            status_containers
-                        )
-
-                        # Format responses with question number
-                        for model, response in responses:
-                            all_responses.append((model, q_idx + 1, response))
+                        
+                        for submission in range(num_submissions):
+                            responses = []
+                            for provider_name, provider in providers.items():
+                                if selected_providers[provider_name]:
+                                    display_name = st.session_state.custom_names.get(provider_name, provider_name)
+                                    status_containers[provider_name].info(f"Processing {display_name} - Question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
+                                    
+                                    try:
+                                        response = provider.generate_response(
+                                            system_prompt,
+                                            user_prompt,
+                                            temperature
+                                        )
+                                        all_responses.append((display_name, question_index, response))
+                                        status_containers[provider_name].success(f"{display_name}: Response received for Q{question_index}")
+                                    except Exception as e:
+                                        error_msg = f"Error with {display_name}: {str(e)}"
+                                        all_responses.append((display_name, question_index, error_msg))
+                                        status_containers[provider_name].error(error_msg)
+                            
+                            # Update progress
+                            progress = (question_index * num_submissions + submission) / (total_questions * num_submissions)
+                            progress_bar.progress(progress)
+                            progress_container.text(f"Processing question {question_index}/{total_questions} (Submission {submission + 1}/{num_submissions})")
 
                     total_execution_time = time.time() - start_time
 
