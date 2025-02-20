@@ -100,7 +100,6 @@ async def render_single_prompt():
         st.session_state.custom_names = load_custom_names()
 
     st.sidebar.header("Settings")
-
     st.sidebar.subheader("Model Settings")
 
     selected_providers = {}
@@ -108,20 +107,6 @@ async def render_single_prompt():
                                     value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
 
-    if show_custom_names:
-        st.sidebar.markdown("---")
-        st.sidebar.subheader("Custom Model Names")
-        for provider_name in providers.keys():
-            custom_name = st.sidebar.text_input(
-                f"Custom name for {provider_name}",
-                value=st.session_state.custom_names.get(provider_name, provider_name),
-                key=f"custom_name_{provider_name}"
-            )
-            st.session_state.custom_names[provider_name] = custom_name
-
-        if st.sidebar.button("Save Custom Names"):
-            save_custom_names(st.session_state.custom_names)
-            st.sidebar.success("Custom names saved!")
 
     st.sidebar.markdown("---")
     st.sidebar.subheader("Select Models")
@@ -142,12 +127,6 @@ async def render_single_prompt():
     )
     st.session_state['temperature'] = temperature
 
-    num_submissions = st.sidebar.number_input(
-        "Number of submissions",
-        min_value=1,
-        max_value=1000,
-        value=1
-    )
 
     st.sidebar.header("Template Management")
     template_names = list_templates()
@@ -180,6 +159,16 @@ async def render_single_prompt():
                     st.rerun()
 
     col1, col2 = st.columns(2)
+
+    # Add number input in the main content area for single prompt
+    num_submissions = st.number_input(
+        "Number of submissions",
+        min_value=1,
+        max_value=1000,
+        value=st.session_state.get('single_num_submissions', 1),
+        key="single_prompt_num_submissions"
+    )
+    st.session_state['single_num_submissions'] = num_submissions
 
     with col1:
         system_prompt = st.text_area(
@@ -327,8 +316,8 @@ async def render_multi_prompt():
     if 'custom_names' not in st.session_state:
         st.session_state.custom_names = load_custom_names()
 
-    # Add number_input for submissions
-    num_submissions = st.sidebar.number_input(
+    # Add number input at the top of multi-prompt tab
+    num_submissions = st.number_input(
         "Number of submissions",
         min_value=1,
         max_value=1000,
