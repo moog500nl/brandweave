@@ -1,0 +1,9 @@
+model,q_number,response
+chatgpt-4o-latest,1,"NordVPN, ExpressVPN, Surfshark, CyberGhost, Private Internet Access, ProtonVPN, IPVanish, Hotspot Shield, Mullvad, TunnelBear"
+chatgpt-4o-latest,2,"ExpressVPN, NordVPN, CyberGhost, Surfshark, Private Internet Access, IPVanish, ProtonVPN, TunnelBear, VyprVPN, Windscribe"
+chatgpt-4o-latest,3,"ExpressVPN, NordVPN, CyberGhost, Surfshark, Private Internet Access, IPVanish, ProtonVPN, VyprVPN, Hotspot Shield, TunnelBear"
+chatgpt-4o-latest,4,"NordVPN, ExpressVPN, CyberGhost, Surfshark, Private Internet Access, IPVanish, TunnelBear, VyprVPN, ProtonVPN, Windscribe"
+chatgpt-4o-latest,1,"NordVPN, ExpressVPN, CyberGhost, Surfshark, Private Internet Access, VyprVPN, ProtonVPN, IPVanish, TunnelBear, Windscribe"
+chatgpt-4o-latest,2,"NordVPN, ExpressVPN, Surfshark, CyberGhost, Private Internet Access, IPVanish, ProtonVPN, VyprVPN, TunnelBear, Windscribe"
+chatgpt-4o-latest,3,"ExpressVPN, NordVPN, CyberGhost, Surfshark, Private Internet Access, IPVanish, ProtonVPN, VyprVPN, Windscribe, TunnelBear"
+chatgpt-4o-latest,4,"NordVPN, ExpressVPN, Surfshark, CyberGhost, Private Internet Access, IPVanish, ProtonVPN, Hotspot Shield, TunnelBear, Windscribe"

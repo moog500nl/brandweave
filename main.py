@@ -127,7 +127,6 @@ async def render_single_prompt():
     )
     st.session_state['temperature'] = temperature
 
-
     st.sidebar.header("Template Management")
     template_names = list_templates()
 
@@ -316,16 +315,6 @@ async def render_multi_prompt():
     if 'custom_names' not in st.session_state:
         st.session_state.custom_names = load_custom_names()
 
-    # Add number input at the top of multi-prompt tab
-    num_submissions = st.number_input(
-        "Number of submissions",
-        min_value=1,
-        max_value=1000,
-        value=st.session_state.get('multi_num_submissions', 1),
-        key="multi_prompt_num_submissions"
-    )
-    st.session_state['multi_num_submissions'] = num_submissions
-
     col1, col2 = st.columns(2)
 
     with col1:
@@ -336,6 +325,16 @@ async def render_multi_prompt():
             placeholder="Enter system prompt here...",
             key="multi_system_prompt_input"
         )
+
+    # Add number input between system prompt and file upload
+    num_submissions = st.number_input(
+        "Number of submissions",
+        min_value=1,
+        max_value=1000,
+        value=st.session_state.get('multi_num_submissions', 1),
+        key="multi_prompt_num_submissions"
+    )
+    st.session_state['multi_num_submissions'] = num_submissions
 
     uploaded_file = st.file_uploader(
         "Upload a file containing user prompts (CSV or TXT)",
@@ -386,7 +385,7 @@ async def render_multi_prompt():
                 system_prompt,
                 st.session_state['multi_prompts'],
                 st.session_state.get('temperature', 1.0),
-                num_submissions,  # Use the actual num_submissions from the input
+                num_submissions,
                 progress_container,
                 progress_bar,
                 status_containers
