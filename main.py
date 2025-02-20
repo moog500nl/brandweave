@@ -100,12 +100,12 @@ async def render_single_prompt():
         st.session_state.custom_names = load_custom_names()
 
     st.sidebar.header("Settings")
+
     st.sidebar.subheader("Model Settings")
 
     selected_providers = {}
     show_custom_names = st.sidebar.checkbox("Customize Model Names", 
-                                    value=st.session_state.get('show_custom_names', False),
-                                    key="customize_names_single")
+                                    value=st.session_state.get('show_custom_names', False))
     st.session_state['show_custom_names'] = show_custom_names
 
     if show_custom_names:
@@ -115,11 +115,11 @@ async def render_single_prompt():
             custom_name = st.sidebar.text_input(
                 f"Custom name for {provider_name}",
                 value=st.session_state.custom_names.get(provider_name, provider_name),
-                key=f"custom_name_single_{provider_name}"
+                key=f"custom_name_{provider_name}"
             )
             st.session_state.custom_names[provider_name] = custom_name
 
-        if st.sidebar.button("Save Custom Names", key="single_save_names"):
+        if st.sidebar.button("Save Custom Names"):
             save_custom_names(st.session_state.custom_names)
             st.sidebar.success("Custom names saved!")
 
@@ -129,8 +129,7 @@ async def render_single_prompt():
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
         selected_providers[provider_name] = st.sidebar.checkbox(
             f"Use {display_name}",
-            value=st.session_state.get(f'selected_{provider_name}', True),
-            key=f"single_{provider_name}"
+            value=st.session_state.get(f'selected_{provider_name}', True)
         )
         st.session_state[f'selected_{provider_name}'] = selected_providers[provider_name]
 
@@ -173,6 +172,11 @@ async def render_single_prompt():
                         st.session_state['temperature'] = template['temperature']
                     if 'custom_names' in template:
                         st.session_state.custom_names.update(template['custom_names'])
+                    st.rerun()
+
+            if st.sidebar.button("Delete Selected Template"):
+                if delete_template(selected_template):
+                    st.sidebar.success(f"Template '{selected_template}' deleted!")
                     st.rerun()
 
     col1, col2 = st.columns(2)
@@ -263,19 +267,17 @@ async def generate_multi_prompt_responses(providers, selected_providers, system_
     responses = []
     total_calls = len(prompts) * sum(1 for p in selected_providers.values() if p) * num_submissions
     current_call = 0
-    providers_per_prompt = sum(1 for p in selected_providers.values() if p)
-    total_prompts = len(prompts)
+    providers_per_submission = sum(1 for p in selected_providers.values() if p)
 
     async def process_provider(provider_name, provider, prompt, q_number, submission_idx):
         nonlocal current_call
         display_name = st.session_state.custom_names.get(provider_name, provider_name)
         is_google = isinstance(provider, (GoogleProvider, GroundedGoogleProvider))
 
-        status_msg = (
-            f"Submission {submission_idx + 1}/{num_submissions} - "
-            f"Q{q_number}/{total_prompts}: {display_name}... "
-            f"{'(waiting for rate limit)' if is_google else ''}"
-        )
+        if is_google:
+            status_msg = f"Processing Q{q_number}: {display_name}... (Submission {submission_idx + 1}/{num_submissions}, waiting for rate limit)"
+        else:
+            status_msg = f"Processing Q{q_number}: {display_name}... (Submission {submission_idx + 1}/{num_submissions})"
 
         status_containers[provider_name].info(status_msg)
 
@@ -285,25 +287,20 @@ async def generate_multi_prompt_responses(providers, selected_providers, system_
                 prompt,
                 temperature
             )
-            responses.append((display_name, q_number, f"[Submission {submission_idx + 1}] {response}"))
-            status_containers[provider_name].success(
-                f"Submission {submission_idx + 1}/{num_submissions} - "
-                f"Q{q_number}/{total_prompts} - {display_name}: Response received"
-            )
+            responses.append((display_name, q_number, response))
+            status_containers[provider_name].success(f"Q{q_number} - {display_name}: Response received (Submission {submission_idx + 1}/{num_submissions})")
         except Exception as e:
             error_msg = f"Error with {display_name}: {str(e)}"
-            responses.append((display_name, q_number, f"[Submission {submission_idx + 1}] {error_msg}"))
+            responses.append((display_name, q_number, error_msg))
             status_containers[provider_name].error(error_msg)
 
         current_call += 1
         progress = current_call / total_calls
         progress_bar.progress(progress)
 
-        current_submission = ((current_call - 1) // (providers_per_prompt * total_prompts)) + 1
-        progress_container.text(
-            f"Processing submission {current_submission}/{num_submissions} "
-            f"({int(progress * 100)}% complete)"
-        )
+        total_submissions = len(prompts) * num_submissions
+        current_submission = ((current_call - 1) // providers_per_submission) + 1
+        progress_container.text(f"Processing submission {current_submission}/{total_submissions} ({int(progress * 100)}% complete)")
 
     general_semaphore = asyncio.Semaphore(3)
 
@@ -330,59 +327,15 @@ async def render_multi_prompt():
     if 'custom_names' not in st.session_state:
         st.session_state.custom_names = load_custom_names()
 
-    st.sidebar.header("Settings")
-    st.sidebar.subheader("Model Settings")
-
-    selected_providers = {}
-    show_custom_names = st.sidebar.checkbox("Customize Model Names", 
-                                    value=st.session_state.get('show_custom_names', False),
-                                    key="customize_names_multi")
-    st.session_state['show_custom_names'] = show_custom_names
-
-    if show_custom_names:
-        st.sidebar.markdown("---")
-        st.sidebar.subheader("Custom Model Names")
-        for provider_name in providers.keys():
-            custom_name = st.sidebar.text_input(
-                f"Custom name for {provider_name}",
-                value=st.session_state.custom_names.get(provider_name, provider_name),
-                key=f"custom_name_multi_{provider_name}"
-            )
-            st.session_state.custom_names[provider_name] = custom_name
-
-        if st.sidebar.button("Save Custom Names", key="multi_save_names"):
-            save_custom_names(st.session_state.custom_names)
-            st.sidebar.success("Custom names saved!")
-
-    st.sidebar.markdown("---")
-    st.sidebar.subheader("Select Models")
-    for provider_name in providers.keys():
-        display_name = st.session_state.custom_names.get(provider_name, provider_name)
-        selected_providers[provider_name] = st.sidebar.checkbox(
-            f"Use {display_name}",
-            value=st.session_state.get(f'selected_{provider_name}', True),
-            key=f"multi_{provider_name}"
-        )
-        st.session_state[f'selected_{provider_name}'] = selected_providers[provider_name]
-
-    temperature = st.sidebar.slider(
-        "Temperature",
-        min_value=0.0,
-        max_value=1.0,
-        value=st.session_state.get('temperature', 1.0),
-        step=0.1,
-        key="multi_temperature"
-    )
-    st.session_state['temperature'] = temperature
-
+    # Add number_input for submissions
     num_submissions = st.sidebar.number_input(
         "Number of submissions",
         min_value=1,
         max_value=1000,
-        value=st.session_state.get('num_submissions', 1),
-        key="multi_num_submissions"
+        value=st.session_state.get('multi_num_submissions', 1),
+        key="multi_prompt_num_submissions"
     )
-    st.session_state['num_submissions'] = num_submissions
+    st.session_state['multi_num_submissions'] = num_submissions
 
     col1, col2 = st.columns(2)
 
@@ -392,7 +345,7 @@ async def render_multi_prompt():
             value=st.session_state.get('multi_system_prompt', ''),
             height=150,
             placeholder="Enter system prompt here...",
-            key="multi_system_prompt_input"  
+            key="multi_system_prompt_input"
         )
 
     uploaded_file = st.file_uploader(
@@ -417,6 +370,9 @@ async def render_multi_prompt():
             st.session_state['multi_prompts'] = []
 
     if st.button("Generate Responses", key="multi_prompt_generate"):
+        selected_providers = {name: st.session_state.get(f'selected_{name}', False) 
+                            for name in providers.keys()}
+
         if not any(selected_providers.values()):
             st.error("Please select at least one LLM provider in the settings")
             return
@@ -440,8 +396,8 @@ async def render_multi_prompt():
                 selected_providers,
                 system_prompt,
                 st.session_state['multi_prompts'],
-                temperature,
-                num_submissions,
+                st.session_state.get('temperature', 1.0),
+                num_submissions,  # Use the actual num_submissions from the input
                 progress_container,
                 progress_bar,
                 status_containers
