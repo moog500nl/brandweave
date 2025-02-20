@@ -327,6 +327,60 @@ async def render_multi_prompt():
     if 'custom_names' not in st.session_state:
         st.session_state.custom_names = load_custom_names()
 
+    # Add sidebar settings
+    st.sidebar.header("Settings")
+    st.sidebar.subheader("Model Settings")
+
+    selected_providers = {}
+    show_custom_names = st.sidebar.checkbox("Customize Model Names", 
+                                    value=st.session_state.get('show_custom_names', False))
+    st.session_state['show_custom_names'] = show_custom_names
+
+    if show_custom_names:
+        st.sidebar.markdown("---")
+        st.sidebar.subheader("Custom Model Names")
+        for provider_name in providers.keys():
+            custom_name = st.sidebar.text_input(
+                f"Custom name for {provider_name}",
+                value=st.session_state.custom_names.get(provider_name, provider_name),
+                key=f"custom_name_multi_{provider_name}"
+            )
+            st.session_state.custom_names[provider_name] = custom_name
+
+        if st.sidebar.button("Save Custom Names", key="multi_save_names"):
+            save_custom_names(st.session_state.custom_names)
+            st.sidebar.success("Custom names saved!")
+
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Select Models")
+    for provider_name in providers.keys():
+        display_name = st.session_state.custom_names.get(provider_name, provider_name)
+        selected_providers[provider_name] = st.sidebar.checkbox(
+            f"Use {display_name}",
+            value=st.session_state.get(f'selected_{provider_name}', True),
+            key=f"multi_{provider_name}"
+        )
+        st.session_state[f'selected_{provider_name}'] = selected_providers[provider_name]
+
+    temperature = st.sidebar.slider(
+        "Temperature",
+        min_value=0.0,
+        max_value=1.0,
+        value=st.session_state.get('temperature', 1.0),
+        step=0.1,
+        key="multi_temperature"
+    )
+    st.session_state['temperature'] = temperature
+
+    num_submissions = st.sidebar.number_input(
+        "Number of submissions",
+        min_value=1,
+        max_value=1000,
+        value=st.session_state.get('num_submissions', 1),
+        key="multi_num_submissions"
+    )
+    st.session_state['num_submissions'] = num_submissions
+
     col1, col2 = st.columns(2)
 
     with col1:
@@ -360,9 +414,6 @@ async def render_multi_prompt():
             st.session_state['multi_prompts'] = []
 
     if st.button("Generate Responses", key="multi_prompt_generate"):
-        selected_providers = {name: st.session_state.get(f'selected_{name}', False) 
-                            for name in providers.keys()}
-
         if not any(selected_providers.values()):
             st.error("Please select at least one LLM provider in the settings")
             return
@@ -386,8 +437,8 @@ async def render_multi_prompt():
                 selected_providers,
                 system_prompt,
                 st.session_state['multi_prompts'],
-                st.session_state.get('temperature', 1.0),
-                st.session_state.get('num_submissions', 1),  # Get num_submissions from session state
+                temperature,  # Use the temperature from the slider
+                num_submissions,  # Use the number of submissions from the input
                 progress_container,
                 progress_bar,
                 status_containers
