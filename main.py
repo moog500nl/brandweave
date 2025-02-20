@@ -137,7 +137,7 @@ async def render_single_prompt():
         "Temperature",
         min_value=0.0,
         max_value=1.0,
-        value=st.session_state.get('temperature', 0.7),
+        value=st.session_state.get('temperature', 1.0),
         step=0.1
     )
     st.session_state['temperature'] = temperature
@@ -386,7 +386,7 @@ async def render_multi_prompt():
                 selected_providers,
                 system_prompt,
                 st.session_state['multi_prompts'],
-                st.session_state.get('temperature', 0.7),
+                st.session_state.get('temperature', 1.0),
                 st.session_state.get('num_submissions', 1),
                 progress_container,
                 progress_bar,
