@@ -387,7 +387,7 @@ async def render_multi_prompt():
                 system_prompt,
                 st.session_state['multi_prompts'],
                 st.session_state.get('temperature', 1.0),
-                st.session_state.get('num_submissions', 1),
+                st.session_state.get('num_submissions', 1),  # Get num_submissions from session state
                 progress_container,
                 progress_bar,
                 status_containers

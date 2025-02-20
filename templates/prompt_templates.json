@@ -11,7 +11,7 @@
     "created_at": "2024-10-25T14:41:56.361945"
   },
   "Name 10 X Brands": {
-    "system_prompt": "You will respond by placing a comma between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. You will not explain yourself. ",
+    "system_prompt": "You will respond by placing a comma and single space between each brand name you respond with. You will not use full stops in the brand names. Do not repeat yourself. Do not mention anything else. ",
     "user_prompt": "Name 10 VPN Brands.",
     "selected_providers": {
       "gpt-4o-mini": true,
