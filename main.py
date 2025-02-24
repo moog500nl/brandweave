@@ -234,24 +234,30 @@ async def render_single_prompt():
             st.info(f"Total execution time: {format_execution_time(total_execution_time)}")
 
             if responses:
-                filename = save_responses_to_csv(responses, total_execution_time)
+                try:
+                    filename = save_responses_to_csv(responses, total_execution_time)
+                    
+                    if os.path.exists(filename):
+                        # Create two columns for the success message and download button
+                        col_msg, col_btn = st.columns([2,1])
 
-                # Create two columns for the success message and download button
-                col_msg, col_btn = st.columns([2,1])
+                        with col_msg:
+                            st.success(f"✅ Responses saved as: {filename}")
+                            st.info("The file will be downloaded to your browser's default downloads folder")
 
-                with col_msg:
-                    st.success(f"✅ Responses saved as: {filename}")
-                    st.info("The file will be downloaded to your browser's default downloads folder")
-
-                with col_btn:
-                    with open(filename, 'rb') as f:
-                        st.download_button(
-                            label="📥 Download Results",
-                            data=f,
-                            file_name=filename,
-                            mime='text/csv',
-                            use_container_width=True,
-                        )
+                        with col_btn:
+                            with open(filename, 'rb') as f:
+                                st.download_button(
+                                    label="📥 Download Results",
+                                    data=f,
+                                    file_name=filename,
+                                    mime='text/csv',
+                                    use_container_width=True,
+                                )
+                    else:
+                        st.error("Failed to create download file")
+                except Exception as e:
+                    st.error(f"Failed to save responses: {str(e)}")
 
         except Exception as e:
             st.error(f"""
