@@ -28,7 +28,7 @@ def format_execution_time(seconds: float) -> str:
 def initialize_providers():
     return {
         "gpt-4o-mini": OpenAIProvider(),
-        "gemini-2.0-flash-exp": GoogleProvider(),
+        "gemini-2.0-flash": GoogleProvider(),
         "claude-3-5-sonnet-latest": AnthropicProvider(),
         "grok-2-1212": GrokProvider(),
         "llama-v3p1-70b-instruct": LlamaProvider(),
