@@ -235,15 +235,24 @@ async def render_single_prompt():
 
             if responses:
                 filename = save_responses_to_csv(responses, total_execution_time)
-                st.success(f"Responses have been saved to CSV file: {filename}")
 
-                with open(filename, 'rb') as f:
-                    st.download_button(
-                        label="Download CSV",
-                        data=f,
-                        file_name=filename,
-                        mime='text/csv'
-                    )
+                # Create two columns for the success message and download button
+                col_msg, col_btn = st.columns([2,1])
+
+                with col_msg:
+                    st.success(f"✅ Responses saved as: {filename}")
+                    st.info("The file will be downloaded to your browser's default downloads folder")
+
+                with col_btn:
+                    with open(filename, 'rb') as f:
+                        st.download_button(
+                            label="📥 Download Results",
+                            data=f,
+                            file_name=filename,
+                            mime='text/csv',
+                            use_container_width=True,
+                        )
+
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
             progress_container.empty()
@@ -402,15 +411,24 @@ async def render_multi_prompt():
 
             if responses:
                 filename = save_responses_to_csv(responses, total_execution_time, is_multi_prompt=True)
-                st.success(f"Responses have been saved to CSV file: {filename}")
 
-                with open(filename, 'rb') as f:
-                    st.download_button(
-                        label="Download CSV",
-                        data=f,
-                        file_name=filename,
-                        mime='text/csv'
-                    )
+                # Create two columns for the success message and download button
+                col_msg, col_btn = st.columns([2,1])
+
+                with col_msg:
+                    st.success(f"✅ Responses saved as: {filename}")
+                    st.info("The file will be downloaded to your browser's default downloads folder")
+
+                with col_btn:
+                    with open(filename, 'rb') as f:
+                        st.download_button(
+                            label="📥 Download Results",
+                            data=f,
+                            file_name=filename,
+                            mime='text/csv',
+                            use_container_width=True,
+                        )
+
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
             progress_container.empty()
