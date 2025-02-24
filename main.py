@@ -254,10 +254,14 @@ async def render_single_prompt():
                         )
 
         except Exception as e:
-            st.error(f"An error occurred: {str(e)}")
-            progress_container.empty()
+            st.error(f"""
+            ❌ Error Details:
+            Type: {type(e).__name__}
+            Message: {str(e)}
+            """)
+            progress_container.error("⚠️ Process failed - see error details above")
             for container in status_containers.values():
-                container.empty()
+                container.error(f"Provider failed: {str(e)}")
             progress_bar.empty()
 
 async def generate_multi_prompt_responses(providers, selected_providers, system_prompt, prompts, temperature, num_submissions, progress_container, progress_bar, status_containers):
@@ -430,10 +434,14 @@ async def render_multi_prompt():
                         )
 
         except Exception as e:
-            st.error(f"An error occurred: {str(e)}")
-            progress_container.empty()
+            st.error(f"""
+            ❌ Error Details:
+            Type: {type(e).__name__}
+            Message: {str(e)}
+            """)
+            progress_container.error("⚠️ Process failed - see error details above")
             for container in status_containers.values():
-                container.empty()
+                container.error(f"Provider failed: {str(e)}")
             progress_bar.empty()
 
 async def async_main():
