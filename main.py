@@ -330,10 +330,17 @@ async def generate_multi_prompt_responses(providers, selected_providers, system_
     return responses
 
 async def render_multi_prompt():
-    providers = initialize_providers()
-
+    # Initialize all required session state variables
+    if 'multi_prompts' not in st.session_state:
+        st.session_state.multi_prompts = []
+    if 'multi_num_submissions' not in st.session_state:
+        st.session_state.multi_num_submissions = 1
     if 'custom_names' not in st.session_state:
         st.session_state.custom_names = load_custom_names()
+    if 'multi_system_prompt' not in st.session_state:
+        st.session_state.multi_system_prompt = ''
+
+    providers = initialize_providers()
 
     col1, col2 = st.columns(2)
 
