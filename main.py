@@ -237,7 +237,7 @@ async def render_single_prompt():
             if responses:
                 try:
                     filename = save_responses_to_csv(responses, total_execution_time)
-                    
+
                     if os.path.exists(filename):
                         # Create two columns for the success message and download button
                         col_msg, col_btn = st.columns([2,1])
@@ -423,13 +423,14 @@ async def render_multi_prompt():
             if responses:
                 try:
                     filename = save_responses_to_csv(responses, total_execution_time, is_multi_prompt=True)
-                    
+
                     if os.path.exists(filename):
                         # Create two columns for the success message and download button
                         col_msg, col_btn = st.columns([2,1])
 
                         with col_msg:
                             st.success(f"✅ Responses saved as: {filename}")
+                            st.markdown(f"🔗 [Click here to view file](./{filename})")
                             st.info("The file will be downloaded to your browser's default downloads folder")
 
                         with col_btn:
