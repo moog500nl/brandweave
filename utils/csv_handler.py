@@ -9,8 +9,11 @@ def save_responses_to_csv(responses: list[tuple[str, str]], execution_time: floa
     For single prompt: responses = [(model, response), ...]
     For multi prompt: responses = [(model, q_number, response), ...]
     """
+    # Create pages directory if it doesn't exist
+    os.makedirs("pages", exist_ok=True)
+    
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"llm_responses_{timestamp}.csv"
+    filename = os.path.join("pages", f"llm_responses_{timestamp}.csv")
 
     if is_multi_prompt:
         # Create DataFrame with responses including question number
