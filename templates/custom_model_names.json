@@ -3,7 +3,7 @@
   "gemini-2.0-flash": "gemini-2.0-flash",
   "claude-3-5-sonnet-latest": "claude-3-5-sonnet-latest",
   "grok-beta": "grok-beta",
-  "llama-v3p1-70b-instruct": "llama-v3p1-70b-instruct",
+  "llama-v3p3-70b-instruct": "llama-v3p3-70b-instruct",
   "gemini-1.5-flash-grounded": "gemini-1.5-flash-grounded",
   "sonar-medium-chat": "sonar"
 }

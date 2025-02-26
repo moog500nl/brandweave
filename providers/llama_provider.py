@@ -11,7 +11,7 @@ class LlamaProvider(LLMProvider):
         
     @property
     def name(self) -> str:
-        return "llama-v3p1-70b-instruct"
+        return "llama-v3p3-70b-instruct"
 
     def generate_response(self, system_prompt: str, user_prompt: str, temperature: float) -> str:
         try:
@@ -21,7 +21,7 @@ class LlamaProvider(LLMProvider):
             ]
             
             response = self.client.chat.completions.create(
-                model="accounts/fireworks/models/llama-v3p1-70b-instruct",
+                model="accounts/fireworks/models/llama-v3p3-70b-instruct",
                 messages=messages,
                 temperature=temperature,
                 max_tokens=1000

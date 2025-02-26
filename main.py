@@ -32,7 +32,7 @@ def initialize_providers():
         "gemini-2.0-flash": GoogleProvider(),
         "claude-3-5-sonnet-latest": AnthropicProvider(),
         "grok-2-1212": GrokProvider(),
-        "llama-v3p1-70b-instruct": LlamaProvider(),
+        "llama-v3p3-70b-instruct": LlamaProvider(),
         "gemini-1.5-flash-grounded": GroundedGoogleProvider(),
         "sonar-medium-chat": PerplexityProvider(),
         "deepseek-v3": DeepseekProvider()
